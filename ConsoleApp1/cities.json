@@ -1,0 +1,5014 @@
+[
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "ThuDuc",
+    "AREA_NAME": "Thủ Đức"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan9",
+    "AREA_NAME": "Quận 9"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan8",
+    "AREA_NAME": "Quận 8"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan5",
+    "AREA_NAME": "Quận 5"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan4",
+    "AREA_NAME": "Quận 4"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan1",
+    "AREA_NAME": "Quận 1"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan12",
+    "AREA_NAME": "Quận 12"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "NhaBe",
+    "AREA_NAME": "Nhà Bè"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "HocMon",
+    "AREA_NAME": "Hóc Môn"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "CanGio",
+    "AREA_NAME": "Cần Giờ"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "BinhTan",
+    "AREA_NAME": "Bình Tân"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "DucHoa",
+    "AREA_NAME": "Đức Hòa"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "TinhBien",
+    "AREA_NAME": "Tịnh Biên"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "Pleiku",
+    "AREA_NAME": "Pleiku"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "PhuThien",
+    "AREA_NAME": "Phú Thiện"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "MangYang",
+    "AREA_NAME": "Mang Yang"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "KongChro",
+    "AREA_NAME": "Kông Chro"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "KrongPa",
+    "AREA_NAME": "Krông Pa"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "GoVap",
+    "AREA_NAME": "Gò Vấp"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "CuChi",
+    "AREA_NAME": "Củ Chi"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "BC",
+    "AREA_NAME": "Bình Chánh"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "KBang",
+    "AREA_NAME": "KBang"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "IaPa",
+    "AREA_NAME": "Ia Pa"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "IaGrai",
+    "AREA_NAME": "Ia Grai"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "ChuSe",
+    "AREA_NAME": "Chư Sê"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "ChuPuh",
+    "AREA_NAME": "Chư Pưh"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "ChuPah",
+    "AREA_NAME": "Chư Păh"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "VinhHung",
+    "AREA_NAME": "Vĩnh Hưng"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "TLac",
+    "AREA_NAME": "Tân Lạc"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "MChau",
+    "AREA_NAME": "Mai Châu"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "MaChau",
+    "AREA_NAME": "Mai Châu"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LThuy",
+    "AREA_NAME": "Lạc Thủy"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "TanPhu",
+    "AREA_NAME": "Tân Phú"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "TanBinh",
+    "AREA_NAME": "Tân Bình"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan7",
+    "AREA_NAME": "Quận 7"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan6",
+    "AREA_NAME": "Quận 6"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan3",
+    "AREA_NAME": "Quận 3"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan2",
+    "AREA_NAME": "Quận 2"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan11",
+    "AREA_NAME": "Quận 11"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "Quan10",
+    "AREA_NAME": "Quận 10"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "PhuNhuan",
+    "AREA_NAME": "Phú Nhuận"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "ChuProng",
+    "AREA_NAME": "Chư Prông"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "AyunPa",
+    "AREA_NAME": "Ayun Pa"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "AnKhe",
+    "AREA_NAME": "An Khê"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "DBac",
+    "AREA_NAME": "Đà Bắc"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "YThuy",
+    "AREA_NAME": "Yên Thủy"
+  },
+  {
+    "CITY_CODE": "HCMI",
+    "CITY_NAME": "Hồ Chí Minh",
+    "ZIP_CODE": "700000",
+    "AREA_CODE": "BThanh",
+    "AREA_NAME": "Bình Thạnh"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "DucHue",
+    "AREA_NAME": "Đức Huệ"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "NinhKieu",
+    "AREA_NAME": "Ninh Kiều"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "CoDo",
+    "AREA_NAME": "Cờ Đỏ"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "PhDien",
+    "AREA_NAME": "Phong Điền"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "CaiRang",
+    "AREA_NAME": "Cái Răng"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "VThanh",
+    "AREA_NAME": "Vĩnh Thạnh"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "BiThuy",
+    "AREA_NAME": "Bình Thủy"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "DucCo",
+    "AREA_NAME": "Đức Cơ"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "DakDoa",
+    "AREA_NAME": "Đắk Đoa"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "DakBo",
+    "AREA_NAME": "Đak Pơ"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "QuocOai",
+    "AREA_NAME": "Quốc Oai"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "PhucTho",
+    "AREA_NAME": "Phúc Thọ"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "PhXuyen",
+    "AREA_NAME": "Phú Xuyên"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "NTLiem",
+    "AREA_NAME": "Nam Từ Liêm"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "MyDuc",
+    "AREA_NAME": "Mỹ Đức"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "MeLinh",
+    "AREA_NAME": "Mê Linh"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "LongBien",
+    "AREA_NAME": "Long Biên"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "HaDong",
+    "AREA_NAME": "Hà Đông"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "HMai",
+    "AREA_NAME": "Hoàng Mai"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "HoanKiem",
+    "AREA_NAME": "Hoàn Kiếm"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "HoaiDuc",
+    "AREA_NAME": "Hoài Đức"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "HBTrung",
+    "AREA_NAME": "Hai Bà Trưng"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "GiaLam",
+    "AREA_NAME": "Gia Lâm"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "CauGiay",
+    "AREA_NAME": "Cầu Giấy"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ChuongMy",
+    "AREA_NAME": "Chương Mỹ"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "BTLiem",
+    "AREA_NAME": "Bắc Từ Liêm"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "BaDinh",
+    "AREA_NAME": "Ba Đình"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "BaVi",
+    "AREA_NAME": "Ba Vì"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "DucTho",
+    "AREA_NAME": "Đức Thọ"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "VuQuang",
+    "AREA_NAME": "Vũ Quang"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "ThachHa",
+    "AREA_NAME": "Thạch Hà"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LcSon",
+    "AREA_NAME": "Lạc Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LSon",
+    "AREA_NAME": "Lương Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "KBoi",
+    "AREA_NAME": "Kim Bôi"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "HoBinh",
+    "AREA_NAME": "Hoà Bình"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "CPhong",
+    "AREA_NAME": "Cao Phong"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "DongVan",
+    "AREA_NAME": "Đồng Văn"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "YenMinh",
+    "AREA_NAME": "Yên Minh"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "XinMan",
+    "AREA_NAME": "Xín Mần"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "ViXuyen",
+    "AREA_NAME": "Vị Xuyên"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "QuanBa",
+    "AREA_NAME": "Quản Bạ"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "QBinh",
+    "AREA_NAME": "Quang Bình"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "MeoVac",
+    "AREA_NAME": "Mèo Vạc"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "HaGiang",
+    "AREA_NAME": "Hà Giang"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "HSuPhi",
+    "AREA_NAME": "Hoàng Su Phì"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "BGiang",
+    "AREA_NAME": "Bắc Quang"
+  },
+  {
+    "CITY_CODE": "HAGIA",
+    "CITY_NAME": "Hà Giang",
+    "ZIP_CODE": "310000",
+    "AREA_CODE": "BacMe",
+    "AREA_NAME": "Bắc Mê"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "ThLiem",
+    "AREA_NAME": "Thanh Liêm"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "PhuLy",
+    "AREA_NAME": "Phủ Lý"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "LyNhan",
+    "AREA_NAME": "Lý Nhân"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "KimBang",
+    "AREA_NAME": "Kim Bảng"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "DuyTien",
+    "AREA_NAME": "Duy Tiên"
+  },
+  {
+    "CITY_CODE": "HANAM",
+    "CITY_NAME": "Hà Nam",
+    "ZIP_CODE": "400000",
+    "AREA_CODE": "BinhLuc",
+    "AREA_NAME": "Bình Lục"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "UngHoa",
+    "AREA_NAME": "Ứng Hòa"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "DongDa",
+    "AREA_NAME": "Đống Đa"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "DongAnh",
+    "AREA_NAME": "Đông Anh"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "DPhuong",
+    "AREA_NAME": "Đan Phượng"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "TayHo",
+    "AREA_NAME": "Tây Hồ"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ThThat",
+    "AREA_NAME": "Thạch Thất"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ThTin",
+    "AREA_NAME": "Thường Tín"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ThaXuan",
+    "AREA_NAME": "Thanh Xuân"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ThaTri",
+    "AREA_NAME": "Thanh Trì"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "ThanhOai",
+    "AREA_NAME": "Thanh Oai"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "STay",
+    "AREA_NAME": "Sơn Tây"
+  },
+  {
+    "CITY_CODE": "HNOI",
+    "CITY_NAME": "Hà Nội",
+    "ZIP_CODE": "100000",
+    "AREA_CODE": "SocSon",
+    "AREA_NAME": "Sóc Sơn"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "HaTinh",
+    "AREA_NAME": "Hà Tĩnh"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "CamXuyen",
+    "AREA_NAME": "Cẩm Xuyên"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "CanLoc",
+    "AREA_NAME": "Can Lộc"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "AnThi",
+    "AREA_NAME": "Ân Thi"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "YenMy",
+    "AREA_NAME": "Yên Mỹ"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "VanLam",
+    "AREA_NAME": "Văn Lâm"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "VanGiang",
+    "AREA_NAME": "Văn Giang"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "TienLu",
+    "AREA_NAME": "Tiên Lữ"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "CatHai",
+    "AREA_NAME": "Cát Hải"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "BLVi",
+    "AREA_NAME": "Bạch Long Vĩ"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "AnLao1",
+    "AREA_NAME": "An Lão"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "AnDuong",
+    "AREA_NAME": "An Dương"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "ChaTha",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "ViThuy",
+    "AREA_NAME": "Vị Thủy"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "ViThanh",
+    "AREA_NAME": "Vị Thanh"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "PhHiep",
+    "AREA_NAME": "Phụng Hiệp"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "PhuCu",
+    "AREA_NAME": "Phù Cừ"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "MyHao",
+    "AREA_NAME": "Mỹ Hào"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "KimDong",
+    "AREA_NAME": "Kim Động"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "KChau",
+    "AREA_NAME": "Khoái Châu"
+  },
+  {
+    "CITY_CODE": "HYEN",
+    "CITY_NAME": "Hưng Yên",
+    "ZIP_CODE": "160000",
+    "AREA_CODE": "HungYen",
+    "AREA_NAME": "Hưng Yên"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "TuKy",
+    "AREA_NAME": "Tứ Kỳ"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "ThMien",
+    "AREA_NAME": "Thanh Miện"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "ThanhHa",
+    "AREA_NAME": "Thanh Hà"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "NiGiang",
+    "AREA_NAME": "Ninh Giang"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "NamSach",
+    "AREA_NAME": "Nam Sách"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "KinhMon",
+    "AREA_NAME": "Kinh Môn"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "KimThanh",
+    "AREA_NAME": "Kim Thành"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "HaiDuong",
+    "AREA_NAME": "Hải Dương"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "GiaLoc",
+    "AREA_NAME": "Gia Lộc"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "CamGiang",
+    "AREA_NAME": "Cẩm Giàng"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "ChiLinh",
+    "AREA_NAME": "Chí Linh"
+  },
+  {
+    "CITY_CODE": "HAID",
+    "CITY_NAME": "Hải Dương",
+    "ZIP_CODE": "170000",
+    "AREA_CODE": "BiGiang",
+    "AREA_NAME": "Bình Giang"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "DoSon",
+    "AREA_NAME": "Đồ Sơn"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "VinhBao",
+    "AREA_NAME": "Vĩnh Bảo"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "TienLang",
+    "AREA_NAME": "Tiên Lãng"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "ThNguyen",
+    "AREA_NAME": "Thuỷ Nguyên"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "NgoQuyen",
+    "AREA_NAME": "Ngô Quyền"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "LeChan",
+    "AREA_NAME": "Lê Chân"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "KienThuy",
+    "AREA_NAME": "Kiến Thụy"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "KienAn",
+    "AREA_NAME": "Kiến An"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "HongBang",
+    "AREA_NAME": "Hồng Bàng"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "HaiAn",
+    "AREA_NAME": "Hải An"
+  },
+  {
+    "CITY_CODE": "HAIP",
+    "CITY_NAME": "Hải Phòng",
+    "ZIP_CODE": "180000",
+    "AREA_CODE": "DKinh",
+    "AREA_NAME": "Dương Kinh"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "NghiXuan",
+    "AREA_NAME": "Nghi Xuân"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "LocHa",
+    "AREA_NAME": "Lộc Hà"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "HongLinh",
+    "AREA_NAME": "Hồng Lĩnh"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "HuongSon",
+    "AREA_NAME": "Hương Sơn"
+  },
+  {
+    "CITY_CODE": "HATINH",
+    "CITY_NAME": "Hà Tĩnh",
+    "ZIP_CODE": "480000",
+    "AREA_CODE": "HuongKhe",
+    "AREA_NAME": "Hương Khê"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "DakTo",
+    "AREA_NAME": "Đăk Tô"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "IaHDrai",
+    "AREA_NAME": "Ia H Drai"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "TuMoRong",
+    "AREA_NAME": "Tu Mơ Rông"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "SaThay",
+    "AREA_NAME": "Sa Thầy"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "NgocHoi",
+    "AREA_NAME": "Ngọc Hồi"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "KonTum",
+    "AREA_NAME": "Kon Tum"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "KonRay",
+    "AREA_NAME": "Kon Rẫy"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "KonPlong",
+    "AREA_NAME": "Kon Plông"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "TUyen",
+    "AREA_NAME": "Tân Uyên"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "ThUyen",
+    "AREA_NAME": "Than Uyên"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "TaDuong",
+    "AREA_NAME": "Tam Đường"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "SinHo",
+    "AREA_NAME": "Sìn Hồ"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "PhongTho",
+    "AREA_NAME": "Phong Thổ"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "NamNhun",
+    "AREA_NAME": "Nậm Nhùn"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "MuongTe",
+    "AREA_NAME": "Mường Tè"
+  },
+  {
+    "CITY_CODE": "LCHAU",
+    "CITY_NAME": "Lai Châu",
+    "ZIP_CODE": "390000",
+    "AREA_CODE": "LaiChau",
+    "AREA_NAME": "Lai Châu"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "TanTru",
+    "AREA_NAME": "Tân Trụ"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "TanThanh",
+    "AREA_NAME": "Tân Thạnh"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "TanHung",
+    "AREA_NAME": "Tân Hưng"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "TanAn",
+    "AREA_NAME": "Tân An"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "ThuThua",
+    "AREA_NAME": "Thủ Thừa"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "ThanhHoa",
+    "AREA_NAME": "Thạnh Hóa"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "MocHoa",
+    "AREA_NAME": "Mộc Hóa"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "KTuong",
+    "AREA_NAME": "Kiến Tường"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "CanDuoc",
+    "AREA_NAME": "Cần Đước"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "CanGiuoc",
+    "AREA_NAME": "Cần Giuộc"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "ChThanh",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "LGAN",
+    "CITY_NAME": "Long An",
+    "ZIP_CODE": "850000",
+    "AREA_CODE": "BenLuc",
+    "AREA_NAME": "Bến Lức"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "VanBan",
+    "AREA_NAME": "Văn Bàn"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "SiMaCai",
+    "AREA_NAME": "Si Ma Cai"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "NgaBay",
+    "AREA_NAME": "Ngã Bảy"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "CThanhA",
+    "AREA_NAME": "Châu Thành A"
+  },
+  {
+    "CITY_CODE": "HGIANG",
+    "CITY_NAME": "Hậu Giang",
+    "ZIP_CODE": "910000",
+    "AREA_CODE": "LongMy",
+    "AREA_NAME": "Long Mỹ"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "VanNinh",
+    "AREA_NAME": "Vạn Ninh"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "TruongSa",
+    "AREA_NAME": "Trường Sa"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "NinhHoa",
+    "AREA_NAME": "Ninh Hòa"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "NhaTrang",
+    "AREA_NAME": "Nha Trang"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "KhaVinh",
+    "AREA_NAME": "Khánh Vĩnh"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "KhanhSon",
+    "AREA_NAME": "Khánh Sơn"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "DKhanh",
+    "AREA_NAME": "Diên Khánh"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "CamRanh",
+    "AREA_NAME": "Cam Ranh"
+  },
+  {
+    "CITY_CODE": "KHHOA",
+    "CITY_NAME": "Khánh Hòa",
+    "ZIP_CODE": "650000",
+    "AREA_CODE": "CamLam",
+    "AREA_NAME": "Cam Lâm"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "VThuan",
+    "AREA_NAME": "Vĩnh Thuận"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "UMThuong",
+    "AREA_NAME": "U Minh Thượng"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "TanHiep",
+    "AREA_NAME": "Tân Hiệp"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "RachGia",
+    "AREA_NAME": "Rạch Giá"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "PhuQuoc",
+    "AREA_NAME": "Phú Quốc"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "KLuong",
+    "AREA_NAME": "Kiên Lương"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "KienHai",
+    "AREA_NAME": "Kiên Hải"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "HonDat",
+    "AREA_NAME": "Hòn Đất"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "HaTien",
+    "AREA_NAME": "Hà Tiên"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "GoQuao",
+    "AREA_NAME": "Gò Quao"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "GRieng",
+    "AREA_NAME": "Giồng Riềng"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "GThanh",
+    "AREA_NAME": "Giang Thành"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "ChTha",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "AnMinh",
+    "AREA_NAME": "An Minh"
+  },
+  {
+    "CITY_CODE": "KGIANG",
+    "CITY_NAME": "Kiên Giang",
+    "ZIP_CODE": "920000",
+    "AREA_CODE": "AnBien",
+    "AREA_NAME": "An Biên"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "DakHa",
+    "AREA_NAME": "Đắk Hà"
+  },
+  {
+    "CITY_CODE": "KTUM",
+    "CITY_NAME": "Kon Tum",
+    "ZIP_CODE": "580000",
+    "AREA_CODE": "DakGlei",
+    "AREA_NAME": "Đắk Glei"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "BaoThang",
+    "AREA_NAME": "Bảo Thắng"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "BatXat",
+    "AREA_NAME": "Bát Xát"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "DucTrong",
+    "AREA_NAME": "Đức Trọng"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "Dateh",
+    "AREA_NAME": "Đạ Tẻh"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "DaHuoai",
+    "AREA_NAME": "Đạ Huoai"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "DonDuong",
+    "AREA_NAME": "Đơn Dương"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "Dalat",
+    "AREA_NAME": "Đà Lạt"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "YenMo",
+    "AREA_NAME": "Yên Mô"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "YenKhanh",
+    "AREA_NAME": "Yên Khánh"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "TamDiep",
+    "AREA_NAME": "Tam Điệp"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "NinhBinh",
+    "AREA_NAME": "Ninh Bình"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "NhoQuan",
+    "AREA_NAME": "Nho Quan"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "KimSon",
+    "AREA_NAME": "Kim Sơn"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "HoaLu",
+    "AREA_NAME": "Hoa Lư"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "DamRong",
+    "AREA_NAME": "Đam Rông"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "LacDuong",
+    "AREA_NAME": "Lạc Dương"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "LamHa",
+    "AREA_NAME": "Lâm Hà"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "DiLinh",
+    "AREA_NAME": "Di Linh"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "CatTien",
+    "AREA_NAME": "Cát Tiên"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "BaoLoc",
+    "AREA_NAME": "Bảo Lộc"
+  },
+  {
+    "CITY_CODE": "LADO",
+    "CITY_NAME": "Lâm Đồng",
+    "ZIP_CODE": "670000",
+    "AREA_CODE": "BLam",
+    "AREA_NAME": "Bảo Lâm"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "DinhLap",
+    "AREA_NAME": "Đình Lập"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "VanQuan",
+    "AREA_NAME": "Văn Quan"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "VanLang",
+    "AREA_NAME": "Vãn Lãng"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "TrgDinh",
+    "AREA_NAME": "Tràng Định"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "LocBinh",
+    "AREA_NAME": "Lộc Bình"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "LaSon",
+    "AREA_NAME": "Lạng Sơn"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "HuuLung",
+    "AREA_NAME": "Hữu Lũng"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "ChiLang",
+    "AREA_NAME": "Chi Lăng"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "CaoLoc",
+    "AREA_NAME": "Cao Lộc"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "BacSon",
+    "AREA_NAME": "Bắc Sơn"
+  },
+  {
+    "CITY_CODE": "LASON",
+    "CITY_NAME": "Lạng Sơn",
+    "ZIP_CODE": "240000",
+    "AREA_CODE": "BiGia",
+    "AREA_NAME": "Bình Gia"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "YYen",
+    "AREA_NAME": "Ý Yên"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "XTruong",
+    "AREA_NAME": "Xuân Trường"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "VuBan",
+    "AREA_NAME": "Vụ Bản"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "TrucNinh",
+    "AREA_NAME": "Trực Ninh"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "NHung",
+    "AREA_NAME": "Nghĩa Hưng"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "NamDinh",
+    "AREA_NAME": "Nam Định"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "NamTruc",
+    "AREA_NAME": "Nam Trực"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "MyLoc",
+    "AREA_NAME": "Mỹ Lộc"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "HaiHau",
+    "AREA_NAME": "Hải Hậu"
+  },
+  {
+    "CITY_CODE": "NAMD",
+    "CITY_NAME": "Nam Định",
+    "ZIP_CODE": "420000",
+    "AREA_CODE": "GiaoThuy",
+    "AREA_NAME": "Giao Thủy"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "SaPa",
+    "AREA_NAME": "Sa Pa"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "MKhuong",
+    "AREA_NAME": "Mường Khương"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "LaoCai",
+    "AREA_NAME": "Lào Cai"
+  },
+  {
+    "CITY_CODE": "LACAI",
+    "CITY_NAME": "Lào Cai",
+    "ZIP_CODE": "330000",
+    "AREA_CODE": "BacHa",
+    "AREA_NAME": "Bắc Hà"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "PhoDien",
+    "AREA_NAME": "Phong Điền"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "ALuoi",
+    "AREA_NAME": "A Lưới"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "ChaThanh",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "TanPhuoc",
+    "AREA_NAME": "Tân Phước"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "CaiLay",
+    "AREA_NAME": "Cai Lậy"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "TPDong",
+    "AREA_NAME": "Tân Phú Đông"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "MyTho",
+    "AREA_NAME": "Mỹ Tho"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "GCDong",
+    "AREA_NAME": "Gò Công Đông"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "GCTay",
+    "AREA_NAME": "Gò Công Tây"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "GoCong",
+    "AREA_NAME": "Gò Công"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "CaiBe",
+    "AREA_NAME": "Cái Bè"
+  },
+  {
+    "CITY_CODE": "TIGIANG",
+    "CITY_NAME": "Tiền Giang",
+    "ZIP_CODE": "860000",
+    "AREA_CODE": "ChoGao",
+    "AREA_NAME": "Chợ Gạo"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "DuyenHai",
+    "AREA_NAME": "Duyên Hải"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "ChauTh",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "TraVinh",
+    "AREA_NAME": "Trà Vinh"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "TraCu",
+    "AREA_NAME": "Trà Cú"
+  },
+  {
+    "CITY_CODE": "NIBINH",
+    "CITY_NAME": "Ninh Bình",
+    "ZIP_CODE": "430000",
+    "AREA_CODE": "GiaVien",
+    "AREA_NAME": "Gia Viễn"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "ThNam",
+    "AREA_NAME": "Thuận Nam"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "ThuanBac",
+    "AREA_NAME": "Thuận Bắc"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "PRTC",
+    "AREA_NAME": "Phan Rang-Tháp Chàm"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "NinhSon",
+    "AREA_NAME": "Ninh Sơn"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "NPhuoc",
+    "AREA_NAME": "Ninh Phước"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "NinhHai",
+    "AREA_NAME": "Ninh Hải"
+  },
+  {
+    "CITY_CODE": "NITHUAN",
+    "CITY_NAME": "Ninh Thuận",
+    "ZIP_CODE": "660000",
+    "AREA_CODE": "BacAi",
+    "AREA_NAME": "Bác Ái"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "DoanHung",
+    "AREA_NAME": "Đoan Hùng"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "YenLap",
+    "AREA_NAME": "Yên Lập"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "DongHung",
+    "AREA_NAME": "Đông Hưng"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "VuThu",
+    "AREA_NAME": "Vũ Thư"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "TienHai",
+    "AREA_NAME": "Tiền Hải"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "ThaiThuy",
+    "AREA_NAME": "Thái Thụy"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "ThaiBinh",
+    "AREA_NAME": "Thái Bình"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "QuPhu",
+    "AREA_NAME": "Quỳnh Phụ"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "KXuong",
+    "AREA_NAME": "Kiến Xương"
+  },
+  {
+    "CITY_CODE": "THBINH",
+    "CITY_NAME": "Thái Bình",
+    "ZIP_CODE": "410000",
+    "AREA_CODE": "HungHa",
+    "AREA_NAME": "Hưng Hà"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "DongHy",
+    "AREA_NAME": "Đồng Hỷ"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "DaiTu",
+    "AREA_NAME": "Đại Từ"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "VoNhai",
+    "AREA_NAME": "Võ Nhai"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "ThaiNgn",
+    "AREA_NAME": "Thái Nguyên"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "SongCong",
+    "AREA_NAME": "Sông Công"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "PhoYen",
+    "AREA_NAME": "Phổ Yên"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "PLuong",
+    "AREA_NAME": "Phú Lương"
+  },
+  {
+    "CITY_CODE": "THNGUYEN",
+    "CITY_NAME": "Thái Nguyên",
+    "ZIP_CODE": "250000",
+    "AREA_CODE": "PhuBinh",
+    "AREA_NAME": "Phú Bình"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "NamDong",
+    "AREA_NAME": "Nam Đông"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "HTra",
+    "AREA_NAME": "Hương Trà"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "HThuy",
+    "AREA_NAME": "Hương Thủy"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "Hue",
+    "AREA_NAME": "Huế"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "QDien",
+    "AREA_NAME": "Quảng Điền"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "PhuVang",
+    "AREA_NAME": "Phú Vang"
+  },
+  {
+    "CITY_CODE": "TTHUE",
+    "CITY_NAME": "Thừa Thiên Huế",
+    "ZIP_CODE": "530000",
+    "AREA_CODE": "PhuLoc",
+    "AREA_NAME": "Phú Lộc"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "YenSon",
+    "AREA_NAME": "Yên Sơn"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "TQuang",
+    "AREA_NAME": "Tuyên Quang"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "SonDuong",
+    "AREA_NAME": "Sơn Dương"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "NaHang",
+    "AREA_NAME": "Na Hang"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "LamBinh",
+    "AREA_NAME": "Lâm Bình"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "HamYen",
+    "AREA_NAME": "Hàm Yên"
+  },
+  {
+    "CITY_CODE": "TUQUANG",
+    "CITY_NAME": "Tuyên Quang",
+    "ZIP_CODE": "300000",
+    "AREA_CODE": "ChiemHoa",
+    "AREA_NAME": "Chiêm Hóa"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "CThanh",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "TNinh",
+    "AREA_NAME": "Tây Ninh"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "VanChan",
+    "AREA_NAME": "Văn Chấn"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "TranYen",
+    "AREA_NAME": "Trấn Yên"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "TramTau",
+    "AREA_NAME": "Trạm Tấu"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "NghiaLo",
+    "AREA_NAME": "Nghĩa Lộ"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "MCChai",
+    "AREA_NAME": "Mù Căng Chải"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "LucYen",
+    "AREA_NAME": "Lục Yên"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "DBDong",
+    "AREA_NAME": "Điện Biên Đông"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "TChau",
+    "AREA_NAME": "Tân Châu"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "TanBien",
+    "AREA_NAME": "Tân Biên"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "TraBang",
+    "AREA_NAME": "Trảng Bàng"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "HoaThanh",
+    "AREA_NAME": "Hòa Thành"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "GoDau",
+    "AREA_NAME": "Gò Dầu"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "DMChau",
+    "AREA_NAME": "Dương Minh Châu"
+  },
+  {
+    "CITY_CODE": "TAYN",
+    "CITY_NAME": "Tây Ninh",
+    "ZIP_CODE": "840000",
+    "AREA_CODE": "BenCau",
+    "AREA_NAME": "Bến Cầu"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "VungLiem",
+    "AREA_NAME": "Vũng Liêm"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "VinhLong",
+    "AREA_NAME": "Vĩnh Long"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "TraOn",
+    "AREA_NAME": "Trà Ôn"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "TamBinh",
+    "AREA_NAME": "Tam Bình"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "MangThit",
+    "AREA_NAME": "Mang Thít"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "LongHo",
+    "AREA_NAME": "Long Hồ"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "BiTan",
+    "AREA_NAME": "Bình Tân"
+  },
+  {
+    "CITY_CODE": "VLONG",
+    "CITY_NAME": "Vĩnh Long",
+    "ZIP_CODE": "890000",
+    "AREA_CODE": "BinhMinh",
+    "AREA_NAME": "Bình Minh"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "YenLac",
+    "AREA_NAME": "Yên Lạc"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "VinhYen",
+    "AREA_NAME": "Vĩnh Yên"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "VTuong",
+    "AREA_NAME": "Vĩnh Tường"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "TamDao",
+    "AREA_NAME": "Tam Đảo"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "TamDuong",
+    "AREA_NAME": "Tam Dương"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "SongLo",
+    "AREA_NAME": "Sông Lô"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "PhucYen",
+    "AREA_NAME": "Phúc Yên"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "LThach",
+    "AREA_NAME": "Lập Thạch"
+  },
+  {
+    "CITY_CODE": "VPHUC",
+    "CITY_NAME": "Vĩnh Phúc",
+    "ZIP_CODE": "280000",
+    "AREA_CODE": "BiXuyen",
+    "AREA_NAME": "Bình Xuyên"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "YenBinh",
+    "AREA_NAME": "Yên Bình"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "YenBai",
+    "AREA_NAME": "Yên Bái"
+  },
+  {
+    "CITY_CODE": "YENB",
+    "CITY_NAME": "Yên Bái",
+    "ZIP_CODE": "320000",
+    "AREA_CODE": "VanYen",
+    "AREA_NAME": "Văn Yên"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "TieuCan",
+    "AREA_NAME": "Tiểu Cần"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "CauNGang",
+    "AREA_NAME": "Cầu Ngang"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "CauKe",
+    "AREA_NAME": "Cầu Kè"
+  },
+  {
+    "CITY_CODE": "TRAV",
+    "CITY_NAME": "Trà Vinh",
+    "ZIP_CODE": "940000",
+    "AREA_CODE": "CaLong",
+    "AREA_NAME": "Càng Long"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "QuTrach",
+    "AREA_NAME": "Quảng Trạch"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "QuaNinh",
+    "AREA_NAME": "Quảng Ninh"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "MinhHoa",
+    "AREA_NAME": "Minh Hóa"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "LeThuy",
+    "AREA_NAME": "Lệ Thủy"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "BoTrach",
+    "AREA_NAME": "Bố Trạch"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "BaDon",
+    "AREA_NAME": "Ba Đồn"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "DBPhu",
+    "AREA_NAME": "Điện Biên Phủ"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "DienBien",
+    "AREA_NAME": "Điện Biên"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "TChua",
+    "AREA_NAME": "Tủa Chùa"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "TuanGiao",
+    "AREA_NAME": "Tuần Giáo"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "NamPo",
+    "AREA_NAME": "Nậm Pồ"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "MAng",
+    "AREA_NAME": "Mường Ảng"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "MuongNhe",
+    "AREA_NAME": "Mường Nhé"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "MLay",
+    "AREA_NAME": "Mường Lay"
+  },
+  {
+    "CITY_CODE": "DBIEN",
+    "CITY_NAME": "Điện Biên",
+    "ZIP_CODE": "380000",
+    "AREA_CODE": "MuongCha",
+    "AREA_NAME": "Mường Chà"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "HoaVang",
+    "AREA_NAME": "Hòa Vang"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "ThanhKhe",
+    "AREA_NAME": "Thanh Khê"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "HoangSa",
+    "AREA_NAME": "Hoàng Sa"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "SonTra",
+    "AREA_NAME": "Sơn Trà"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "CamLe",
+    "AREA_NAME": "Cẩm Lệ"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "LChieu",
+    "AREA_NAME": "Liên Chiểu"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "VietTri",
+    "AREA_NAME": "Việt Trì"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "TanSon",
+    "AREA_NAME": "Tân Sơn"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "ThThuy",
+    "AREA_NAME": "Thanh Thủy"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "ThSon",
+    "AREA_NAME": "Thanh Sơn"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "ThanhBa",
+    "AREA_NAME": "Thanh Ba"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "TNong",
+    "AREA_NAME": "Tam Nông"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "PhuTho",
+    "AREA_NAME": "Phú Thọ"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "PhNinh",
+    "AREA_NAME": "Phù Ninh"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "LamThao",
+    "AREA_NAME": "Lâm Thao"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "HaHoa",
+    "AREA_NAME": "Hạ Hòa"
+  },
+  {
+    "CITY_CODE": "PTHO",
+    "CITY_NAME": "Phú Thọ",
+    "ZIP_CODE": "290000",
+    "AREA_CODE": "CamKhe",
+    "AREA_NAME": "Cẩm Khê"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "DongXuan",
+    "AREA_NAME": "Đồng Xuân"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "DongHoa",
+    "AREA_NAME": "Đông Hòa"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "TayHoa",
+    "AREA_NAME": "Tây Hòa"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "TuyHoa",
+    "AREA_NAME": "Tuy Hòa"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "TuyAn",
+    "AREA_NAME": "Tuy An"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "SonHoa",
+    "AREA_NAME": "Sơn Hòa"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "SongHinh",
+    "AREA_NAME": "Sông Hinh"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "SongCau",
+    "AREA_NAME": "Sông Cầu"
+  },
+  {
+    "CITY_CODE": "PYEN",
+    "CITY_NAME": "Phú Yên",
+    "ZIP_CODE": "620000",
+    "AREA_CODE": "PhuHoa",
+    "AREA_NAME": "Phú Hòa"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "DongHoi",
+    "AREA_NAME": "Đồng Hới"
+  },
+  {
+    "CITY_CODE": "QBINH",
+    "CITY_NAME": "Quảng Bình",
+    "ZIP_CODE": "510000",
+    "AREA_CODE": "TuyenHoa",
+    "AREA_NAME": "Tuyên Hóa"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "LXuyen",
+    "AREA_NAME": "Long Xuyên"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "TanChau",
+    "AREA_NAME": "Tân Châu"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "ChauPhu",
+    "AREA_NAME": "Châu Phú"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "TriTon",
+    "AREA_NAME": "Tri Tôn"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "ChauT",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "ChauDoc",
+    "AREA_NAME": "Châu Đốc"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "BacLieu",
+    "AREA_NAME": "Bạc Liêu"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "BinhDai",
+    "AREA_NAME": "Bình Đại"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "ThoiBinh",
+    "AREA_NAME": "Thới Bình"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "PhTan",
+    "AREA_NAME": "Phú Tân"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "NamCan",
+    "AREA_NAME": "Năm Căn"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "NgocHien",
+    "AREA_NAME": "Ngọc Hiển"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "ThanhPhu",
+    "AREA_NAME": "Thạnh Phú"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "GiTrom",
+    "AREA_NAME": "Giồng Trôm"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "ChoLach",
+    "AREA_NAME": "Chợ Lách"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "BenTre",
+    "AREA_NAME": "Bến Tre"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "CaiNuoc",
+    "AREA_NAME": "Cái Nước"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "DGiang",
+    "AREA_NAME": "Đông Giang"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "DienBan",
+    "AREA_NAME": "Điện Bàn"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "TayGiang",
+    "AREA_NAME": "Tây Giang"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "ThBinh",
+    "AREA_NAME": "Thăng Bình"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "QueSon",
+    "AREA_NAME": "Quế Sơn"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "NongSon",
+    "AREA_NAME": "Nông Sơn"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "NTMy",
+    "AREA_NAME": "Nam Trà My"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "NGiang",
+    "AREA_NAME": "Nam Giang"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "HoiAn",
+    "AREA_NAME": "Hội An"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "ThuanAn",
+    "AREA_NAME": "Thuận An"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "PhuGiao",
+    "AREA_NAME": "Phú Giáo"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "DauTieng",
+    "AREA_NAME": "Dầu Tiếng"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "BenCat",
+    "AREA_NAME": "Bến Cát"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "NuiThanh",
+    "AREA_NAME": "Núi Thành"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "HiepDuc",
+    "AREA_NAME": "Hiệp Đức"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "DuyXuyen",
+    "AREA_NAME": "Duy Xuyên"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "BTMy",
+    "AREA_NAME": "Bắc Trà My"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "DucPho",
+    "AREA_NAME": "Đức Phổ"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "TuNghia",
+    "AREA_NAME": "Tư Nghĩa"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "TayTra",
+    "AREA_NAME": "Tây Trà"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "TraBong",
+    "AREA_NAME": "Trà Bồng"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "SonTinh",
+    "AREA_NAME": "Sơn Tịnh"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "XuyenMoc",
+    "AREA_NAME": "Xuyên Mộc"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "VungTau",
+    "AREA_NAME": "Vũng Tàu"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "TThanh",
+    "AREA_NAME": "Tân Thành"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "ConDao",
+    "AREA_NAME": "Côn Đảo"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "ChauDuc",
+    "AREA_NAME": "Châu Đức"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "DatDo",
+    "AREA_NAME": "Đất Đỏ"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "BauBang",
+    "AREA_NAME": "Bàu Bàng"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "DongPhu",
+    "AREA_NAME": "Đồng Phú"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "BaRia",
+    "AREA_NAME": "Bà Rịa"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "DiAn",
+    "AREA_NAME": "Dĩ An"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "BacTUyen",
+    "AREA_NAME": "Bắc Tân Uyên"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "PLong",
+    "AREA_NAME": "Phước Long"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "PhuMy",
+    "AREA_NAME": "Phù Mỹ"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "PhuCat",
+    "AREA_NAME": "Phù Cát"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "HoaiNhon",
+    "AREA_NAME": "Hoài Nhơn"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "AnNhon",
+    "AREA_NAME": "An Nhơn"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "AnLao",
+    "AREA_NAME": "An Lão"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "DongHai",
+    "AREA_NAME": "Đông Hải"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "VinhLoi",
+    "AREA_NAME": "Vĩnh Lợi"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "MCNam",
+    "AREA_NAME": "Mỏ Cày Nam"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "BaTri",
+    "AREA_NAME": "Ba Tri"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "DamDoi",
+    "AREA_NAME": "Đầm Dơi"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "UMinh",
+    "AREA_NAME": "U Minh"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "TVThoi",
+    "AREA_NAME": "Trần Văn Thời"
+  },
+  {
+    "CITY_CODE": "CMAU",
+    "CITY_NAME": "Cà Mau",
+    "ZIP_CODE": "970000",
+    "AREA_CODE": "CaMau",
+    "AREA_NAME": "Cà Mau"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "DaiLoc",
+    "AREA_NAME": "Đại Lộc"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "TPhuoc",
+    "AREA_NAME": "Tiên Phước"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "TamKy",
+    "AREA_NAME": "Tam Kỳ"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "PhuocSon",
+    "AREA_NAME": "Phước Sơn"
+  },
+  {
+    "CITY_CODE": "QNAM",
+    "CITY_NAME": "Quảng Nam",
+    "ZIP_CODE": "560000",
+    "AREA_CODE": "PhuNinh",
+    "AREA_NAME": "Phú Ninh"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "NHSon",
+    "AREA_NAME": "Ngũ Hành Sơn"
+  },
+  {
+    "CITY_CODE": "DANA",
+    "CITY_NAME": "Đà Nẵng",
+    "ZIP_CODE": "550000",
+    "AREA_CODE": "HaiChau",
+    "AREA_NAME": "Hải Châu"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "TDMot",
+    "AREA_NAME": "Thủ Dầu Một"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "PhuRieng",
+    "AREA_NAME": "Phú Riềng"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "ChoMoi",
+    "AREA_NAME": "Chợ Mới"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "PhuTan",
+    "AREA_NAME": "Phú Tán"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "ThoaiSon",
+    "AREA_NAME": "Thoại Sơn"
+  },
+  {
+    "CITY_CODE": "ANGA",
+    "CITY_NAME": "An Giang",
+    "ZIP_CODE": "880000",
+    "AREA_CODE": "AnPhu",
+    "AREA_NAME": "An Phú"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "OMon",
+    "AREA_NAME": "Ô Môn"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "ThoiLai",
+    "AREA_NAME": "Thới Lai"
+  },
+  {
+    "CITY_CODE": "CANTHO",
+    "CITY_NAME": "Cần Thơ",
+    "ZIP_CODE": "900000",
+    "AREA_CODE": "ThotNot",
+    "AREA_NAME": "Thốt Nốt"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "LocNinh",
+    "AREA_NAME": "Lộc Ninh"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "ChonTha",
+    "AREA_NAME": "Chơn Thành"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "BuDop",
+    "AREA_NAME": "Bù Đốp"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "BuDang",
+    "AREA_NAME": "Bù Đăng"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "MCBac",
+    "AREA_NAME": "Mỏ Cày Bắc"
+  },
+  {
+    "CITY_CODE": "BTRE",
+    "CITY_NAME": "Bến Tre",
+    "ZIP_CODE": "930000",
+    "AREA_CODE": "ChaThan",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "LaGi",
+    "AREA_NAME": "La Gi"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "DongXoai",
+    "AREA_NAME": "Đồng Xoài"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "BGMap",
+    "AREA_NAME": "Bù Gia Mập"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "BinhLong",
+    "AREA_NAME": "Bình Long"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "HamTan",
+    "AREA_NAME": "Hàm Tân"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "TanhLinh",
+    "AREA_NAME": "Tánh Linh"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "PhuQuy",
+    "AREA_NAME": "Phú Quý"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "HTNam",
+    "AREA_NAME": "Hàm Thuận Nam"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "VinhTha",
+    "AREA_NAME": "Vĩnh Thạnh"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "VanCanh",
+    "AREA_NAME": "Vân Canh"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "TuyPhong",
+    "AREA_NAME": "Tuy Phong"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "PThiet",
+    "AREA_NAME": "Phan Thiết"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "HTBac",
+    "AREA_NAME": "Hàm Thuận Bắc"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "BacBinh",
+    "AREA_NAME": "Bắc Bình"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "TaySon",
+    "AREA_NAME": "Tây Sơn"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "LongDien",
+    "AREA_NAME": "Long Điền"
+  },
+  {
+    "CITY_CODE": "BIDU",
+    "CITY_NAME": "Bình Dương",
+    "ZIP_CODE": "590000",
+    "AREA_CODE": "TanUyen",
+    "AREA_NAME": "Tân Uyên"
+  },
+  {
+    "CITY_CODE": "BPHUOC",
+    "CITY_NAME": "Bình Phước",
+    "ZIP_CODE": "830000",
+    "AREA_CODE": "HonQuan",
+    "AREA_NAME": "Hớn Quản"
+  },
+  {
+    "CITY_CODE": "BTHUA",
+    "CITY_NAME": "Bình Thuận",
+    "ZIP_CODE": "800000",
+    "AREA_CODE": "DLinh",
+    "AREA_NAME": "Đức Linh"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "TuyPhuoc",
+    "AREA_NAME": "Tuy Phước"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "QuyNhon",
+    "AREA_NAME": "Quy Nhơn"
+  },
+  {
+    "CITY_CODE": "BDIN",
+    "CITY_NAME": "Bình Định",
+    "ZIP_CODE": "820000",
+    "AREA_CODE": "HoaiAn",
+    "AREA_NAME": "Hoài Ân"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "PhLong",
+    "AREA_NAME": "Phước Long"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "HongDan",
+    "AREA_NAME": "Hồng Dân"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "HoaBinh",
+    "AREA_NAME": "Hoà Bình"
+  },
+  {
+    "CITY_CODE": "BLIEU",
+    "CITY_NAME": "Bạc Liêu",
+    "ZIP_CODE": "260000",
+    "AREA_CODE": "GiaRai",
+    "AREA_NAME": "Giá Rai"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "Lak",
+    "AREA_NAME": "Lắk"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "KrNang",
+    "AREA_NAME": "Krông Năng"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "EaSup",
+    "AREA_NAME": "Ea Súp"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "EaHleo",
+    "AREA_NAME": "Ea H leo"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "PhucHoa",
+    "AREA_NAME": "Phục Hòa"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "HoaAn",
+    "AREA_NAME": "Hòa An"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "HaQuang",
+    "AREA_NAME": "Hà Quảng"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "CaoBang",
+    "AREA_NAME": "Cao Bằng"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "BaoLam",
+    "AREA_NAME": "Bảo Lâm"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "NgaSon",
+    "AREA_NAME": "Nga Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "MuongLat",
+    "AREA_NAME": "Mường Lát"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "LChanh",
+    "AREA_NAME": "Lang Chánh"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "HauLoc",
+    "AREA_NAME": "Hậu Lộc"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "HaTrung",
+    "AREA_NAME": "Hà Trung"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "HoangHoa",
+    "AREA_NAME": "Hoằng Hóa"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "CamThuy",
+    "AREA_NAME": "Cẩm Thủy"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "DoLuong",
+    "AREA_NAME": "Đô Lương"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "YenThanh",
+    "AREA_NAME": "Yên Thành"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "ThChuong",
+    "AREA_NAME": "Thanh Chương"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "HongNgu",
+    "AREA_NAME": "Hồng Ngự"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "ChauThan",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "CaoLanh",
+    "AREA_NAME": "Cao Lãnh"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "SonTay",
+    "AREA_NAME": "Sơn Tây"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "QuNgai",
+    "AREA_NAME": "Quảng Ngãi"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "NgHanh",
+    "AREA_NAME": "Nghĩa Hành"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "MinhLong",
+    "AREA_NAME": "Minh Long"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "LySon",
+    "AREA_NAME": "Lý Sơn"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "BinhSon",
+    "AREA_NAME": "Bình Sơn"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "BaTo",
+    "AREA_NAME": "Ba Tơ"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "DongHa",
+    "AREA_NAME": "Đông Hà"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "DaKrong",
+    "AREA_NAME": "Đa Krông"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "VinhLinh",
+    "AREA_NAME": "Vĩnh Linh"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "TrPhong",
+    "AREA_NAME": "Triệu Phong"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "HaiLang",
+    "AREA_NAME": "Hải Lăng"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "GioLinh",
+    "AREA_NAME": "Gio Linh"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "CamLo",
+    "AREA_NAME": "Cam Lộ"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "TranDe",
+    "AREA_NAME": "Trần Đề"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "NgaNam",
+    "AREA_NAME": "Ngã Năm"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "LongPhu",
+    "AREA_NAME": "Long Phú"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "KeSach",
+    "AREA_NAME": "Kế Sách"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "CMGar",
+    "AREA_NAME": "Cư M Gar"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "CuKuin",
+    "AREA_NAME": "Cư Kuin"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "BuonHo",
+    "AREA_NAME": "Buôn Hồ"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "DakRlap",
+    "AREA_NAME": "Đắk R lấp"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "DinhQuan",
+    "AREA_NAME": "Định Quán"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "VinhCuu",
+    "AREA_NAME": "Vĩnh Cửu"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "TanPh",
+    "AREA_NAME": "Tân Phú"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "TrangBom",
+    "AREA_NAME": "Trảng Bom"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "ThNhat",
+    "AREA_NAME": "Thống Nhất"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "LKhanh",
+    "AREA_NAME": "Long Khánh"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "ChMoi",
+    "AREA_NAME": "Chợ Mới"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "ThChau",
+    "AREA_NAME": "Thuận Châu"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "SopCop",
+    "AREA_NAME": "Sốp Cộp"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "SonLa",
+    "AREA_NAME": "Sơn La"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "SongMa",
+    "AREA_NAME": "Sông Mã"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "PhuYen",
+    "AREA_NAME": "Phù Yên"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "MaiSon",
+    "AREA_NAME": "Mai Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "DaBac",
+    "AREA_NAME": "Đà Bắc"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "TanLac",
+    "AREA_NAME": "Tân Lạc"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "MaiChau",
+    "AREA_NAME": "Mai Châu"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LuongSon",
+    "AREA_NAME": "Lương Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "KimBoi",
+    "AREA_NAME": "Kim Bôi"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "HBinh",
+    "AREA_NAME": "Hoà Bình"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "HoanhBo",
+    "AREA_NAME": "Hoành Bồ"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "CamPha",
+    "AREA_NAME": "Cẩm Phả"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "YenThe",
+    "AREA_NAME": "Yên Thế"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "YenDung",
+    "AREA_NAME": "Yên Dũng"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "TanYen",
+    "AREA_NAME": "Tân Yên"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "SonDong",
+    "AREA_NAME": "Sơn Động"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "DongSon",
+    "AREA_NAME": "Đông Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "YenDinh",
+    "AREA_NAME": "Yên Định"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "VinhLoc",
+    "AREA_NAME": "Vĩnh Lộc"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "TinhGia",
+    "AREA_NAME": "Tĩnh Gia"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "TrieuSon",
+    "AREA_NAME": "Triệu Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "ThoXuan",
+    "AREA_NAME": "Thọ Xuân"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "ThaThanh",
+    "AREA_NAME": "Thạch Thành"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "ThXuan",
+    "AREA_NAME": "Thường Xuân"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "ThieuHoa",
+    "AREA_NAME": "Thiệu Hóa"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "ThHoa",
+    "AREA_NAME": "Thanh Hóa"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "QuUyen",
+    "AREA_NAME": "Quảng Uyên"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LacSon",
+    "AREA_NAME": "Lạc Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "KySon",
+    "AREA_NAME": "Kỳ Sơn"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "CaoPhong",
+    "AREA_NAME": "Cao Phong"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "MongCai",
+    "AREA_NAME": "Móng Cái"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "HaiHa",
+    "AREA_NAME": "Hải Hà"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "TienDu",
+    "AREA_NAME": "Tiên Du"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "ThThanh",
+    "AREA_NAME": "Thuận Thành"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "QueVo",
+    "AREA_NAME": "Quế Võ"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "BacNinh",
+    "AREA_NAME": "Bắc Ninh"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "SamSon",
+    "AREA_NAME": "Sầm Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "QuXuong",
+    "AREA_NAME": "Quảng Xương"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "QuanSon",
+    "AREA_NAME": "Quan Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "QuanHoa",
+    "AREA_NAME": "Quan Hóa"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "NongCong",
+    "AREA_NAME": "Nông Cống"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "NhuXuan",
+    "AREA_NAME": "Như Xuân"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "NhuThanh",
+    "AREA_NAME": "Như Thanh"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "NgocLac",
+    "AREA_NAME": "Ngọc Lặc"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "TanKy",
+    "AREA_NAME": "Tân Kỳ"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "ThaiHoa",
+    "AREA_NAME": "Thái Hòa"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "QuynhLuu",
+    "AREA_NAME": "Quỳnh Lưu"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "QuyHop",
+    "AREA_NAME": "Quỳ Hợp"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "QuyChau",
+    "AREA_NAME": "Quỳ Châu"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "QuePhong",
+    "AREA_NAME": "Quế Phong"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "NghiaDan",
+    "AREA_NAME": "Nghĩa Đàn"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "NghiLoc",
+    "AREA_NAME": "Nghi Lộc"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "NamDan",
+    "AREA_NAME": "Nam Đàn"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "KSon",
+    "AREA_NAME": "Kỳ Sơn"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "HNguyen",
+    "AREA_NAME": "Hưng Nguyên"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "HoangMai",
+    "AREA_NAME": "Hoàng Mai"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "MDrak",
+    "AREA_NAME": "M Đrăk"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "KrongPak",
+    "AREA_NAME": "Krông Pắk"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "KrongBuk",
+    "AREA_NAME": "Krông Búk"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "KrBong",
+    "AREA_NAME": "Krông Bông"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "KrongAna",
+    "AREA_NAME": "Krông Ana"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "DakMil",
+    "AREA_NAME": "Đắk Mil"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "DGlong",
+    "AREA_NAME": "Đắk Glong"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "DakSong",
+    "AREA_NAME": "Đăk Song"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "KrongNo",
+    "AREA_NAME": "Krông Nô"
+  },
+  {
+    "CITY_CODE": "DNONG",
+    "CITY_NAME": "Đắk Nông",
+    "ZIP_CODE": "640000",
+    "AREA_CODE": "CuJut",
+    "AREA_NAME": "Cư Jút"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "LThanh",
+    "AREA_NAME": "Long Thành"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "NhTrach",
+    "AREA_NAME": "Nhơn Trạch"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "CamMy",
+    "AREA_NAME": "Cẩm Mỹ"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "BienHoa",
+    "AREA_NAME": "Biên Hòa"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "PacNam",
+    "AREA_NAME": "Pác Nặm"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "NaRi",
+    "AREA_NAME": "Na Rì"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "YenChau",
+    "AREA_NAME": "Yên Châu"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "VanHo",
+    "AREA_NAME": "Vân Hồ"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "LacThuy",
+    "AREA_NAME": "Lạc Thủy"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "DamHa",
+    "AREA_NAME": "Đầm Hà"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "DTrieu",
+    "AREA_NAME": "Đông Triều"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "VanDon",
+    "AREA_NAME": "Vân Đồn"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "UongBi",
+    "AREA_NAME": "Uông Bí"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "TienYen",
+    "AREA_NAME": "Tiên Yên"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "QuangYen",
+    "AREA_NAME": "Quảng Yên"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "CoTo",
+    "AREA_NAME": "Cô Tô"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "BinhLieu",
+    "AREA_NAME": "Bình Liêu"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "BaChe",
+    "AREA_NAME": "Ba Chẽ"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "VietYen",
+    "AREA_NAME": "Việt Yên"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "LuongTai",
+    "AREA_NAME": "Lương Tài"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "EaKar",
+    "AREA_NAME": "Ea Kar"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "BuonDon",
+    "AREA_NAME": "Buôn Đôn"
+  },
+  {
+    "CITY_CODE": "DLAK",
+    "CITY_NAME": "Đắk Lắk",
+    "ZIP_CODE": "630000",
+    "AREA_CODE": "BMThuot",
+    "AREA_NAME": "Buôn Ma Thuột"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "NganSon",
+    "AREA_NAME": "Ngân Sơn"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "ChoDon",
+    "AREA_NAME": "Chợ Đồn"
+  },
+  {
+    "CITY_CODE": "DONA",
+    "CITY_NAME": "Đồng Nai",
+    "ZIP_CODE": "810000",
+    "AREA_CODE": "XuanLoc",
+    "AREA_NAME": "Xuân Lộc"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "BacKan",
+    "AREA_NAME": "Bắc Kạn"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "BThong",
+    "AREA_NAME": "Bạch Thông"
+  },
+  {
+    "CITY_CODE": "BKAN",
+    "CITY_NAME": "Bắc Kạn",
+    "ZIP_CODE": "960000",
+    "AREA_CODE": "BaBe",
+    "AREA_NAME": "Ba Bể"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "QuNhai",
+    "AREA_NAME": "Quỳnh Nhai"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "MocChau",
+    "AREA_NAME": "Mộc Châu"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "MuongLa",
+    "AREA_NAME": "Mường La"
+  },
+  {
+    "CITY_CODE": "SONLA",
+    "CITY_NAME": "Sơn La",
+    "ZIP_CODE": "360000",
+    "AREA_CODE": "BacYen",
+    "AREA_NAME": "Bắc Yên"
+  },
+  {
+    "CITY_CODE": "HOAB",
+    "CITY_NAME": "Hoà Bình",
+    "ZIP_CODE": "350000",
+    "AREA_CODE": "YenThuy",
+    "AREA_NAME": "Yên Thủy"
+  },
+  {
+    "CITY_CODE": "QNINH",
+    "CITY_NAME": "Quảng Ninh",
+    "ZIP_CODE": "200000",
+    "AREA_CODE": "HaLong",
+    "AREA_NAME": "Hạ Long"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "LucNgan",
+    "AREA_NAME": "Lục Ngạn"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "LucNam",
+    "AREA_NAME": "Lục Nam"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "LGiang",
+    "AREA_NAME": "Lạng Giang"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "HiepHoa",
+    "AREA_NAME": "Hiệp Hòa"
+  },
+  {
+    "CITY_CODE": "BGIA",
+    "CITY_NAME": "Bắc Giang",
+    "ZIP_CODE": "230000",
+    "AREA_CODE": "BacGiang",
+    "AREA_NAME": "Bắc Giang"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "YenPhong",
+    "AREA_NAME": "Yên Phong"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "TuSon",
+    "AREA_NAME": "Từ Sơn"
+  },
+  {
+    "CITY_CODE": "BANI",
+    "CITY_NAME": "Bắc Ninh",
+    "ZIP_CODE": "220000",
+    "AREA_CODE": "GiaBinh",
+    "AREA_NAME": "Gia Bình"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "BimSon",
+    "AREA_NAME": "Bỉm Sơn"
+  },
+  {
+    "CITY_CODE": "THOA",
+    "CITY_NAME": "Thanh Hóa",
+    "ZIP_CODE": "440000",
+    "AREA_CODE": "BaThuoc",
+    "AREA_NAME": "Bá Thước"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "Vinh",
+    "AREA_NAME": "Vinh"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "TDuong",
+    "AREA_NAME": "Tương Dương"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "SonHa",
+    "AREA_NAME": "Sơn Hà"
+  },
+  {
+    "CITY_CODE": "QNGAI",
+    "CITY_NAME": "Quảng Ngãi",
+    "ZIP_CODE": "570000",
+    "AREA_CODE": "MoDuc",
+    "AREA_NAME": "Mộ Đức"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "HuongHoa",
+    "AREA_NAME": "Hướng Hóa"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "ConCo",
+    "AREA_NAME": "Cồn Cỏ"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "VinhChau",
+    "AREA_NAME": "Vĩnh Châu"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "MyXuyen",
+    "AREA_NAME": "Mỹ Xuyên"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "ThanhTri",
+    "AREA_NAME": "Thạnh Trị"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "SocTrang",
+    "AREA_NAME": "Sóc Trăng"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "MyTu",
+    "AREA_NAME": "Mỹ Tú"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "CLDung",
+    "AREA_NAME": "Cù Lao Dung"
+  },
+  {
+    "CITY_CODE": "SOCTR",
+    "CITY_NAME": "Sóc Trăng",
+    "ZIP_CODE": "950000",
+    "AREA_CODE": "ChaThnh",
+    "AREA_NAME": "Châu Thành"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "TrKhanh",
+    "AREA_NAME": "Trùng Khánh"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "TraLinh",
+    "AREA_NAME": "Trà Lĩnh"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "ThachAn",
+    "AREA_NAME": "Thạch An"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "ThNong",
+    "AREA_NAME": "Thông Nông"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "NgBinh",
+    "AREA_NAME": "Nguyên Bình"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "HaLang",
+    "AREA_NAME": "Hạ Lang"
+  },
+  {
+    "CITY_CODE": "CAOB",
+    "CITY_NAME": "Cao Bằng",
+    "ZIP_CODE": "270000",
+    "AREA_CODE": "BaoLac",
+    "AREA_NAME": "Bảo Lạc"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "DienChau",
+    "AREA_NAME": "Diễn Châu"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "CuaLo",
+    "AREA_NAME": "Cửa Lò"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "ConCuong",
+    "AREA_NAME": "Con Cuông"
+  },
+  {
+    "CITY_CODE": "NGAN",
+    "CITY_NAME": "Nghệ An",
+    "ZIP_CODE": "460000",
+    "AREA_CODE": "AnhSon",
+    "AREA_NAME": "Anh Sơn"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "TanHong",
+    "AREA_NAME": "Tân Hồng"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "ThapMuoi",
+    "AREA_NAME": "Tháp Mười"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "ThanBinh",
+    "AREA_NAME": "Thanh Bình"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "TamNong",
+    "AREA_NAME": "Tam Nông"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "SaDec",
+    "AREA_NAME": "Sa Đéc"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "LapVo",
+    "AREA_NAME": "Lấp Vò"
+  },
+  {
+    "CITY_CODE": "DOTHA",
+    "CITY_NAME": "Đồng Tháp",
+    "ZIP_CODE": "870000",
+    "AREA_CODE": "LaiVung",
+    "AREA_NAME": "Lai Vung"
+  },
+  {
+    "CITY_CODE": "CCS",
+    "CITY_NAME": "Cục Cảnh Sát Đkql Và Dlqg",
+    "ZIP_CODE": "990000",
+    "AREA_CODE": "CCS",
+    "AREA_NAME": "Cục Cảnh sát ĐKQL và DLQG"
+  },
+  {
+    "CITY_CODE": "QTRI",
+    "CITY_NAME": "Quảng Trị",
+    "ZIP_CODE": "520000",
+    "AREA_CODE": "QuangTri",
+    "AREA_NAME": "Quảng Trị"
+  },
+  {
+    "CITY_CODE": "GILAI",
+    "CITY_NAME": "Gia Lai",
+    "ZIP_CODE": "600000",
+    "AREA_CODE": "Pleku",
+    "AREA_NAME": "Pleku"
+  },
+  {
+    "CITY_CODE": "BRVT",
+    "CITY_NAME": "Bà Rịa - Vũng Tàu",
+    "ZIP_CODE": "790000",
+    "AREA_CODE": "PMy",
+    "AREA_NAME": "Phú Mỹ"
+  }
+]

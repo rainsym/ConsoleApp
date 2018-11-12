@@ -1,0 +1,4094 @@
+[
+  {
+    "City": "Hà Nội",
+    "CityId": null,
+    "Code": "HNOI",
+    "ZipCode": "100000",
+    "Districts": [
+      {
+        "District": "Quốc Oai",
+        "Code": "QuocOai",
+        "Wards": null
+      },
+      {
+        "District": "Phúc Thọ",
+        "Code": "PhucTho",
+        "Wards": null
+      },
+      {
+        "District": "Phú Xuyên",
+        "Code": "PhXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Nam Từ Liêm",
+        "Code": "NTLiem",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Đức",
+        "Code": "MyDuc",
+        "Wards": null
+      },
+      {
+        "District": "Mê Linh",
+        "Code": "MeLinh",
+        "Wards": null
+      },
+      {
+        "District": "Long Biên",
+        "Code": "LongBien",
+        "Wards": null
+      },
+      {
+        "District": "Hà Đông",
+        "Code": "HaDong",
+        "Wards": null
+      },
+      {
+        "District": "Hoàng Mai",
+        "Code": "HMai",
+        "Wards": null
+      },
+      {
+        "District": "Hoàn Kiếm",
+        "Code": "HoanKiem",
+        "Wards": null
+      },
+      {
+        "District": "Hoài Đức",
+        "Code": "HoaiDuc",
+        "Wards": null
+      },
+      {
+        "District": "Hai Bà Trưng",
+        "Code": "HBTrung",
+        "Wards": null
+      },
+      {
+        "District": "Gia Lâm",
+        "Code": "GiaLam",
+        "Wards": null
+      },
+      {
+        "District": "Cầu Giấy",
+        "Code": "CauGiay",
+        "Wards": null
+      },
+      {
+        "District": "Chương Mỹ",
+        "Code": "ChuongMy",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Từ Liêm",
+        "Code": "BTLiem",
+        "Wards": null
+      },
+      {
+        "District": "Ba Đình",
+        "Code": "BaDinh",
+        "Wards": null
+      },
+      {
+        "District": "Ba Vì",
+        "Code": "BaVi",
+        "Wards": null
+      },
+      {
+        "District": "Ứng Hòa",
+        "Code": "UngHoa",
+        "Wards": null
+      },
+      {
+        "District": "Đống Đa",
+        "Code": "DongDa",
+        "Wards": null
+      },
+      {
+        "District": "Đông Anh",
+        "Code": "DongAnh",
+        "Wards": null
+      },
+      {
+        "District": "Đan Phượng",
+        "Code": "DPhuong",
+        "Wards": null
+      },
+      {
+        "District": "Tây Hồ",
+        "Code": "TayHo",
+        "Wards": null
+      },
+      {
+        "District": "Thạch Thất",
+        "Code": "ThThat",
+        "Wards": null
+      },
+      {
+        "District": "Thường Tín",
+        "Code": "ThTin",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Xuân",
+        "Code": "ThaXuan",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Trì",
+        "Code": "ThaTri",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Oai",
+        "Code": "ThanhOai",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Tây",
+        "Code": "STay",
+        "Wards": null
+      },
+      {
+        "District": "Sóc Sơn",
+        "Code": "SocSon",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hồ Chí Minh",
+    "CityId": null,
+    "Code": "HCMI",
+    "ZipCode": "700000",
+    "Districts": [
+      {
+        "District": "Thủ Đức",
+        "Code": "ThuDuc",
+        "Wards": null
+      },
+      {
+        "District": "Quận 9",
+        "Code": "Quan9",
+        "Wards": null
+      },
+      {
+        "District": "Quận 8",
+        "Code": "Quan8",
+        "Wards": null
+      },
+      {
+        "District": "Quận 5",
+        "Code": "Quan5",
+        "Wards": null
+      },
+      {
+        "District": "Quận 4",
+        "Code": "Quan4",
+        "Wards": null
+      },
+      {
+        "District": "Quận 1",
+        "Code": "Quan1",
+        "Wards": null
+      },
+      {
+        "District": "Quận 12",
+        "Code": "Quan12",
+        "Wards": null
+      },
+      {
+        "District": "Nhà Bè",
+        "Code": "NhaBe",
+        "Wards": null
+      },
+      {
+        "District": "Hóc Môn",
+        "Code": "HocMon",
+        "Wards": null
+      },
+      {
+        "District": "Cần Giờ",
+        "Code": "CanGio",
+        "Wards": null
+      },
+      {
+        "District": "Bình Tân",
+        "Code": "BinhTan",
+        "Wards": null
+      },
+      {
+        "District": "Gò Vấp",
+        "Code": "GoVap",
+        "Wards": null
+      },
+      {
+        "District": "Củ Chi",
+        "Code": "CuChi",
+        "Wards": null
+      },
+      {
+        "District": "Bình Chánh",
+        "Code": "BC",
+        "Wards": null
+      },
+      {
+        "District": "Tân Phú",
+        "Code": "TanPhu",
+        "Wards": null
+      },
+      {
+        "District": "Tân Bình",
+        "Code": "TanBinh",
+        "Wards": null
+      },
+      {
+        "District": "Quận 7",
+        "Code": "Quan7",
+        "Wards": null
+      },
+      {
+        "District": "Quận 6",
+        "Code": "Quan6",
+        "Wards": null
+      },
+      {
+        "District": "Quận 3",
+        "Code": "Quan3",
+        "Wards": null
+      },
+      {
+        "District": "Quận 2",
+        "Code": "Quan2",
+        "Wards": null
+      },
+      {
+        "District": "Quận 11",
+        "Code": "Quan11",
+        "Wards": null
+      },
+      {
+        "District": "Quận 10",
+        "Code": "Quan10",
+        "Wards": null
+      },
+      {
+        "District": "Phú Nhuận",
+        "Code": "PhuNhuan",
+        "Wards": null
+      },
+      {
+        "District": "Bình Thạnh",
+        "Code": "BThanh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Long An",
+    "CityId": null,
+    "Code": "LGAN",
+    "ZipCode": "850000",
+    "Districts": [
+      {
+        "District": "Đức Hòa",
+        "Code": "DucHoa",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Hưng",
+        "Code": "VinhHung",
+        "Wards": null
+      },
+      {
+        "District": "Đức Huệ",
+        "Code": "DucHue",
+        "Wards": null
+      },
+      {
+        "District": "Tân Trụ",
+        "Code": "TanTru",
+        "Wards": null
+      },
+      {
+        "District": "Tân Thạnh",
+        "Code": "TanThanh",
+        "Wards": null
+      },
+      {
+        "District": "Tân Hưng",
+        "Code": "TanHung",
+        "Wards": null
+      },
+      {
+        "District": "Tân An",
+        "Code": "TanAn",
+        "Wards": null
+      },
+      {
+        "District": "Thủ Thừa",
+        "Code": "ThuThua",
+        "Wards": null
+      },
+      {
+        "District": "Thạnh Hóa",
+        "Code": "ThanhHoa",
+        "Wards": null
+      },
+      {
+        "District": "Mộc Hóa",
+        "Code": "MocHoa",
+        "Wards": null
+      },
+      {
+        "District": "Kiến Tường",
+        "Code": "KTuong",
+        "Wards": null
+      },
+      {
+        "District": "Cần Đước",
+        "Code": "CanDuoc",
+        "Wards": null
+      },
+      {
+        "District": "Cần Giuộc",
+        "Code": "CanGiuoc",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChThanh",
+        "Wards": null
+      },
+      {
+        "District": "Bến Lức",
+        "Code": "BenLuc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "An Giang",
+    "CityId": null,
+    "Code": "ANGA",
+    "ZipCode": "880000",
+    "Districts": [
+      {
+        "District": "Tịnh Biên",
+        "Code": "TinhBien",
+        "Wards": null
+      },
+      {
+        "District": "Long Xuyên",
+        "Code": "LXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Tân Châu",
+        "Code": "TanChau",
+        "Wards": null
+      },
+      {
+        "District": "Châu Phú",
+        "Code": "ChauPhu",
+        "Wards": null
+      },
+      {
+        "District": "Tri Tôn",
+        "Code": "TriTon",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChauT",
+        "Wards": null
+      },
+      {
+        "District": "Châu Đốc",
+        "Code": "ChauDoc",
+        "Wards": null
+      },
+      {
+        "District": "Chợ Mới",
+        "Code": "ChoMoi",
+        "Wards": null
+      },
+      {
+        "District": "Phú Tán",
+        "Code": "PhuTan",
+        "Wards": null
+      },
+      {
+        "District": "Thoại Sơn",
+        "Code": "ThoaiSon",
+        "Wards": null
+      },
+      {
+        "District": "An Phú",
+        "Code": "AnPhu",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Gia Lai",
+    "CityId": null,
+    "Code": "GILAI",
+    "ZipCode": "600000",
+    "Districts": [
+      {
+        "District": "Pleiku",
+        "Code": "Pleiku",
+        "Wards": null
+      },
+      {
+        "District": "Phú Thiện",
+        "Code": "PhuThien",
+        "Wards": null
+      },
+      {
+        "District": "Mang Yang",
+        "Code": "MangYang",
+        "Wards": null
+      },
+      {
+        "District": "Kông Chro",
+        "Code": "KongChro",
+        "Wards": null
+      },
+      {
+        "District": "Krông Pa",
+        "Code": "KrongPa",
+        "Wards": null
+      },
+      {
+        "District": "KBang",
+        "Code": "KBang",
+        "Wards": null
+      },
+      {
+        "District": "Ia Pa",
+        "Code": "IaPa",
+        "Wards": null
+      },
+      {
+        "District": "Ia Grai",
+        "Code": "IaGrai",
+        "Wards": null
+      },
+      {
+        "District": "Chư Sê",
+        "Code": "ChuSe",
+        "Wards": null
+      },
+      {
+        "District": "Chư Pưh",
+        "Code": "ChuPuh",
+        "Wards": null
+      },
+      {
+        "District": "Chư Păh",
+        "Code": "ChuPah",
+        "Wards": null
+      },
+      {
+        "District": "Chư Prông",
+        "Code": "ChuProng",
+        "Wards": null
+      },
+      {
+        "District": "Ayun Pa",
+        "Code": "AyunPa",
+        "Wards": null
+      },
+      {
+        "District": "An Khê",
+        "Code": "AnKhe",
+        "Wards": null
+      },
+      {
+        "District": "Đức Cơ",
+        "Code": "DucCo",
+        "Wards": null
+      },
+      {
+        "District": "Đắk Đoa",
+        "Code": "DakDoa",
+        "Wards": null
+      },
+      {
+        "District": "Đak Pơ",
+        "Code": "DakBo",
+        "Wards": null
+      },
+      {
+        "District": "Pleku",
+        "Code": "Pleku",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hoà Bình",
+    "CityId": null,
+    "Code": "HOAB",
+    "ZipCode": "350000",
+    "Districts": [
+      {
+        "District": "Tân Lạc",
+        "Code": "TLac",
+        "Wards": null
+      },
+      {
+        "District": "Mai Châu",
+        "Code": "MChau",
+        "Wards": null
+      },
+      {
+        "District": "Mai Châu",
+        "Code": "MaChau",
+        "Wards": null
+      },
+      {
+        "District": "Lạc Thủy",
+        "Code": "LThuy",
+        "Wards": null
+      },
+      {
+        "District": "Đà Bắc",
+        "Code": "DBac",
+        "Wards": null
+      },
+      {
+        "District": "Yên Thủy",
+        "Code": "YThuy",
+        "Wards": null
+      },
+      {
+        "District": "Lạc Sơn",
+        "Code": "LcSon",
+        "Wards": null
+      },
+      {
+        "District": "Lương Sơn",
+        "Code": "LSon",
+        "Wards": null
+      },
+      {
+        "District": "Kim Bôi",
+        "Code": "KBoi",
+        "Wards": null
+      },
+      {
+        "District": "Hoà Bình",
+        "Code": "HoBinh",
+        "Wards": null
+      },
+      {
+        "District": "Cao Phong",
+        "Code": "CPhong",
+        "Wards": null
+      },
+      {
+        "District": "Đà Bắc",
+        "Code": "DaBac",
+        "Wards": null
+      },
+      {
+        "District": "Tân Lạc",
+        "Code": "TanLac",
+        "Wards": null
+      },
+      {
+        "District": "Mai Châu",
+        "Code": "MaiChau",
+        "Wards": null
+      },
+      {
+        "District": "Lương Sơn",
+        "Code": "LuongSon",
+        "Wards": null
+      },
+      {
+        "District": "Kim Bôi",
+        "Code": "KimBoi",
+        "Wards": null
+      },
+      {
+        "District": "Hoà Bình",
+        "Code": "HBinh",
+        "Wards": null
+      },
+      {
+        "District": "Lạc Sơn",
+        "Code": "LacSon",
+        "Wards": null
+      },
+      {
+        "District": "Kỳ Sơn",
+        "Code": "KySon",
+        "Wards": null
+      },
+      {
+        "District": "Cao Phong",
+        "Code": "CaoPhong",
+        "Wards": null
+      },
+      {
+        "District": "Lạc Thủy",
+        "Code": "LacThuy",
+        "Wards": null
+      },
+      {
+        "District": "Yên Thủy",
+        "Code": "YenThuy",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Cần Thơ",
+    "CityId": null,
+    "Code": "CANTHO",
+    "ZipCode": "900000",
+    "Districts": [
+      {
+        "District": "Ninh Kiều",
+        "Code": "NinhKieu",
+        "Wards": null
+      },
+      {
+        "District": "Cờ Đỏ",
+        "Code": "CoDo",
+        "Wards": null
+      },
+      {
+        "District": "Phong Điền",
+        "Code": "PhDien",
+        "Wards": null
+      },
+      {
+        "District": "Cái Răng",
+        "Code": "CaiRang",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Thạnh",
+        "Code": "VThanh",
+        "Wards": null
+      },
+      {
+        "District": "Bình Thủy",
+        "Code": "BiThuy",
+        "Wards": null
+      },
+      {
+        "District": "Ô Môn",
+        "Code": "OMon",
+        "Wards": null
+      },
+      {
+        "District": "Thới Lai",
+        "Code": "ThoiLai",
+        "Wards": null
+      },
+      {
+        "District": "Thốt Nốt",
+        "Code": "ThotNot",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hà Tĩnh",
+    "CityId": null,
+    "Code": "HATINH",
+    "ZipCode": "480000",
+    "Districts": [
+      {
+        "District": "Đức Thọ",
+        "Code": "DucTho",
+        "Wards": null
+      },
+      {
+        "District": "Vũ Quang",
+        "Code": "VuQuang",
+        "Wards": null
+      },
+      {
+        "District": "Thạch Hà",
+        "Code": "ThachHa",
+        "Wards": null
+      },
+      {
+        "District": "Hà Tĩnh",
+        "Code": "HaTinh",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Xuyên",
+        "Code": "CamXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Can Lộc",
+        "Code": "CanLoc",
+        "Wards": null
+      },
+      {
+        "District": "Nghi Xuân",
+        "Code": "NghiXuan",
+        "Wards": null
+      },
+      {
+        "District": "Lộc Hà",
+        "Code": "LocHa",
+        "Wards": null
+      },
+      {
+        "District": "Hồng Lĩnh",
+        "Code": "HongLinh",
+        "Wards": null
+      },
+      {
+        "District": "Hương Sơn",
+        "Code": "HuongSon",
+        "Wards": null
+      },
+      {
+        "District": "Hương Khê",
+        "Code": "HuongKhe",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hà Giang",
+    "CityId": null,
+    "Code": "HAGIA",
+    "ZipCode": "310000",
+    "Districts": [
+      {
+        "District": "Đồng Văn",
+        "Code": "DongVan",
+        "Wards": null
+      },
+      {
+        "District": "Yên Minh",
+        "Code": "YenMinh",
+        "Wards": null
+      },
+      {
+        "District": "Xín Mần",
+        "Code": "XinMan",
+        "Wards": null
+      },
+      {
+        "District": "Vị Xuyên",
+        "Code": "ViXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Quản Bạ",
+        "Code": "QuanBa",
+        "Wards": null
+      },
+      {
+        "District": "Quang Bình",
+        "Code": "QBinh",
+        "Wards": null
+      },
+      {
+        "District": "Mèo Vạc",
+        "Code": "MeoVac",
+        "Wards": null
+      },
+      {
+        "District": "Hà Giang",
+        "Code": "HaGiang",
+        "Wards": null
+      },
+      {
+        "District": "Hoàng Su Phì",
+        "Code": "HSuPhi",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Quang",
+        "Code": "BGiang",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Mê",
+        "Code": "BacMe",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hà Nam",
+    "CityId": null,
+    "Code": "HANAM",
+    "ZipCode": "400000",
+    "Districts": [
+      {
+        "District": "Thanh Liêm",
+        "Code": "ThLiem",
+        "Wards": null
+      },
+      {
+        "District": "Phủ Lý",
+        "Code": "PhuLy",
+        "Wards": null
+      },
+      {
+        "District": "Lý Nhân",
+        "Code": "LyNhan",
+        "Wards": null
+      },
+      {
+        "District": "Kim Bảng",
+        "Code": "KimBang",
+        "Wards": null
+      },
+      {
+        "District": "Duy Tiên",
+        "Code": "DuyTien",
+        "Wards": null
+      },
+      {
+        "District": "Bình Lục",
+        "Code": "BinhLuc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hưng Yên",
+    "CityId": null,
+    "Code": "HYEN",
+    "ZipCode": "160000",
+    "Districts": [
+      {
+        "District": "Ân Thi",
+        "Code": "AnThi",
+        "Wards": null
+      },
+      {
+        "District": "Yên Mỹ",
+        "Code": "YenMy",
+        "Wards": null
+      },
+      {
+        "District": "Văn Lâm",
+        "Code": "VanLam",
+        "Wards": null
+      },
+      {
+        "District": "Văn Giang",
+        "Code": "VanGiang",
+        "Wards": null
+      },
+      {
+        "District": "Tiên Lữ",
+        "Code": "TienLu",
+        "Wards": null
+      },
+      {
+        "District": "Phù Cừ",
+        "Code": "PhuCu",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Hào",
+        "Code": "MyHao",
+        "Wards": null
+      },
+      {
+        "District": "Kim Động",
+        "Code": "KimDong",
+        "Wards": null
+      },
+      {
+        "District": "Khoái Châu",
+        "Code": "KChau",
+        "Wards": null
+      },
+      {
+        "District": "Hưng Yên",
+        "Code": "HungYen",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hải Phòng",
+    "CityId": null,
+    "Code": "HAIP",
+    "ZipCode": "180000",
+    "Districts": [
+      {
+        "District": "Cát Hải",
+        "Code": "CatHai",
+        "Wards": null
+      },
+      {
+        "District": "Bạch Long Vĩ",
+        "Code": "BLVi",
+        "Wards": null
+      },
+      {
+        "District": "An Lão",
+        "Code": "AnLao1",
+        "Wards": null
+      },
+      {
+        "District": "An Dương",
+        "Code": "AnDuong",
+        "Wards": null
+      },
+      {
+        "District": "Đồ Sơn",
+        "Code": "DoSon",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Bảo",
+        "Code": "VinhBao",
+        "Wards": null
+      },
+      {
+        "District": "Tiên Lãng",
+        "Code": "TienLang",
+        "Wards": null
+      },
+      {
+        "District": "Thuỷ Nguyên",
+        "Code": "ThNguyen",
+        "Wards": null
+      },
+      {
+        "District": "Ngô Quyền",
+        "Code": "NgoQuyen",
+        "Wards": null
+      },
+      {
+        "District": "Lê Chân",
+        "Code": "LeChan",
+        "Wards": null
+      },
+      {
+        "District": "Kiến Thụy",
+        "Code": "KienThuy",
+        "Wards": null
+      },
+      {
+        "District": "Kiến An",
+        "Code": "KienAn",
+        "Wards": null
+      },
+      {
+        "District": "Hồng Bàng",
+        "Code": "HongBang",
+        "Wards": null
+      },
+      {
+        "District": "Hải An",
+        "Code": "HaiAn",
+        "Wards": null
+      },
+      {
+        "District": "Dương Kinh",
+        "Code": "DKinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hậu Giang",
+    "CityId": null,
+    "Code": "HGIANG",
+    "ZipCode": "910000",
+    "Districts": [
+      {
+        "District": "Châu Thành",
+        "Code": "ChaTha",
+        "Wards": null
+      },
+      {
+        "District": "Vị Thủy",
+        "Code": "ViThuy",
+        "Wards": null
+      },
+      {
+        "District": "Vị Thanh",
+        "Code": "ViThanh",
+        "Wards": null
+      },
+      {
+        "District": "Phụng Hiệp",
+        "Code": "PhHiep",
+        "Wards": null
+      },
+      {
+        "District": "Ngã Bảy",
+        "Code": "NgaBay",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành A",
+        "Code": "CThanhA",
+        "Wards": null
+      },
+      {
+        "District": "Long Mỹ",
+        "Code": "LongMy",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Hải Dương",
+    "CityId": null,
+    "Code": "HAID",
+    "ZipCode": "170000",
+    "Districts": [
+      {
+        "District": "Tứ Kỳ",
+        "Code": "TuKy",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Miện",
+        "Code": "ThMien",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Hà",
+        "Code": "ThanhHa",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Giang",
+        "Code": "NiGiang",
+        "Wards": null
+      },
+      {
+        "District": "Nam Sách",
+        "Code": "NamSach",
+        "Wards": null
+      },
+      {
+        "District": "Kinh Môn",
+        "Code": "KinhMon",
+        "Wards": null
+      },
+      {
+        "District": "Kim Thành",
+        "Code": "KimThanh",
+        "Wards": null
+      },
+      {
+        "District": "Hải Dương",
+        "Code": "HaiDuong",
+        "Wards": null
+      },
+      {
+        "District": "Gia Lộc",
+        "Code": "GiaLoc",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Giàng",
+        "Code": "CamGiang",
+        "Wards": null
+      },
+      {
+        "District": "Chí Linh",
+        "Code": "ChiLinh",
+        "Wards": null
+      },
+      {
+        "District": "Bình Giang",
+        "Code": "BiGiang",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Kon Tum",
+    "CityId": null,
+    "Code": "KTUM",
+    "ZipCode": "580000",
+    "Districts": [
+      {
+        "District": "Đăk Tô",
+        "Code": "DakTo",
+        "Wards": null
+      },
+      {
+        "District": "Ia H Drai",
+        "Code": "IaHDrai",
+        "Wards": null
+      },
+      {
+        "District": "Tu Mơ Rông",
+        "Code": "TuMoRong",
+        "Wards": null
+      },
+      {
+        "District": "Sa Thầy",
+        "Code": "SaThay",
+        "Wards": null
+      },
+      {
+        "District": "Ngọc Hồi",
+        "Code": "NgocHoi",
+        "Wards": null
+      },
+      {
+        "District": "Kon Tum",
+        "Code": "KonTum",
+        "Wards": null
+      },
+      {
+        "District": "Kon Rẫy",
+        "Code": "KonRay",
+        "Wards": null
+      },
+      {
+        "District": "Kon Plông",
+        "Code": "KonPlong",
+        "Wards": null
+      },
+      {
+        "District": "Đắk Hà",
+        "Code": "DakHa",
+        "Wards": null
+      },
+      {
+        "District": "Đắk Glei",
+        "Code": "DakGlei",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Lai Châu",
+    "CityId": null,
+    "Code": "LCHAU",
+    "ZipCode": "390000",
+    "Districts": [
+      {
+        "District": "Tân Uyên",
+        "Code": "TUyen",
+        "Wards": null
+      },
+      {
+        "District": "Than Uyên",
+        "Code": "ThUyen",
+        "Wards": null
+      },
+      {
+        "District": "Tam Đường",
+        "Code": "TaDuong",
+        "Wards": null
+      },
+      {
+        "District": "Sìn Hồ",
+        "Code": "SinHo",
+        "Wards": null
+      },
+      {
+        "District": "Phong Thổ",
+        "Code": "PhongTho",
+        "Wards": null
+      },
+      {
+        "District": "Nậm Nhùn",
+        "Code": "NamNhun",
+        "Wards": null
+      },
+      {
+        "District": "Mường Tè",
+        "Code": "MuongTe",
+        "Wards": null
+      },
+      {
+        "District": "Lai Châu",
+        "Code": "LaiChau",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Lào Cai",
+    "CityId": null,
+    "Code": "LACAI",
+    "ZipCode": "330000",
+    "Districts": [
+      {
+        "District": "Văn Bàn",
+        "Code": "VanBan",
+        "Wards": null
+      },
+      {
+        "District": "Si Ma Cai",
+        "Code": "SiMaCai",
+        "Wards": null
+      },
+      {
+        "District": "Bảo Thắng",
+        "Code": "BaoThang",
+        "Wards": null
+      },
+      {
+        "District": "Bát Xát",
+        "Code": "BatXat",
+        "Wards": null
+      },
+      {
+        "District": "Sa Pa",
+        "Code": "SaPa",
+        "Wards": null
+      },
+      {
+        "District": "Mường Khương",
+        "Code": "MKhuong",
+        "Wards": null
+      },
+      {
+        "District": "Lào Cai",
+        "Code": "LaoCai",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Hà",
+        "Code": "BacHa",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Khánh Hòa",
+    "CityId": null,
+    "Code": "KHHOA",
+    "ZipCode": "650000",
+    "Districts": [
+      {
+        "District": "Vạn Ninh",
+        "Code": "VanNinh",
+        "Wards": null
+      },
+      {
+        "District": "Trường Sa",
+        "Code": "TruongSa",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Hòa",
+        "Code": "NinhHoa",
+        "Wards": null
+      },
+      {
+        "District": "Nha Trang",
+        "Code": "NhaTrang",
+        "Wards": null
+      },
+      {
+        "District": "Khánh Vĩnh",
+        "Code": "KhaVinh",
+        "Wards": null
+      },
+      {
+        "District": "Khánh Sơn",
+        "Code": "KhanhSon",
+        "Wards": null
+      },
+      {
+        "District": "Diên Khánh",
+        "Code": "DKhanh",
+        "Wards": null
+      },
+      {
+        "District": "Cam Ranh",
+        "Code": "CamRanh",
+        "Wards": null
+      },
+      {
+        "District": "Cam Lâm",
+        "Code": "CamLam",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Kiên Giang",
+    "CityId": null,
+    "Code": "KGIANG",
+    "ZipCode": "920000",
+    "Districts": [
+      {
+        "District": "Vĩnh Thuận",
+        "Code": "VThuan",
+        "Wards": null
+      },
+      {
+        "District": "U Minh Thượng",
+        "Code": "UMThuong",
+        "Wards": null
+      },
+      {
+        "District": "Tân Hiệp",
+        "Code": "TanHiep",
+        "Wards": null
+      },
+      {
+        "District": "Rạch Giá",
+        "Code": "RachGia",
+        "Wards": null
+      },
+      {
+        "District": "Phú Quốc",
+        "Code": "PhuQuoc",
+        "Wards": null
+      },
+      {
+        "District": "Kiên Lương",
+        "Code": "KLuong",
+        "Wards": null
+      },
+      {
+        "District": "Kiên Hải",
+        "Code": "KienHai",
+        "Wards": null
+      },
+      {
+        "District": "Hòn Đất",
+        "Code": "HonDat",
+        "Wards": null
+      },
+      {
+        "District": "Hà Tiên",
+        "Code": "HaTien",
+        "Wards": null
+      },
+      {
+        "District": "Gò Quao",
+        "Code": "GoQuao",
+        "Wards": null
+      },
+      {
+        "District": "Giồng Riềng",
+        "Code": "GRieng",
+        "Wards": null
+      },
+      {
+        "District": "Giang Thành",
+        "Code": "GThanh",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChTha",
+        "Wards": null
+      },
+      {
+        "District": "An Minh",
+        "Code": "AnMinh",
+        "Wards": null
+      },
+      {
+        "District": "An Biên",
+        "Code": "AnBien",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Lâm Đồng",
+    "CityId": null,
+    "Code": "LADO",
+    "ZipCode": "670000",
+    "Districts": [
+      {
+        "District": "Đức Trọng",
+        "Code": "DucTrong",
+        "Wards": null
+      },
+      {
+        "District": "Đạ Tẻh",
+        "Code": "Dateh",
+        "Wards": null
+      },
+      {
+        "District": "Đạ Huoai",
+        "Code": "DaHuoai",
+        "Wards": null
+      },
+      {
+        "District": "Đơn Dương",
+        "Code": "DonDuong",
+        "Wards": null
+      },
+      {
+        "District": "Đà Lạt",
+        "Code": "Dalat",
+        "Wards": null
+      },
+      {
+        "District": "Đam Rông",
+        "Code": "DamRong",
+        "Wards": null
+      },
+      {
+        "District": "Lạc Dương",
+        "Code": "LacDuong",
+        "Wards": null
+      },
+      {
+        "District": "Lâm Hà",
+        "Code": "LamHa",
+        "Wards": null
+      },
+      {
+        "District": "Di Linh",
+        "Code": "DiLinh",
+        "Wards": null
+      },
+      {
+        "District": "Cát Tiên",
+        "Code": "CatTien",
+        "Wards": null
+      },
+      {
+        "District": "Bảo Lộc",
+        "Code": "BaoLoc",
+        "Wards": null
+      },
+      {
+        "District": "Bảo Lâm",
+        "Code": "BLam",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Ninh Bình",
+    "CityId": null,
+    "Code": "NIBINH",
+    "ZipCode": "430000",
+    "Districts": [
+      {
+        "District": "Yên Mô",
+        "Code": "YenMo",
+        "Wards": null
+      },
+      {
+        "District": "Yên Khánh",
+        "Code": "YenKhanh",
+        "Wards": null
+      },
+      {
+        "District": "Tam Điệp",
+        "Code": "TamDiep",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Bình",
+        "Code": "NinhBinh",
+        "Wards": null
+      },
+      {
+        "District": "Nho Quan",
+        "Code": "NhoQuan",
+        "Wards": null
+      },
+      {
+        "District": "Kim Sơn",
+        "Code": "KimSon",
+        "Wards": null
+      },
+      {
+        "District": "Hoa Lư",
+        "Code": "HoaLu",
+        "Wards": null
+      },
+      {
+        "District": "Gia Viễn",
+        "Code": "GiaVien",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Lạng Sơn",
+    "CityId": null,
+    "Code": "LASON",
+    "ZipCode": "240000",
+    "Districts": [
+      {
+        "District": "Đình Lập",
+        "Code": "DinhLap",
+        "Wards": null
+      },
+      {
+        "District": "Văn Quan",
+        "Code": "VanQuan",
+        "Wards": null
+      },
+      {
+        "District": "Vãn Lãng",
+        "Code": "VanLang",
+        "Wards": null
+      },
+      {
+        "District": "Tràng Định",
+        "Code": "TrgDinh",
+        "Wards": null
+      },
+      {
+        "District": "Lộc Bình",
+        "Code": "LocBinh",
+        "Wards": null
+      },
+      {
+        "District": "Lạng Sơn",
+        "Code": "LaSon",
+        "Wards": null
+      },
+      {
+        "District": "Hữu Lũng",
+        "Code": "HuuLung",
+        "Wards": null
+      },
+      {
+        "District": "Chi Lăng",
+        "Code": "ChiLang",
+        "Wards": null
+      },
+      {
+        "District": "Cao Lộc",
+        "Code": "CaoLoc",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Sơn",
+        "Code": "BacSon",
+        "Wards": null
+      },
+      {
+        "District": "Bình Gia",
+        "Code": "BiGia",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Nam Định",
+    "CityId": null,
+    "Code": "NAMD",
+    "ZipCode": "420000",
+    "Districts": [
+      {
+        "District": "Ý Yên",
+        "Code": "YYen",
+        "Wards": null
+      },
+      {
+        "District": "Xuân Trường",
+        "Code": "XTruong",
+        "Wards": null
+      },
+      {
+        "District": "Vụ Bản",
+        "Code": "VuBan",
+        "Wards": null
+      },
+      {
+        "District": "Trực Ninh",
+        "Code": "TrucNinh",
+        "Wards": null
+      },
+      {
+        "District": "Nghĩa Hưng",
+        "Code": "NHung",
+        "Wards": null
+      },
+      {
+        "District": "Nam Định",
+        "Code": "NamDinh",
+        "Wards": null
+      },
+      {
+        "District": "Nam Trực",
+        "Code": "NamTruc",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Lộc",
+        "Code": "MyLoc",
+        "Wards": null
+      },
+      {
+        "District": "Hải Hậu",
+        "Code": "HaiHau",
+        "Wards": null
+      },
+      {
+        "District": "Giao Thủy",
+        "Code": "GiaoThuy",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Thừa Thiên Huế",
+    "CityId": null,
+    "Code": "TTHUE",
+    "ZipCode": "530000",
+    "Districts": [
+      {
+        "District": "Phong Điền",
+        "Code": "PhoDien",
+        "Wards": null
+      },
+      {
+        "District": "A Lưới",
+        "Code": "ALuoi",
+        "Wards": null
+      },
+      {
+        "District": "Nam Đông",
+        "Code": "NamDong",
+        "Wards": null
+      },
+      {
+        "District": "Hương Trà",
+        "Code": "HTra",
+        "Wards": null
+      },
+      {
+        "District": "Hương Thủy",
+        "Code": "HThuy",
+        "Wards": null
+      },
+      {
+        "District": "Huế",
+        "Code": "Hue",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Điền",
+        "Code": "QDien",
+        "Wards": null
+      },
+      {
+        "District": "Phú Vang",
+        "Code": "PhuVang",
+        "Wards": null
+      },
+      {
+        "District": "Phú Lộc",
+        "Code": "PhuLoc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Tiền Giang",
+    "CityId": null,
+    "Code": "TIGIANG",
+    "ZipCode": "860000",
+    "Districts": [
+      {
+        "District": "Châu Thành",
+        "Code": "ChaThanh",
+        "Wards": null
+      },
+      {
+        "District": "Tân Phước",
+        "Code": "TanPhuoc",
+        "Wards": null
+      },
+      {
+        "District": "Cai Lậy",
+        "Code": "CaiLay",
+        "Wards": null
+      },
+      {
+        "District": "Tân Phú Đông",
+        "Code": "TPDong",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Tho",
+        "Code": "MyTho",
+        "Wards": null
+      },
+      {
+        "District": "Gò Công Đông",
+        "Code": "GCDong",
+        "Wards": null
+      },
+      {
+        "District": "Gò Công Tây",
+        "Code": "GCTay",
+        "Wards": null
+      },
+      {
+        "District": "Gò Công",
+        "Code": "GoCong",
+        "Wards": null
+      },
+      {
+        "District": "Cái Bè",
+        "Code": "CaiBe",
+        "Wards": null
+      },
+      {
+        "District": "Chợ Gạo",
+        "Code": "ChoGao",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Trà Vinh",
+    "CityId": null,
+    "Code": "TRAV",
+    "ZipCode": "940000",
+    "Districts": [
+      {
+        "District": "Duyên Hải",
+        "Code": "DuyenHai",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChauTh",
+        "Wards": null
+      },
+      {
+        "District": "Trà Vinh",
+        "Code": "TraVinh",
+        "Wards": null
+      },
+      {
+        "District": "Trà Cú",
+        "Code": "TraCu",
+        "Wards": null
+      },
+      {
+        "District": "Tiểu Cần",
+        "Code": "TieuCan",
+        "Wards": null
+      },
+      {
+        "District": "Cầu Ngang",
+        "Code": "CauNGang",
+        "Wards": null
+      },
+      {
+        "District": "Cầu Kè",
+        "Code": "CauKe",
+        "Wards": null
+      },
+      {
+        "District": "Càng Long",
+        "Code": "CaLong",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Ninh Thuận",
+    "CityId": null,
+    "Code": "NITHUAN",
+    "ZipCode": "660000",
+    "Districts": [
+      {
+        "District": "Thuận Nam",
+        "Code": "ThNam",
+        "Wards": null
+      },
+      {
+        "District": "Thuận Bắc",
+        "Code": "ThuanBac",
+        "Wards": null
+      },
+      {
+        "District": "Phan Rang-Tháp Chàm",
+        "Code": "PRTC",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Sơn",
+        "Code": "NinhSon",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Phước",
+        "Code": "NPhuoc",
+        "Wards": null
+      },
+      {
+        "District": "Ninh Hải",
+        "Code": "NinhHai",
+        "Wards": null
+      },
+      {
+        "District": "Bác Ái",
+        "Code": "BacAi",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Phú Thọ",
+    "CityId": null,
+    "Code": "PTHO",
+    "ZipCode": "290000",
+    "Districts": [
+      {
+        "District": "Đoan Hùng",
+        "Code": "DoanHung",
+        "Wards": null
+      },
+      {
+        "District": "Yên Lập",
+        "Code": "YenLap",
+        "Wards": null
+      },
+      {
+        "District": "Việt Trì",
+        "Code": "VietTri",
+        "Wards": null
+      },
+      {
+        "District": "Tân Sơn",
+        "Code": "TanSon",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Thủy",
+        "Code": "ThThuy",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Sơn",
+        "Code": "ThSon",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Ba",
+        "Code": "ThanhBa",
+        "Wards": null
+      },
+      {
+        "District": "Tam Nông",
+        "Code": "TNong",
+        "Wards": null
+      },
+      {
+        "District": "Phú Thọ",
+        "Code": "PhuTho",
+        "Wards": null
+      },
+      {
+        "District": "Phù Ninh",
+        "Code": "PhNinh",
+        "Wards": null
+      },
+      {
+        "District": "Lâm Thao",
+        "Code": "LamThao",
+        "Wards": null
+      },
+      {
+        "District": "Hạ Hòa",
+        "Code": "HaHoa",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Khê",
+        "Code": "CamKhe",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Thái Bình",
+    "CityId": null,
+    "Code": "THBINH",
+    "ZipCode": "410000",
+    "Districts": [
+      {
+        "District": "Đông Hưng",
+        "Code": "DongHung",
+        "Wards": null
+      },
+      {
+        "District": "Vũ Thư",
+        "Code": "VuThu",
+        "Wards": null
+      },
+      {
+        "District": "Tiền Hải",
+        "Code": "TienHai",
+        "Wards": null
+      },
+      {
+        "District": "Thái Thụy",
+        "Code": "ThaiThuy",
+        "Wards": null
+      },
+      {
+        "District": "Thái Bình",
+        "Code": "ThaiBinh",
+        "Wards": null
+      },
+      {
+        "District": "Quỳnh Phụ",
+        "Code": "QuPhu",
+        "Wards": null
+      },
+      {
+        "District": "Kiến Xương",
+        "Code": "KXuong",
+        "Wards": null
+      },
+      {
+        "District": "Hưng Hà",
+        "Code": "HungHa",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Thái Nguyên",
+    "CityId": null,
+    "Code": "THNGUYEN",
+    "ZipCode": "250000",
+    "Districts": [
+      {
+        "District": "Đồng Hỷ",
+        "Code": "DongHy",
+        "Wards": null
+      },
+      {
+        "District": "Đại Từ",
+        "Code": "DaiTu",
+        "Wards": null
+      },
+      {
+        "District": "Võ Nhai",
+        "Code": "VoNhai",
+        "Wards": null
+      },
+      {
+        "District": "Thái Nguyên",
+        "Code": "ThaiNgn",
+        "Wards": null
+      },
+      {
+        "District": "Sông Công",
+        "Code": "SongCong",
+        "Wards": null
+      },
+      {
+        "District": "Phổ Yên",
+        "Code": "PhoYen",
+        "Wards": null
+      },
+      {
+        "District": "Phú Lương",
+        "Code": "PLuong",
+        "Wards": null
+      },
+      {
+        "District": "Phú Bình",
+        "Code": "PhuBinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Tuyên Quang",
+    "CityId": null,
+    "Code": "TUQUANG",
+    "ZipCode": "300000",
+    "Districts": [
+      {
+        "District": "Yên Sơn",
+        "Code": "YenSon",
+        "Wards": null
+      },
+      {
+        "District": "Tuyên Quang",
+        "Code": "TQuang",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Dương",
+        "Code": "SonDuong",
+        "Wards": null
+      },
+      {
+        "District": "Na Hang",
+        "Code": "NaHang",
+        "Wards": null
+      },
+      {
+        "District": "Lâm Bình",
+        "Code": "LamBinh",
+        "Wards": null
+      },
+      {
+        "District": "Hàm Yên",
+        "Code": "HamYen",
+        "Wards": null
+      },
+      {
+        "District": "Chiêm Hóa",
+        "Code": "ChiemHoa",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Tây Ninh",
+    "CityId": null,
+    "Code": "TAYN",
+    "ZipCode": "840000",
+    "Districts": [
+      {
+        "District": "Châu Thành",
+        "Code": "CThanh",
+        "Wards": null
+      },
+      {
+        "District": "Tây Ninh",
+        "Code": "TNinh",
+        "Wards": null
+      },
+      {
+        "District": "Tân Châu",
+        "Code": "TChau",
+        "Wards": null
+      },
+      {
+        "District": "Tân Biên",
+        "Code": "TanBien",
+        "Wards": null
+      },
+      {
+        "District": "Trảng Bàng",
+        "Code": "TraBang",
+        "Wards": null
+      },
+      {
+        "District": "Hòa Thành",
+        "Code": "HoaThanh",
+        "Wards": null
+      },
+      {
+        "District": "Gò Dầu",
+        "Code": "GoDau",
+        "Wards": null
+      },
+      {
+        "District": "Dương Minh Châu",
+        "Code": "DMChau",
+        "Wards": null
+      },
+      {
+        "District": "Bến Cầu",
+        "Code": "BenCau",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Yên Bái",
+    "CityId": null,
+    "Code": "YENB",
+    "ZipCode": "320000",
+    "Districts": [
+      {
+        "District": "Văn Chấn",
+        "Code": "VanChan",
+        "Wards": null
+      },
+      {
+        "District": "Trấn Yên",
+        "Code": "TranYen",
+        "Wards": null
+      },
+      {
+        "District": "Trạm Tấu",
+        "Code": "TramTau",
+        "Wards": null
+      },
+      {
+        "District": "Nghĩa Lộ",
+        "Code": "NghiaLo",
+        "Wards": null
+      },
+      {
+        "District": "Mù Căng Chải",
+        "Code": "MCChai",
+        "Wards": null
+      },
+      {
+        "District": "Lục Yên",
+        "Code": "LucYen",
+        "Wards": null
+      },
+      {
+        "District": "Yên Bình",
+        "Code": "YenBinh",
+        "Wards": null
+      },
+      {
+        "District": "Yên Bái",
+        "Code": "YenBai",
+        "Wards": null
+      },
+      {
+        "District": "Văn Yên",
+        "Code": "VanYen",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Điện Biên",
+    "CityId": null,
+    "Code": "DBIEN",
+    "ZipCode": "380000",
+    "Districts": [
+      {
+        "District": "Điện Biên Đông",
+        "Code": "DBDong",
+        "Wards": null
+      },
+      {
+        "District": "Điện Biên Phủ",
+        "Code": "DBPhu",
+        "Wards": null
+      },
+      {
+        "District": "Điện Biên",
+        "Code": "DienBien",
+        "Wards": null
+      },
+      {
+        "District": "Tủa Chùa",
+        "Code": "TChua",
+        "Wards": null
+      },
+      {
+        "District": "Tuần Giáo",
+        "Code": "TuanGiao",
+        "Wards": null
+      },
+      {
+        "District": "Nậm Pồ",
+        "Code": "NamPo",
+        "Wards": null
+      },
+      {
+        "District": "Mường Ảng",
+        "Code": "MAng",
+        "Wards": null
+      },
+      {
+        "District": "Mường Nhé",
+        "Code": "MuongNhe",
+        "Wards": null
+      },
+      {
+        "District": "Mường Lay",
+        "Code": "MLay",
+        "Wards": null
+      },
+      {
+        "District": "Mường Chà",
+        "Code": "MuongCha",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Vĩnh Long",
+    "CityId": null,
+    "Code": "VLONG",
+    "ZipCode": "890000",
+    "Districts": [
+      {
+        "District": "Vũng Liêm",
+        "Code": "VungLiem",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Long",
+        "Code": "VinhLong",
+        "Wards": null
+      },
+      {
+        "District": "Trà Ôn",
+        "Code": "TraOn",
+        "Wards": null
+      },
+      {
+        "District": "Tam Bình",
+        "Code": "TamBinh",
+        "Wards": null
+      },
+      {
+        "District": "Mang Thít",
+        "Code": "MangThit",
+        "Wards": null
+      },
+      {
+        "District": "Long Hồ",
+        "Code": "LongHo",
+        "Wards": null
+      },
+      {
+        "District": "Bình Tân",
+        "Code": "BiTan",
+        "Wards": null
+      },
+      {
+        "District": "Bình Minh",
+        "Code": "BinhMinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Vĩnh Phúc",
+    "CityId": null,
+    "Code": "VPHUC",
+    "ZipCode": "280000",
+    "Districts": [
+      {
+        "District": "Yên Lạc",
+        "Code": "YenLac",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Yên",
+        "Code": "VinhYen",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Tường",
+        "Code": "VTuong",
+        "Wards": null
+      },
+      {
+        "District": "Tam Đảo",
+        "Code": "TamDao",
+        "Wards": null
+      },
+      {
+        "District": "Tam Dương",
+        "Code": "TamDuong",
+        "Wards": null
+      },
+      {
+        "District": "Sông Lô",
+        "Code": "SongLo",
+        "Wards": null
+      },
+      {
+        "District": "Phúc Yên",
+        "Code": "PhucYen",
+        "Wards": null
+      },
+      {
+        "District": "Lập Thạch",
+        "Code": "LThach",
+        "Wards": null
+      },
+      {
+        "District": "Bình Xuyên",
+        "Code": "BiXuyen",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Quảng Bình",
+    "CityId": null,
+    "Code": "QBINH",
+    "ZipCode": "510000",
+    "Districts": [
+      {
+        "District": "Quảng Trạch",
+        "Code": "QuTrach",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Ninh",
+        "Code": "QuaNinh",
+        "Wards": null
+      },
+      {
+        "District": "Minh Hóa",
+        "Code": "MinhHoa",
+        "Wards": null
+      },
+      {
+        "District": "Lệ Thủy",
+        "Code": "LeThuy",
+        "Wards": null
+      },
+      {
+        "District": "Bố Trạch",
+        "Code": "BoTrach",
+        "Wards": null
+      },
+      {
+        "District": "Ba Đồn",
+        "Code": "BaDon",
+        "Wards": null
+      },
+      {
+        "District": "Đồng Hới",
+        "Code": "DongHoi",
+        "Wards": null
+      },
+      {
+        "District": "Tuyên Hóa",
+        "Code": "TuyenHoa",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Đà Nẵng",
+    "CityId": null,
+    "Code": "DANA",
+    "ZipCode": "550000",
+    "Districts": [
+      {
+        "District": "Hòa Vang",
+        "Code": "HoaVang",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Khê",
+        "Code": "ThanhKhe",
+        "Wards": null
+      },
+      {
+        "District": "Hoàng Sa",
+        "Code": "HoangSa",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Trà",
+        "Code": "SonTra",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Lệ",
+        "Code": "CamLe",
+        "Wards": null
+      },
+      {
+        "District": "Liên Chiểu",
+        "Code": "LChieu",
+        "Wards": null
+      },
+      {
+        "District": "Ngũ Hành Sơn",
+        "Code": "NHSon",
+        "Wards": null
+      },
+      {
+        "District": "Hải Châu",
+        "Code": "HaiChau",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Phú Yên",
+    "CityId": null,
+    "Code": "PYEN",
+    "ZipCode": "620000",
+    "Districts": [
+      {
+        "District": "Đồng Xuân",
+        "Code": "DongXuan",
+        "Wards": null
+      },
+      {
+        "District": "Đông Hòa",
+        "Code": "DongHoa",
+        "Wards": null
+      },
+      {
+        "District": "Tây Hòa",
+        "Code": "TayHoa",
+        "Wards": null
+      },
+      {
+        "District": "Tuy Hòa",
+        "Code": "TuyHoa",
+        "Wards": null
+      },
+      {
+        "District": "Tuy An",
+        "Code": "TuyAn",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Hòa",
+        "Code": "SonHoa",
+        "Wards": null
+      },
+      {
+        "District": "Sông Hinh",
+        "Code": "SongHinh",
+        "Wards": null
+      },
+      {
+        "District": "Sông Cầu",
+        "Code": "SongCau",
+        "Wards": null
+      },
+      {
+        "District": "Phú Hòa",
+        "Code": "PhuHoa",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bạc Liêu",
+    "CityId": null,
+    "Code": "BLIEU",
+    "ZipCode": "260000",
+    "Districts": [
+      {
+        "District": "Bạc Liêu",
+        "Code": "BacLieu",
+        "Wards": null
+      },
+      {
+        "District": "Đông Hải",
+        "Code": "DongHai",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Lợi",
+        "Code": "VinhLoi",
+        "Wards": null
+      },
+      {
+        "District": "Phước Long",
+        "Code": "PhLong",
+        "Wards": null
+      },
+      {
+        "District": "Hồng Dân",
+        "Code": "HongDan",
+        "Wards": null
+      },
+      {
+        "District": "Hoà Bình",
+        "Code": "HoaBinh",
+        "Wards": null
+      },
+      {
+        "District": "Giá Rai",
+        "Code": "GiaRai",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bến Tre",
+    "CityId": null,
+    "Code": "BTRE",
+    "ZipCode": "930000",
+    "Districts": [
+      {
+        "District": "Bình Đại",
+        "Code": "BinhDai",
+        "Wards": null
+      },
+      {
+        "District": "Thạnh Phú",
+        "Code": "ThanhPhu",
+        "Wards": null
+      },
+      {
+        "District": "Giồng Trôm",
+        "Code": "GiTrom",
+        "Wards": null
+      },
+      {
+        "District": "Chợ Lách",
+        "Code": "ChoLach",
+        "Wards": null
+      },
+      {
+        "District": "Bến Tre",
+        "Code": "BenTre",
+        "Wards": null
+      },
+      {
+        "District": "Mỏ Cày Nam",
+        "Code": "MCNam",
+        "Wards": null
+      },
+      {
+        "District": "Ba Tri",
+        "Code": "BaTri",
+        "Wards": null
+      },
+      {
+        "District": "Mỏ Cày Bắc",
+        "Code": "MCBac",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChaThan",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Cà Mau",
+    "CityId": null,
+    "Code": "CMAU",
+    "ZipCode": "970000",
+    "Districts": [
+      {
+        "District": "Thới Bình",
+        "Code": "ThoiBinh",
+        "Wards": null
+      },
+      {
+        "District": "Phú Tân",
+        "Code": "PhTan",
+        "Wards": null
+      },
+      {
+        "District": "Năm Căn",
+        "Code": "NamCan",
+        "Wards": null
+      },
+      {
+        "District": "Ngọc Hiển",
+        "Code": "NgocHien",
+        "Wards": null
+      },
+      {
+        "District": "Cái Nước",
+        "Code": "CaiNuoc",
+        "Wards": null
+      },
+      {
+        "District": "Đầm Dơi",
+        "Code": "DamDoi",
+        "Wards": null
+      },
+      {
+        "District": "U Minh",
+        "Code": "UMinh",
+        "Wards": null
+      },
+      {
+        "District": "Trần Văn Thời",
+        "Code": "TVThoi",
+        "Wards": null
+      },
+      {
+        "District": "Cà Mau",
+        "Code": "CaMau",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Quảng Nam",
+    "CityId": null,
+    "Code": "QNAM",
+    "ZipCode": "560000",
+    "Districts": [
+      {
+        "District": "Đông Giang",
+        "Code": "DGiang",
+        "Wards": null
+      },
+      {
+        "District": "Điện Bàn",
+        "Code": "DienBan",
+        "Wards": null
+      },
+      {
+        "District": "Tây Giang",
+        "Code": "TayGiang",
+        "Wards": null
+      },
+      {
+        "District": "Thăng Bình",
+        "Code": "ThBinh",
+        "Wards": null
+      },
+      {
+        "District": "Quế Sơn",
+        "Code": "QueSon",
+        "Wards": null
+      },
+      {
+        "District": "Nông Sơn",
+        "Code": "NongSon",
+        "Wards": null
+      },
+      {
+        "District": "Nam Trà My",
+        "Code": "NTMy",
+        "Wards": null
+      },
+      {
+        "District": "Nam Giang",
+        "Code": "NGiang",
+        "Wards": null
+      },
+      {
+        "District": "Hội An",
+        "Code": "HoiAn",
+        "Wards": null
+      },
+      {
+        "District": "Núi Thành",
+        "Code": "NuiThanh",
+        "Wards": null
+      },
+      {
+        "District": "Hiệp Đức",
+        "Code": "HiepDuc",
+        "Wards": null
+      },
+      {
+        "District": "Duy Xuyên",
+        "Code": "DuyXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Trà My",
+        "Code": "BTMy",
+        "Wards": null
+      },
+      {
+        "District": "Đại Lộc",
+        "Code": "DaiLoc",
+        "Wards": null
+      },
+      {
+        "District": "Tiên Phước",
+        "Code": "TPhuoc",
+        "Wards": null
+      },
+      {
+        "District": "Tam Kỳ",
+        "Code": "TamKy",
+        "Wards": null
+      },
+      {
+        "District": "Phước Sơn",
+        "Code": "PhuocSon",
+        "Wards": null
+      },
+      {
+        "District": "Phú Ninh",
+        "Code": "PhuNinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bình Dương",
+    "CityId": null,
+    "Code": "BIDU",
+    "ZipCode": "590000",
+    "Districts": [
+      {
+        "District": "Thuận An",
+        "Code": "ThuanAn",
+        "Wards": null
+      },
+      {
+        "District": "Phú Giáo",
+        "Code": "PhuGiao",
+        "Wards": null
+      },
+      {
+        "District": "Dầu Tiếng",
+        "Code": "DauTieng",
+        "Wards": null
+      },
+      {
+        "District": "Bến Cát",
+        "Code": "BenCat",
+        "Wards": null
+      },
+      {
+        "District": "Bàu Bàng",
+        "Code": "BauBang",
+        "Wards": null
+      },
+      {
+        "District": "Dĩ An",
+        "Code": "DiAn",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Tân Uyên",
+        "Code": "BacTUyen",
+        "Wards": null
+      },
+      {
+        "District": "Thủ Dầu Một",
+        "Code": "TDMot",
+        "Wards": null
+      },
+      {
+        "District": "Tân Uyên",
+        "Code": "TanUyen",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Quảng Ngãi",
+    "CityId": null,
+    "Code": "QNGAI",
+    "ZipCode": "570000",
+    "Districts": [
+      {
+        "District": "Đức Phổ",
+        "Code": "DucPho",
+        "Wards": null
+      },
+      {
+        "District": "Tư Nghĩa",
+        "Code": "TuNghia",
+        "Wards": null
+      },
+      {
+        "District": "Tây Trà",
+        "Code": "TayTra",
+        "Wards": null
+      },
+      {
+        "District": "Trà Bồng",
+        "Code": "TraBong",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Tịnh",
+        "Code": "SonTinh",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Tây",
+        "Code": "SonTay",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Ngãi",
+        "Code": "QuNgai",
+        "Wards": null
+      },
+      {
+        "District": "Nghĩa Hành",
+        "Code": "NgHanh",
+        "Wards": null
+      },
+      {
+        "District": "Minh Long",
+        "Code": "MinhLong",
+        "Wards": null
+      },
+      {
+        "District": "Lý Sơn",
+        "Code": "LySon",
+        "Wards": null
+      },
+      {
+        "District": "Bình Sơn",
+        "Code": "BinhSon",
+        "Wards": null
+      },
+      {
+        "District": "Ba Tơ",
+        "Code": "BaTo",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Hà",
+        "Code": "SonHa",
+        "Wards": null
+      },
+      {
+        "District": "Mộ Đức",
+        "Code": "MoDuc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bà Rịa - Vũng Tàu",
+    "CityId": null,
+    "Code": "BRVT",
+    "ZipCode": "790000",
+    "Districts": [
+      {
+        "District": "Xuyên Mộc",
+        "Code": "XuyenMoc",
+        "Wards": null
+      },
+      {
+        "District": "Vũng Tàu",
+        "Code": "VungTau",
+        "Wards": null
+      },
+      {
+        "District": "Tân Thành",
+        "Code": "TThanh",
+        "Wards": null
+      },
+      {
+        "District": "Côn Đảo",
+        "Code": "ConDao",
+        "Wards": null
+      },
+      {
+        "District": "Châu Đức",
+        "Code": "ChauDuc",
+        "Wards": null
+      },
+      {
+        "District": "Đất Đỏ",
+        "Code": "DatDo",
+        "Wards": null
+      },
+      {
+        "District": "Bà Rịa",
+        "Code": "BaRia",
+        "Wards": null
+      },
+      {
+        "District": "Long Điền",
+        "Code": "LongDien",
+        "Wards": null
+      },
+      {
+        "District": "Phú Mỹ",
+        "Code": "PMy",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bình Phước",
+    "CityId": null,
+    "Code": "BPHUOC",
+    "ZipCode": "830000",
+    "Districts": [
+      {
+        "District": "Đồng Phú",
+        "Code": "DongPhu",
+        "Wards": null
+      },
+      {
+        "District": "Phước Long",
+        "Code": "PLong",
+        "Wards": null
+      },
+      {
+        "District": "Phú Riềng",
+        "Code": "PhuRieng",
+        "Wards": null
+      },
+      {
+        "District": "Lộc Ninh",
+        "Code": "LocNinh",
+        "Wards": null
+      },
+      {
+        "District": "Chơn Thành",
+        "Code": "ChonTha",
+        "Wards": null
+      },
+      {
+        "District": "Bù Đốp",
+        "Code": "BuDop",
+        "Wards": null
+      },
+      {
+        "District": "Bù Đăng",
+        "Code": "BuDang",
+        "Wards": null
+      },
+      {
+        "District": "Đồng Xoài",
+        "Code": "DongXoai",
+        "Wards": null
+      },
+      {
+        "District": "Bù Gia Mập",
+        "Code": "BGMap",
+        "Wards": null
+      },
+      {
+        "District": "Bình Long",
+        "Code": "BinhLong",
+        "Wards": null
+      },
+      {
+        "District": "Hớn Quản",
+        "Code": "HonQuan",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bình Định",
+    "CityId": null,
+    "Code": "BDIN",
+    "ZipCode": "820000",
+    "Districts": [
+      {
+        "District": "Phù Mỹ",
+        "Code": "PhuMy",
+        "Wards": null
+      },
+      {
+        "District": "Phù Cát",
+        "Code": "PhuCat",
+        "Wards": null
+      },
+      {
+        "District": "Hoài Nhơn",
+        "Code": "HoaiNhon",
+        "Wards": null
+      },
+      {
+        "District": "An Nhơn",
+        "Code": "AnNhon",
+        "Wards": null
+      },
+      {
+        "District": "An Lão",
+        "Code": "AnLao",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Thạnh",
+        "Code": "VinhTha",
+        "Wards": null
+      },
+      {
+        "District": "Vân Canh",
+        "Code": "VanCanh",
+        "Wards": null
+      },
+      {
+        "District": "Tây Sơn",
+        "Code": "TaySon",
+        "Wards": null
+      },
+      {
+        "District": "Tuy Phước",
+        "Code": "TuyPhuoc",
+        "Wards": null
+      },
+      {
+        "District": "Quy Nhơn",
+        "Code": "QuyNhon",
+        "Wards": null
+      },
+      {
+        "District": "Hoài Ân",
+        "Code": "HoaiAn",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bình Thuận",
+    "CityId": null,
+    "Code": "BTHUA",
+    "ZipCode": "800000",
+    "Districts": [
+      {
+        "District": "La Gi",
+        "Code": "LaGi",
+        "Wards": null
+      },
+      {
+        "District": "Hàm Tân",
+        "Code": "HamTan",
+        "Wards": null
+      },
+      {
+        "District": "Tánh Linh",
+        "Code": "TanhLinh",
+        "Wards": null
+      },
+      {
+        "District": "Phú Quý",
+        "Code": "PhuQuy",
+        "Wards": null
+      },
+      {
+        "District": "Hàm Thuận Nam",
+        "Code": "HTNam",
+        "Wards": null
+      },
+      {
+        "District": "Tuy Phong",
+        "Code": "TuyPhong",
+        "Wards": null
+      },
+      {
+        "District": "Phan Thiết",
+        "Code": "PThiet",
+        "Wards": null
+      },
+      {
+        "District": "Hàm Thuận Bắc",
+        "Code": "HTBac",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Bình",
+        "Code": "BacBinh",
+        "Wards": null
+      },
+      {
+        "District": "Đức Linh",
+        "Code": "DLinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Đắk Lắk",
+    "CityId": null,
+    "Code": "DLAK",
+    "ZipCode": "630000",
+    "Districts": [
+      {
+        "District": "Lắk",
+        "Code": "Lak",
+        "Wards": null
+      },
+      {
+        "District": "Krông Năng",
+        "Code": "KrNang",
+        "Wards": null
+      },
+      {
+        "District": "Ea Súp",
+        "Code": "EaSup",
+        "Wards": null
+      },
+      {
+        "District": "Ea H leo",
+        "Code": "EaHleo",
+        "Wards": null
+      },
+      {
+        "District": "Cư M Gar",
+        "Code": "CMGar",
+        "Wards": null
+      },
+      {
+        "District": "Cư Kuin",
+        "Code": "CuKuin",
+        "Wards": null
+      },
+      {
+        "District": "Buôn Hồ",
+        "Code": "BuonHo",
+        "Wards": null
+      },
+      {
+        "District": "M Đrăk",
+        "Code": "MDrak",
+        "Wards": null
+      },
+      {
+        "District": "Krông Pắk",
+        "Code": "KrongPak",
+        "Wards": null
+      },
+      {
+        "District": "Krông Búk",
+        "Code": "KrongBuk",
+        "Wards": null
+      },
+      {
+        "District": "Krông Bông",
+        "Code": "KrBong",
+        "Wards": null
+      },
+      {
+        "District": "Krông Ana",
+        "Code": "KrongAna",
+        "Wards": null
+      },
+      {
+        "District": "Ea Kar",
+        "Code": "EaKar",
+        "Wards": null
+      },
+      {
+        "District": "Buôn Đôn",
+        "Code": "BuonDon",
+        "Wards": null
+      },
+      {
+        "District": "Buôn Ma Thuột",
+        "Code": "BMThuot",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Cao Bằng",
+    "CityId": null,
+    "Code": "CAOB",
+    "ZipCode": "270000",
+    "Districts": [
+      {
+        "District": "Phục Hòa",
+        "Code": "PhucHoa",
+        "Wards": null
+      },
+      {
+        "District": "Hòa An",
+        "Code": "HoaAn",
+        "Wards": null
+      },
+      {
+        "District": "Hà Quảng",
+        "Code": "HaQuang",
+        "Wards": null
+      },
+      {
+        "District": "Cao Bằng",
+        "Code": "CaoBang",
+        "Wards": null
+      },
+      {
+        "District": "Bảo Lâm",
+        "Code": "BaoLam",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Uyên",
+        "Code": "QuUyen",
+        "Wards": null
+      },
+      {
+        "District": "Trùng Khánh",
+        "Code": "TrKhanh",
+        "Wards": null
+      },
+      {
+        "District": "Trà Lĩnh",
+        "Code": "TraLinh",
+        "Wards": null
+      },
+      {
+        "District": "Thạch An",
+        "Code": "ThachAn",
+        "Wards": null
+      },
+      {
+        "District": "Thông Nông",
+        "Code": "ThNong",
+        "Wards": null
+      },
+      {
+        "District": "Nguyên Bình",
+        "Code": "NgBinh",
+        "Wards": null
+      },
+      {
+        "District": "Hạ Lang",
+        "Code": "HaLang",
+        "Wards": null
+      },
+      {
+        "District": "Bảo Lạc",
+        "Code": "BaoLac",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Thanh Hóa",
+    "CityId": null,
+    "Code": "THOA",
+    "ZipCode": "440000",
+    "Districts": [
+      {
+        "District": "Nga Sơn",
+        "Code": "NgaSon",
+        "Wards": null
+      },
+      {
+        "District": "Mường Lát",
+        "Code": "MuongLat",
+        "Wards": null
+      },
+      {
+        "District": "Lang Chánh",
+        "Code": "LChanh",
+        "Wards": null
+      },
+      {
+        "District": "Hậu Lộc",
+        "Code": "HauLoc",
+        "Wards": null
+      },
+      {
+        "District": "Hà Trung",
+        "Code": "HaTrung",
+        "Wards": null
+      },
+      {
+        "District": "Hoằng Hóa",
+        "Code": "HoangHoa",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Thủy",
+        "Code": "CamThuy",
+        "Wards": null
+      },
+      {
+        "District": "Đông Sơn",
+        "Code": "DongSon",
+        "Wards": null
+      },
+      {
+        "District": "Yên Định",
+        "Code": "YenDinh",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Lộc",
+        "Code": "VinhLoc",
+        "Wards": null
+      },
+      {
+        "District": "Tĩnh Gia",
+        "Code": "TinhGia",
+        "Wards": null
+      },
+      {
+        "District": "Triệu Sơn",
+        "Code": "TrieuSon",
+        "Wards": null
+      },
+      {
+        "District": "Thọ Xuân",
+        "Code": "ThoXuan",
+        "Wards": null
+      },
+      {
+        "District": "Thạch Thành",
+        "Code": "ThaThanh",
+        "Wards": null
+      },
+      {
+        "District": "Thường Xuân",
+        "Code": "ThXuan",
+        "Wards": null
+      },
+      {
+        "District": "Thiệu Hóa",
+        "Code": "ThieuHoa",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Hóa",
+        "Code": "ThHoa",
+        "Wards": null
+      },
+      {
+        "District": "Sầm Sơn",
+        "Code": "SamSon",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Xương",
+        "Code": "QuXuong",
+        "Wards": null
+      },
+      {
+        "District": "Quan Sơn",
+        "Code": "QuanSon",
+        "Wards": null
+      },
+      {
+        "District": "Quan Hóa",
+        "Code": "QuanHoa",
+        "Wards": null
+      },
+      {
+        "District": "Nông Cống",
+        "Code": "NongCong",
+        "Wards": null
+      },
+      {
+        "District": "Như Xuân",
+        "Code": "NhuXuan",
+        "Wards": null
+      },
+      {
+        "District": "Như Thanh",
+        "Code": "NhuThanh",
+        "Wards": null
+      },
+      {
+        "District": "Ngọc Lặc",
+        "Code": "NgocLac",
+        "Wards": null
+      },
+      {
+        "District": "Bỉm Sơn",
+        "Code": "BimSon",
+        "Wards": null
+      },
+      {
+        "District": "Bá Thước",
+        "Code": "BaThuoc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Nghệ An",
+    "CityId": null,
+    "Code": "NGAN",
+    "ZipCode": "460000",
+    "Districts": [
+      {
+        "District": "Đô Lương",
+        "Code": "DoLuong",
+        "Wards": null
+      },
+      {
+        "District": "Yên Thành",
+        "Code": "YenThanh",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Chương",
+        "Code": "ThChuong",
+        "Wards": null
+      },
+      {
+        "District": "Tân Kỳ",
+        "Code": "TanKy",
+        "Wards": null
+      },
+      {
+        "District": "Thái Hòa",
+        "Code": "ThaiHoa",
+        "Wards": null
+      },
+      {
+        "District": "Quỳnh Lưu",
+        "Code": "QuynhLuu",
+        "Wards": null
+      },
+      {
+        "District": "Quỳ Hợp",
+        "Code": "QuyHop",
+        "Wards": null
+      },
+      {
+        "District": "Quỳ Châu",
+        "Code": "QuyChau",
+        "Wards": null
+      },
+      {
+        "District": "Quế Phong",
+        "Code": "QuePhong",
+        "Wards": null
+      },
+      {
+        "District": "Nghĩa Đàn",
+        "Code": "NghiaDan",
+        "Wards": null
+      },
+      {
+        "District": "Nghi Lộc",
+        "Code": "NghiLoc",
+        "Wards": null
+      },
+      {
+        "District": "Nam Đàn",
+        "Code": "NamDan",
+        "Wards": null
+      },
+      {
+        "District": "Kỳ Sơn",
+        "Code": "KSon",
+        "Wards": null
+      },
+      {
+        "District": "Hưng Nguyên",
+        "Code": "HNguyen",
+        "Wards": null
+      },
+      {
+        "District": "Hoàng Mai",
+        "Code": "HoangMai",
+        "Wards": null
+      },
+      {
+        "District": "Vinh",
+        "Code": "Vinh",
+        "Wards": null
+      },
+      {
+        "District": "Tương Dương",
+        "Code": "TDuong",
+        "Wards": null
+      },
+      {
+        "District": "Diễn Châu",
+        "Code": "DienChau",
+        "Wards": null
+      },
+      {
+        "District": "Cửa Lò",
+        "Code": "CuaLo",
+        "Wards": null
+      },
+      {
+        "District": "Con Cuông",
+        "Code": "ConCuong",
+        "Wards": null
+      },
+      {
+        "District": "Anh Sơn",
+        "Code": "AnhSon",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Đồng Tháp",
+    "CityId": null,
+    "Code": "DOTHA",
+    "ZipCode": "870000",
+    "Districts": [
+      {
+        "District": "Hồng Ngự",
+        "Code": "HongNgu",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChauThan",
+        "Wards": null
+      },
+      {
+        "District": "Cao Lãnh",
+        "Code": "CaoLanh",
+        "Wards": null
+      },
+      {
+        "District": "Tân Hồng",
+        "Code": "TanHong",
+        "Wards": null
+      },
+      {
+        "District": "Tháp Mười",
+        "Code": "ThapMuoi",
+        "Wards": null
+      },
+      {
+        "District": "Thanh Bình",
+        "Code": "ThanBinh",
+        "Wards": null
+      },
+      {
+        "District": "Tam Nông",
+        "Code": "TamNong",
+        "Wards": null
+      },
+      {
+        "District": "Sa Đéc",
+        "Code": "SaDec",
+        "Wards": null
+      },
+      {
+        "District": "Lấp Vò",
+        "Code": "LapVo",
+        "Wards": null
+      },
+      {
+        "District": "Lai Vung",
+        "Code": "LaiVung",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Quảng Trị",
+    "CityId": null,
+    "Code": "QTRI",
+    "ZipCode": "520000",
+    "Districts": [
+      {
+        "District": "Đông Hà",
+        "Code": "DongHa",
+        "Wards": null
+      },
+      {
+        "District": "Đa Krông",
+        "Code": "DaKrong",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Linh",
+        "Code": "VinhLinh",
+        "Wards": null
+      },
+      {
+        "District": "Triệu Phong",
+        "Code": "TrPhong",
+        "Wards": null
+      },
+      {
+        "District": "Hải Lăng",
+        "Code": "HaiLang",
+        "Wards": null
+      },
+      {
+        "District": "Gio Linh",
+        "Code": "GioLinh",
+        "Wards": null
+      },
+      {
+        "District": "Cam Lộ",
+        "Code": "CamLo",
+        "Wards": null
+      },
+      {
+        "District": "Hướng Hóa",
+        "Code": "HuongHoa",
+        "Wards": null
+      },
+      {
+        "District": "Cồn Cỏ",
+        "Code": "ConCo",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Trị",
+        "Code": "QuangTri",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Sóc Trăng",
+    "CityId": null,
+    "Code": "SOCTR",
+    "ZipCode": "950000",
+    "Districts": [
+      {
+        "District": "Trần Đề",
+        "Code": "TranDe",
+        "Wards": null
+      },
+      {
+        "District": "Ngã Năm",
+        "Code": "NgaNam",
+        "Wards": null
+      },
+      {
+        "District": "Long Phú",
+        "Code": "LongPhu",
+        "Wards": null
+      },
+      {
+        "District": "Kế Sách",
+        "Code": "KeSach",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Châu",
+        "Code": "VinhChau",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Xuyên",
+        "Code": "MyXuyen",
+        "Wards": null
+      },
+      {
+        "District": "Thạnh Trị",
+        "Code": "ThanhTri",
+        "Wards": null
+      },
+      {
+        "District": "Sóc Trăng",
+        "Code": "SocTrang",
+        "Wards": null
+      },
+      {
+        "District": "Mỹ Tú",
+        "Code": "MyTu",
+        "Wards": null
+      },
+      {
+        "District": "Cù Lao Dung",
+        "Code": "CLDung",
+        "Wards": null
+      },
+      {
+        "District": "Châu Thành",
+        "Code": "ChaThnh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Đắk Nông",
+    "CityId": null,
+    "Code": "DNONG",
+    "ZipCode": "640000",
+    "Districts": [
+      {
+        "District": "Đắk R lấp",
+        "Code": "DakRlap",
+        "Wards": null
+      },
+      {
+        "District": "Đắk Mil",
+        "Code": "DakMil",
+        "Wards": null
+      },
+      {
+        "District": "Đắk Glong",
+        "Code": "DGlong",
+        "Wards": null
+      },
+      {
+        "District": "Đăk Song",
+        "Code": "DakSong",
+        "Wards": null
+      },
+      {
+        "District": "Krông Nô",
+        "Code": "KrongNo",
+        "Wards": null
+      },
+      {
+        "District": "Cư Jút",
+        "Code": "CuJut",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Đồng Nai",
+    "CityId": null,
+    "Code": "DONA",
+    "ZipCode": "810000",
+    "Districts": [
+      {
+        "District": "Định Quán",
+        "Code": "DinhQuan",
+        "Wards": null
+      },
+      {
+        "District": "Vĩnh Cửu",
+        "Code": "VinhCuu",
+        "Wards": null
+      },
+      {
+        "District": "Tân Phú",
+        "Code": "TanPh",
+        "Wards": null
+      },
+      {
+        "District": "Trảng Bom",
+        "Code": "TrangBom",
+        "Wards": null
+      },
+      {
+        "District": "Thống Nhất",
+        "Code": "ThNhat",
+        "Wards": null
+      },
+      {
+        "District": "Long Khánh",
+        "Code": "LKhanh",
+        "Wards": null
+      },
+      {
+        "District": "Long Thành",
+        "Code": "LThanh",
+        "Wards": null
+      },
+      {
+        "District": "Nhơn Trạch",
+        "Code": "NhTrach",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Mỹ",
+        "Code": "CamMy",
+        "Wards": null
+      },
+      {
+        "District": "Biên Hòa",
+        "Code": "BienHoa",
+        "Wards": null
+      },
+      {
+        "District": "Xuân Lộc",
+        "Code": "XuanLoc",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bắc Kạn",
+    "CityId": null,
+    "Code": "BKAN",
+    "ZipCode": "960000",
+    "Districts": [
+      {
+        "District": "Chợ Mới",
+        "Code": "ChMoi",
+        "Wards": null
+      },
+      {
+        "District": "Pác Nặm",
+        "Code": "PacNam",
+        "Wards": null
+      },
+      {
+        "District": "Na Rì",
+        "Code": "NaRi",
+        "Wards": null
+      },
+      {
+        "District": "Ngân Sơn",
+        "Code": "NganSon",
+        "Wards": null
+      },
+      {
+        "District": "Chợ Đồn",
+        "Code": "ChoDon",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Kạn",
+        "Code": "BacKan",
+        "Wards": null
+      },
+      {
+        "District": "Bạch Thông",
+        "Code": "BThong",
+        "Wards": null
+      },
+      {
+        "District": "Ba Bể",
+        "Code": "BaBe",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Sơn La",
+    "CityId": null,
+    "Code": "SONLA",
+    "ZipCode": "360000",
+    "Districts": [
+      {
+        "District": "Thuận Châu",
+        "Code": "ThChau",
+        "Wards": null
+      },
+      {
+        "District": "Sốp Cộp",
+        "Code": "SopCop",
+        "Wards": null
+      },
+      {
+        "District": "Sơn La",
+        "Code": "SonLa",
+        "Wards": null
+      },
+      {
+        "District": "Sông Mã",
+        "Code": "SongMa",
+        "Wards": null
+      },
+      {
+        "District": "Phù Yên",
+        "Code": "PhuYen",
+        "Wards": null
+      },
+      {
+        "District": "Mai Sơn",
+        "Code": "MaiSon",
+        "Wards": null
+      },
+      {
+        "District": "Yên Châu",
+        "Code": "YenChau",
+        "Wards": null
+      },
+      {
+        "District": "Vân Hồ",
+        "Code": "VanHo",
+        "Wards": null
+      },
+      {
+        "District": "Quỳnh Nhai",
+        "Code": "QuNhai",
+        "Wards": null
+      },
+      {
+        "District": "Mộc Châu",
+        "Code": "MocChau",
+        "Wards": null
+      },
+      {
+        "District": "Mường La",
+        "Code": "MuongLa",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Yên",
+        "Code": "BacYen",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Quảng Ninh",
+    "CityId": null,
+    "Code": "QNINH",
+    "ZipCode": "200000",
+    "Districts": [
+      {
+        "District": "Hoành Bồ",
+        "Code": "HoanhBo",
+        "Wards": null
+      },
+      {
+        "District": "Cẩm Phả",
+        "Code": "CamPha",
+        "Wards": null
+      },
+      {
+        "District": "Móng Cái",
+        "Code": "MongCai",
+        "Wards": null
+      },
+      {
+        "District": "Hải Hà",
+        "Code": "HaiHa",
+        "Wards": null
+      },
+      {
+        "District": "Đầm Hà",
+        "Code": "DamHa",
+        "Wards": null
+      },
+      {
+        "District": "Đông Triều",
+        "Code": "DTrieu",
+        "Wards": null
+      },
+      {
+        "District": "Vân Đồn",
+        "Code": "VanDon",
+        "Wards": null
+      },
+      {
+        "District": "Uông Bí",
+        "Code": "UongBi",
+        "Wards": null
+      },
+      {
+        "District": "Tiên Yên",
+        "Code": "TienYen",
+        "Wards": null
+      },
+      {
+        "District": "Quảng Yên",
+        "Code": "QuangYen",
+        "Wards": null
+      },
+      {
+        "District": "Cô Tô",
+        "Code": "CoTo",
+        "Wards": null
+      },
+      {
+        "District": "Bình Liêu",
+        "Code": "BinhLieu",
+        "Wards": null
+      },
+      {
+        "District": "Ba Chẽ",
+        "Code": "BaChe",
+        "Wards": null
+      },
+      {
+        "District": "Hạ Long",
+        "Code": "HaLong",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bắc Giang",
+    "CityId": null,
+    "Code": "BGIA",
+    "ZipCode": "230000",
+    "Districts": [
+      {
+        "District": "Yên Thế",
+        "Code": "YenThe",
+        "Wards": null
+      },
+      {
+        "District": "Yên Dũng",
+        "Code": "YenDung",
+        "Wards": null
+      },
+      {
+        "District": "Tân Yên",
+        "Code": "TanYen",
+        "Wards": null
+      },
+      {
+        "District": "Sơn Động",
+        "Code": "SonDong",
+        "Wards": null
+      },
+      {
+        "District": "Việt Yên",
+        "Code": "VietYen",
+        "Wards": null
+      },
+      {
+        "District": "Lục Ngạn",
+        "Code": "LucNgan",
+        "Wards": null
+      },
+      {
+        "District": "Lục Nam",
+        "Code": "LucNam",
+        "Wards": null
+      },
+      {
+        "District": "Lạng Giang",
+        "Code": "LGiang",
+        "Wards": null
+      },
+      {
+        "District": "Hiệp Hòa",
+        "Code": "HiepHoa",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Giang",
+        "Code": "BacGiang",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Bắc Ninh",
+    "CityId": null,
+    "Code": "BANI",
+    "ZipCode": "220000",
+    "Districts": [
+      {
+        "District": "Tiên Du",
+        "Code": "TienDu",
+        "Wards": null
+      },
+      {
+        "District": "Thuận Thành",
+        "Code": "ThThanh",
+        "Wards": null
+      },
+      {
+        "District": "Quế Võ",
+        "Code": "QueVo",
+        "Wards": null
+      },
+      {
+        "District": "Bắc Ninh",
+        "Code": "BacNinh",
+        "Wards": null
+      },
+      {
+        "District": "Lương Tài",
+        "Code": "LuongTai",
+        "Wards": null
+      },
+      {
+        "District": "Yên Phong",
+        "Code": "YenPhong",
+        "Wards": null
+      },
+      {
+        "District": "Từ Sơn",
+        "Code": "TuSon",
+        "Wards": null
+      },
+      {
+        "District": "Gia Bình",
+        "Code": "GiaBinh",
+        "Wards": null
+      }
+    ]
+  },
+  {
+    "City": "Cục Cảnh Sát Đkql Và Dlqg",
+    "CityId": null,
+    "Code": "CCS",
+    "ZipCode": "990000",
+    "Districts": [
+      {
+        "District": "Cục Cảnh sát ĐKQL và DLQG",
+        "Code": "CCS",
+        "Wards": null
+      }
+    ]
+  }
+]
