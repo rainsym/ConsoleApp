@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Microservice.B.EventHandlers
+namespace Microservice.C.EventHandlers
 {
     public class TestHandler : IMessageHandle<TestEvent>
     {
@@ -20,7 +20,7 @@ namespace Microservice.B.EventHandlers
 
         public async Task HandleAsync(TestEvent e, IMessageContext context)
         {
-            _logger.LogInformation("B: taken event");
+            _logger.LogInformation("C: taken event");
         }
     }
 }

@@ -25,17 +25,30 @@ namespace Microservice.Common.Services
             globalMessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId;
             await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
 
-            CreateEventAsync(message, globalMessageId);
+            SubscribedAsync(message, globalMessageId);
         }
 
-        public async Task CreateEventAsync<T>(T message, Guid globalMessageId, EventType type = EventType.Publish)
+        public async Task RegisterEventAsync(string name, string subscriber)
+        {
+            var rawRabbitEvent = new RawRabbitEvent
+            {
+                Name = name,
+                Subscriber = subscriber
+            };
+
+            _context.Add(rawRabbitEvent);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task SubscribedAsync<T>(T message, Guid globalMessageId, string subscriber = null, EventType type = EventType.Publish)
         {
             var eventTracker = new EventTracker
             {
                 MessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId,
                 Name = message.GetType().ToString(),
                 PayLoad = JsonConvert.SerializeObject(message),
-                Type = type
+                Type = type,
+                Subscriber = subscriber
             };
 
             _context.Add(eventTracker);

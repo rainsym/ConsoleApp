@@ -19,12 +19,13 @@ namespace Microservice.Common.RawRabbit
 {
     public static class RawRabbitExtensions
     {
-        public static void AddMessageHandler<TMessage, TMessageHandler>(this IApplicationBuilder app, Action<ISubscriptionConfigurationBuilder> configuration = null)
+        public static void AddMessageHandler<TMessage, TMessageHandler>(this IApplicationBuilder app, string subscriber, Action<ISubscriptionConfigurationBuilder> configuration = null)
                 where TMessage : IMessage
                 where TMessageHandler : IMessageHandle<TMessage>
         {
             var client = GetClient(app);
             var _logger = GetLogging<IMessage>(app);
+
             client.SubscribeAsync<TMessage>(async (e, context) =>
             {
                 var scopeFactory = app.ApplicationServices.GetService<IServiceScopeFactory>();
@@ -41,7 +42,7 @@ namespace Microservice.Common.RawRabbit
 
                         //insert one row into EventTracker when finished
                         var rawRabbitWrapper = scope.ServiceProvider.GetRequiredService<IRawRabbitWrapper>();
-                        await rawRabbitWrapper.CreateEventAsync(e, context.GlobalRequestId, EventType.Subscribe);
+                        await rawRabbitWrapper.SubscribedAsync(e, context.GlobalRequestId, subscriber, EventType.Subscribe);
                     }
                     catch (Exception ex)
                     {
@@ -54,6 +55,14 @@ namespace Microservice.Common.RawRabbit
                     }
                 }
             }, configuration);
+
+            //subscribe event
+            using(var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var rawRabbitWrapper = scope.ServiceProvider.GetRequiredService<IRawRabbitWrapper>();
+                var name = typeof(TMessage).ToString();
+                rawRabbitWrapper.RegisterEventAsync(name, subscriber).Wait();
+            }
         }
 
         private static IBusClient GetClient(IApplicationBuilder app)

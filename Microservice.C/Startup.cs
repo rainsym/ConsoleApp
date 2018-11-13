@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microservice.B.EventHandlers;
+using Microservice.C.EventHandlers;
 using Microservice.Common.Models;
 using Microservice.Common.Models.Events;
 using Microservice.Common.RawRabbit;
@@ -10,7 +10,6 @@ using Microservice.Common.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +20,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
 using RawRabbit.Extensions.Client;
 
-namespace Microservice.B
+namespace Microservice.C
 {
     public class Startup
     {
@@ -70,7 +69,7 @@ namespace Microservice.B
 
             app.UseMvc();
 
-            app.AddMessageHandler<TestEvent, TestHandler>("Microservice.B");
+            app.AddMessageHandler<TestEvent, TestHandler>("Microservice.C");
         }
     }
 }

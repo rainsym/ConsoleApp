@@ -10,6 +10,8 @@ namespace Microservice.Common.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Subscriber { get; set; }
+        public DateTime? CreatedAt { get; set; }
     }
 
     public class EventTracker: BaseObject
@@ -26,6 +28,7 @@ namespace Microservice.Common.Models
 
         public int Id { get; set; }
         public Guid MessageId { get; set; }
+        public string Subscriber { get; set; }
         public string Name { get; set; }
         public string PayLoad { get; set; }
         public EventType Type { get; set; }

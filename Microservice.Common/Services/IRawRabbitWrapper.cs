@@ -11,6 +11,8 @@ namespace Microservice.Common.Services
     {
         Task PublishAsync<T>(T message = default(T), Guid globalMessageId = default(Guid), Action<IPublishConfigurationBuilder> configuration = null);
 
-        Task CreateEventAsync<T>(T message, Guid globalMessageId, EventType type = EventType.Publish);
+        Task SubscribedAsync<T>(T message, Guid globalMessageId, string subscriber = null, EventType type = EventType.Publish);
+
+        Task RegisterEventAsync(string name, string subscriber);
     }
 }
