@@ -18,10 +18,9 @@ namespace Microservice.B.EventHandlers
             _logger = logger;
         }
 
-        public Task HandleAsync(TestEvent e, IMessageContext context)
+        public async Task HandleAsync(TestEvent e, IMessageContext context)
         {
             _logger.LogInformation("taken event");
-            throw new NotImplementedException();
         }
     }
 }

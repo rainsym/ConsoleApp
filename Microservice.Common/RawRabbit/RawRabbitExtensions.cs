@@ -1,4 +1,6 @@
 ﻿using Microservice.Common.Exceptions;
+using Microservice.Common.Models;
+using Microservice.Common.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -36,6 +38,10 @@ namespace Microservice.Common.RawRabbit
                             _logger.LogInformation($"Subscribe on Event {e.GetType()} {JsonConvert.SerializeObject(e)}");
                         }
                         await handler.HandleAsync(e, context);
+
+                        //insert one row into EventTracker when finished
+                        var rawRabbitWrapper = scope.ServiceProvider.GetRequiredService<IRawRabbitWrapper>();
+                        await rawRabbitWrapper.CreateEventAsync(e, context.GlobalRequestId, EventType.Subscribe);
                     }
                     catch (Exception ex)
                     {

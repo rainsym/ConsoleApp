@@ -22,22 +22,25 @@ namespace Microservice.Common.Services
 
         public async Task PublishAsync<T>(T message = default(T), Guid globalMessageId = default(Guid), Action<IPublishConfigurationBuilder> configuration = null)
         {
-            //Task.Run(() =>
-            //{
+            globalMessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId;
+            await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
 
-            //});
+            CreateEventAsync(message, globalMessageId);
+        }
+
+        public async Task CreateEventAsync<T>(T message, Guid globalMessageId, EventType type = EventType.Publish)
+        {
             var eventTracker = new EventTracker
             {
-                MessageId = globalMessageId,
+                MessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId,
                 Name = message.GetType().ToString(),
-                PayLoad = JsonConvert.SerializeObject(message)
+                PayLoad = JsonConvert.SerializeObject(message),
+                Type = type
             };
 
             _context.Add(eventTracker);
 
-            await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
-
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

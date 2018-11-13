@@ -9,11 +9,13 @@ using Microservice.Common.RawRabbit;
 using Microservice.Common.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
@@ -40,6 +42,9 @@ namespace Microservice.B
 
             //config raw rabbit
             services.AddRawRabbit(cfg => cfg.SetBasePath(_contentRootPath).AddJsonFile("rabbitmq.json"));
+
+            // Try Add IHttpContextAccessor for get http context in db context
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddScoped<IRawRabbitWrapper, RawRabbitWrapper>();
             services.AddScoped<TestHandler, TestHandler>();

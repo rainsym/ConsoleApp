@@ -14,6 +14,16 @@ namespace Microservice.Common.Models
 
     public class EventTracker: BaseObject
     {
+        public EventTracker() { }
+
+        public EventTracker(Guid messageId, string name, string payLoad, EventType type)
+        {
+            MessageId = messageId;
+            Name = name;
+            PayLoad = payLoad;
+            Type = type;
+        }
+
         public int Id { get; set; }
         public Guid MessageId { get; set; }
         public string Name { get; set; }
