@@ -56,6 +56,8 @@ namespace Microservice.C
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.LogDeployDate();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -69,7 +71,9 @@ namespace Microservice.C
 
             app.UseMvc();
 
-            app.AddMessageHandler<TestEvent, TestHandler>("Microservice.C");
+            app.AddMessageHandler<TestEvent, TestHandler>(typeof(Startup).Namespace);
+
+            app.CheckEventRegistered(typeof(Startup).Namespace);
         }
     }
 }

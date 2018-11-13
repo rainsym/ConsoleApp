@@ -6,14 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RawRabbit;
-using RawRabbit.Common;
-using RawRabbit.Configuration.Publish;
-using RawRabbit.Configuration.Request;
-using RawRabbit.Configuration.Respond;
 using RawRabbit.Configuration.Subscribe;
-using RawRabbit.Context;
 using System;
-using System.Threading.Tasks;
 
 namespace Microservice.Common.RawRabbit
 {
