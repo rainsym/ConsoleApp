@@ -13,12 +13,14 @@ namespace Microservice.Common.RawRabbit
 {
     public static class RawRabbitExtensions
     {
-        public static void AddMessageHandler<TMessage, TMessageHandler>(this IApplicationBuilder app, string subscriber, Action<ISubscriptionConfigurationBuilder> configuration = null)
+        public static void AddMessageHandler<TMessage, TMessageHandler>(this IApplicationBuilder app, Action<ISubscriptionConfigurationBuilder> configuration = null)
                 where TMessage : IMessage
                 where TMessageHandler : IMessageHandle<TMessage>
         {
             var client = GetClient(app);
             var _logger = GetLogging<IMessage>(app);
+            //get namespace of service
+            var subscriber = typeof(TMessageHandler).Assembly.FullName.Split(',')[0];
 
             client.SubscribeAsync<TMessage>(async (e, context) =>
             {

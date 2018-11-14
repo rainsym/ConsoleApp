@@ -71,7 +71,7 @@ namespace Microservice.C
 
             app.UseMvc();
 
-            app.AddMessageHandler<TestEvent, TestHandler>(typeof(Startup).Namespace);
+            app.AddMessageHandler<TestEvent, TestHandler>();
 
             app.CheckEventRegistered(typeof(Startup).Namespace);
         }

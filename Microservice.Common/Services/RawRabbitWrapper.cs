@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microservice.Common.Models;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RawRabbit;
 using RawRabbit.Configuration.Publish;
@@ -13,11 +14,13 @@ namespace Microservice.Common.Services
     {
         private readonly EventDbContext _context;
         private readonly IBusClient _rawRabbitClient;
+        private readonly ILogger _logger;
 
-        public RawRabbitWrapper(EventDbContext context, IBusClient rawRabbitClient)
+        public RawRabbitWrapper(EventDbContext context, IBusClient rawRabbitClient, ILogger<RawRabbitWrapper> logger)
         {
             _context = context;
             _rawRabbitClient = rawRabbitClient;
+            _logger = logger;
         }
 
         public async Task PublishAsync<T>(T message = default(T), Guid globalMessageId = default(Guid), Action<IPublishConfigurationBuilder> configuration = null)
@@ -25,7 +28,10 @@ namespace Microservice.Common.Services
             globalMessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId;
             await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
 
-            SubscribedAsync(message, globalMessageId);
+            Task.Run(async () =>
+            {
+                await SubscribedAsync(message, globalMessageId);
+            });
         }
 
         public async Task RegisterEventAsync(string name, string subscriber)
@@ -42,18 +48,25 @@ namespace Microservice.Common.Services
 
         public async Task SubscribedAsync<T>(T message, Guid globalMessageId, string subscriber = null, EventType type = EventType.Publish)
         {
-            var eventTracker = new EventTracker
+            try
             {
-                MessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId,
-                Name = message.GetType().ToString(),
-                PayLoad = JsonConvert.SerializeObject(message),
-                Type = type,
-                Subscriber = subscriber
-            };
+                var eventTracker = new EventTracker
+                {
+                    MessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId,
+                    Name = message.GetType().ToString(),
+                    PayLoad = JsonConvert.SerializeObject(message),
+                    Type = type,
+                    Subscriber = subscriber
+                };
 
-            _context.Add(eventTracker);
+                _context.Add(eventTracker);
 
-            await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, $"SubscribedAsync ERROR");
+            }
         }
     }
 }

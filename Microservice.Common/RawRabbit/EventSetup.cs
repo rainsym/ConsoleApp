@@ -42,6 +42,8 @@ namespace Microservice.Common.RawRabbit
             var _env = app.ApplicationServices.GetService<IHostingEnvironment>();
             var versionTrackingFile = _env.ContentRootFileProvider.GetFileInfo(deployFileName);
             var date = versionTrackingFile.PhysicalPath.ReadJsonFile<DateTime>();
+
+            //delete old version
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var context = scope.ServiceProvider.GetRequiredService<EventDbContext>();
