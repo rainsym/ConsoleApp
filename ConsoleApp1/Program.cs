@@ -29,6 +29,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            
+
+            Console.ReadLine();
+        }
+
+        static void ConvertXMLToModel()
+        {
             var xml = @"<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
                            <SOAP-ENV:Header/>
                            <SOAP-ENV:Body>
@@ -41,8 +48,6 @@ namespace ConsoleApp1
             var stringwriter = new StringWriter();
             var xmlSerializer = new XmlSerializer(typeof(abc));
             var a = xmlSerializer.Deserialize(new StringReader(xml));
-
-            Console.ReadLine();
         }
 
         static void ResizeImage()

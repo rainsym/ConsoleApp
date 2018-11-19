@@ -21,5 +21,10 @@ namespace Microservice.Common
         {
             File.WriteAllText(path, JsonConvert.SerializeObject(model));
         }
+
+        public static bool IsNullOrEmpty(this string val)
+        {
+            return string.IsNullOrEmpty(val);
+        }
     }
 }

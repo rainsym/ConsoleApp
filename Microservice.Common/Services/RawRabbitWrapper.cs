@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microservice.Common.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RawRabbit;
@@ -28,10 +30,7 @@ namespace Microservice.Common.Services
             globalMessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId;
             await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
 
-            Task.Run(async () =>
-            {
-                await SubscribedAsync(message, globalMessageId);
-            });
+            await SubscribedAsync(message, globalMessageId);
         }
 
         public async Task RegisterEventAsync(string name, string subscriber)
@@ -48,13 +47,14 @@ namespace Microservice.Common.Services
 
         public async Task SubscribedAsync<T>(T message, Guid globalMessageId, string subscriber = null, EventType type = EventType.Publish)
         {
+            var payload = JsonConvert.SerializeObject(message);
             try
             {
                 var eventTracker = new EventTracker
                 {
                     MessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId,
                     Name = message.GetType().ToString(),
-                    PayLoad = JsonConvert.SerializeObject(message),
+                    PayLoad = payload,
                     Type = type,
                     Subscriber = subscriber
                 };
@@ -65,8 +65,14 @@ namespace Microservice.Common.Services
             }
             catch(Exception ex)
             {
-                _logger.LogError(ex, $"SubscribedAsync ERROR");
+                _logger.LogError(ex, $"SubscribedAsync ERROR {JsonConvert.SerializeObject(payload)}");
             }
+        }
+
+        public async Task<List<UnsubscribeEvent>> GetUnsubscribeEvents()
+        {
+            var query = _context.UnsubscribeEvents.FromSqlObject();
+            return await query.ToListAsync();
         }
     }
 }

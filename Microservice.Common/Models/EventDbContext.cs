@@ -1,4 +1,5 @@
 ﻿using Microservice.Common.Authentication;
+using Microservice.Common.CustomAttributes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -27,6 +29,7 @@ namespace Microservice.Common.Models
 
         public DbSet<EventTracker> EventTrackers { get; set; }
         public DbSet<RawRabbitEvent> RawRabbitEvents { get; set; }
+        public DbSet<UnsubscribeEvent> UnsubscribeEvents { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -118,6 +121,23 @@ namespace Microservice.Common.Models
                         entry.Property("ModifiedBy").CurrentValue = accountId;
                 }
             }
+        }
+    }
+
+    public static class ReportContextExtensions
+    {
+        public static IQueryable<TEntity> FromSqlObject<TEntity>(this DbSet<TEntity> set) where TEntity : class
+        {
+            var type = typeof(TEntity).GetTypeInfo();
+
+            var sqlObjectNameAttribute = type.GetCustomAttribute<SQLViewName>();
+
+            if (sqlObjectNameAttribute != null && !sqlObjectNameAttribute.SqlViewName.IsNullOrEmpty())
+            {
+                return set.FromSql("SELECT * FROM `" + sqlObjectNameAttribute.SqlViewName + "`");
+            }
+
+            return null;
         }
     }
 }

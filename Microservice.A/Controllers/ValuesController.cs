@@ -24,8 +24,6 @@ namespace Microservice.A.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            _rawRabbitClient.PublishAsync(new TestEvent { Id = 1, Name = "TestEvent" }).Wait();
-
             return new string[] { "value1", "value2" };
         }
 
@@ -33,6 +31,12 @@ namespace Microservice.A.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
+            //_rawRabbitClient.PublishAsync(new TestEvent { Id = 1, Name = "TestEvent" }).Wait();
+            for (int i = 0; i < 10; i++)
+            {
+                _rawRabbitClient.PublishAsync(new TestEvent { Id = i, Name = "TestEvent" }).Wait();
+            }
+
             return "value";
         }
 

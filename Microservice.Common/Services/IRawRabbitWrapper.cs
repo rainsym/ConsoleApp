@@ -14,5 +14,7 @@ namespace Microservice.Common.Services
         Task SubscribedAsync<T>(T message, Guid globalMessageId, string subscriber = null, EventType type = EventType.Publish);
 
         Task RegisterEventAsync(string name, string subscriber);
+
+        Task<List<UnsubscribeEvent>> GetUnsubscribeEvents();
     }
 }

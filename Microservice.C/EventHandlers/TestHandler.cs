@@ -20,7 +20,7 @@ namespace Microservice.C.EventHandlers
 
         public async Task HandleAsync(TestEvent e, IMessageContext context)
         {
-            _logger.LogInformation("C: taken event");
+            _logger.LogInformation($"C: {e.Id} taken event");
         }
     }
 }
