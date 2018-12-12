@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Nest;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Quartz;
+using Quartz.Impl;
+using Quartz.Logging;
 using RawRabbit.Context;
 using RawRabbit.Extensions.Client;
 using RawRabbit.Extensions.MessageSequence;
@@ -15,6 +18,7 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -29,75 +33,58 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+            var locations = new List<Location> { new Location { Code = "123", City = "HCM" }, new Location { Code = "456", City = "HN" } };
+            var loc = locations.FirstOrDefault(t => t.Code == "123");
+
+            loc.Code = "01";
+            loc.City = "Hồ chí minh";
+
+            Console.WriteLine(JsonConvert.SerializeObject(locations));
 
             Console.ReadLine();
         }
 
-        static void ConvertXMLToModel()
+        private static async Task RunProgramRunExample()
         {
-            var xml = @"<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'>
-                           <SOAP-ENV:Header/>
-                           <SOAP-ENV:Body>
-                              <ns5:createApplicationResponse xmlns:ns5='http://schema.applicationservices.ws.pro.finnone.nucleus.com' xmlns:ns10='http://www.nucleus.com/PersonInfo' xmlns:ns11='http://www.nucleus.com/FamilyDetail' xmlns:ns12='http://www.nucleus.com/EducationDetail' xmlns:ns13='http://www.nucleus.com/IdentificationDetail' xmlns:ns14='http://www.nucleus.com/OccupationInfo' xmlns:ns15='http://www.nucleus.com/Address' xmlns:ns16='http://www.nucleus.com/CommunicationDetail' xmlns:ns17='http://www.nucleus.com/schemas/integration/leadCreationService' xmlns:ns18='http://schema.document.ws.pro.finnone.nucleus.com' xmlns:ns19='http://www.nucleus.com/schemas/InterfaceStatusUpdateService' xmlns:ns2='http://cancellation.disbursal.schema.neo.nucleus.com' xmlns:ns20='http://schema.subsequent.disbursal.ws.pro.finnone.nucleus.com' xmlns:ns21='http://schema.author.status.ws.pro.finnone.nucleus.com' xmlns:ns22='http://www.nucleus.com/schemas/CASLoanApplicationInfoService' xmlns:ns3='http://schema.loancontract.ws.pro.finnone.nucleus.com' xmlns:ns4='http://cancellation.loan.schema.neo.nucleus.com' xmlns:ns6='http://schema.cas.common.base.ws.pro.finnone.nucleus.com' xmlns:ns7='http://www.nucleus.com/EligibleAmount' xmlns:ns8='http://www.nucleus.com/ConsumerDurable' xmlns:ns9='http://schema.base.ws.pro.finnone.nucleus.com'>
-                                 <ns5:applicationNumber>APPL00009054</ns5:applicationNumber>
-                                 <ns5:customerNumber>CUST00013285</ns5:customerNumber>
-                              </ns5:createApplicationResponse>
-                           </SOAP-ENV:Body>
-                        </SOAP-ENV:Envelope>";
-            var stringwriter = new StringWriter();
-            var xmlSerializer = new XmlSerializer(typeof(abc));
-            var a = xmlSerializer.Deserialize(new StringReader(xml));
-        }
-
-        static void ResizeImage()
-        {
-            var extention = Path.GetExtension(@"C:\Users\rainsym\Desktop\New folder\original_20181030_586a2ec464cc4e60b438836c8ed62c98.png");
-            var fileArray = File.ReadAllBytes(@"C:\Users\rainsym\Desktop\New folder\original_20181030_586a2ec464cc4e60b438836c8ed62c98.png");
-            ImageHelper.UploadImage(@"C:\Users\rainsym\Desktop\New folder\original_20181030_586a2ec464cc4e60b438836c8ed62c98.png", @"C:\Users\rainsym\Desktop\New folder\", $"resized{extention}");
-        }
-
-        [XmlRoot("Envelope", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
-        public partial class abc
-        {
-            [XmlElement("Body", Namespace = "http://schemas.xmlsoap.org/soap/envelope/")]
-            public body Body { get; set; }
-        }
-
-        public class body
-        {
-            [XmlElement("createApplicationResponse", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public createApplicationResponse createApplicationResponse { get; set; }
-        }
-
-        public class createApplicationResponse
-        {
-            [XmlElement("applicationNumber", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public string applicationNumber;
-
-            [XmlElement("customerNumber", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public string customerNumber;
-
-            [XmlElement("cifNumber", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public string cifNumber;
-
-            [XmlElement("collateralNumber", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public string collateralNumber;
-
-            [XmlElement("interestRate", Namespace = "http://schema.applicationservices.ws.pro.finnone.nucleus.com")]
-            public decimal interestRate;
-
-            public createApplicationResponse()
+            try
             {
+                // Grab the Scheduler instance from the Factory
+                NameValueCollection props = new NameValueCollection
+                {
+                    { "quartz.serializer.type", "binary" }
+                };
+                StdSchedulerFactory factory = new StdSchedulerFactory(props);
+                IScheduler scheduler = await factory.GetScheduler();
+
+                // and start it off
+                await scheduler.Start();
+
+                // define the job and tie it to our HelloJob class
+                IJobDetail job = JobBuilder.Create<HelloJob>()
+                    .WithIdentity("job1", "group1")
+                    .Build();
+
+                // Trigger the job to run now, and then repeat every 10 seconds
+                Quartz.ITrigger trigger = TriggerBuilder.Create()
+                    .WithIdentity("trigger1", "group1")
+                    .StartNow()
+                    .WithSimpleSchedule(x => x
+                        .WithIntervalInSeconds(10)
+                        .RepeatForever())
+                    .Build();
+
+                // Tell quartz to schedule the job using our trigger
+                await scheduler.ScheduleJob(job, trigger);
+
+                // some sleep to show what's happening
+                //await Task.Delay(TimeSpan.FromSeconds(60));
+
+                // and last shut down the scheduler when you are ready to close your program
+                //await scheduler.Shutdown();
             }
-
-            public createApplicationResponse(string applicationNumber, string customerNumber, string cifNumber, string collateralNumber, decimal interestRate)
+            catch (SchedulerException se)
             {
-                this.applicationNumber = applicationNumber;
-                this.customerNumber = customerNumber;
-                this.cifNumber = cifNumber;
-                this.collateralNumber = collateralNumber;
-                this.interestRate = interestRate;
+                Console.WriteLine(se);
             }
         }
 
@@ -291,65 +278,6 @@ namespace ConsoleApp1
             }
             path = "C:\\Users\\rainsym\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp1\\ConsoleApp1\\locations-updated.json";
             locations.WriteJsonFile(path);
-        }
-
-        public static string FormatFullName(string fullName)
-        {
-            if (string.IsNullOrEmpty(fullName))
-            {
-                return fullName;
-            }
-
-            fullName = ConvertToUnSign(fullName);
-            while (fullName.Length > 19)
-            {
-                var result = ShortenFullName(fullName);
-                if (!result.CanOptimize)
-                {
-                    break;
-                }
-                else
-                {
-                    fullName = result.FullName;
-                }
-            }
-
-            return fullName;
-        }
-
-        public static (string FullName, bool CanOptimize) ShortenFullName(string fullName)
-        {
-            //there are no middle name
-            var temp = fullName.Split(' ');
-            if (temp.Length <= 2)
-            {
-                return (fullName, false);
-            }
-
-            var lastName = temp[0];
-            var firstName = temp[temp.Length - 1];
-
-            var middles = temp.Skip(1).Take(temp.Length - 2).ToList();
-            var canOptimize = false;
-            for (var i = 0; i < middles.Count; i++)
-            {
-                if (middles[i].Length > 1)
-                {
-                    middles[i] = middles[i].Substring(0, 1);
-                    canOptimize = true;
-                    break;
-                }
-            }
-
-            if (!canOptimize)
-            {
-                return (fullName, false);
-            }
-
-            middles.Insert(0, lastName);
-            middles.Add(firstName);
-
-            return (string.Join(' ', middles), true);
         }
 
         public static TResponse ReadJsonFile<TResponse>(this string path)

@@ -16,6 +16,7 @@
     <PackageReference Include="NEST" Version="6.2.0" />
     <!--<PackageReference Include="PdfSharp" Version="1.32.3057" />-->
     <PackageReference Include="QRCoder" Version="1.2.8" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
     <PackageReference Include="RawRabbit" Version="1.10.4" />
     <PackageReference Include="RawRabbit.Extensions" Version="1.10.4" />
     <PackageReference Include="RawRabbit.vNext" Version="1.10.4" />
