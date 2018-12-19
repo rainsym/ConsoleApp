@@ -33,13 +33,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var locations = new List<Location> { new Location { Code = "123", City = "HCM" }, new Location { Code = "456", City = "HN" } };
-            var loc = locations.FirstOrDefault(t => t.Code == "123");
+            var path = @"C:\Users\rainsym\Desktop\Photos\abc.png";
+            var fileName = Path.GetFileName(path);
+            var img = File.ReadAllBytes(path);
+            ImageHelper.UploadImage(img, @"C:\Users\rainsym\Desktop\Photos", $"{DateTime.Now.Ticks}_{fileName}");
 
-            loc.Code = "01";
-            loc.City = "Hồ chí minh";
-
-            Console.WriteLine(JsonConvert.SerializeObject(locations));
+            ImageHelper.UploadImage(path, @"C:\Users\rainsym\Desktop\Photos", fileName);
+            Console.WriteLine("Done");
 
             Console.ReadLine();
         }
