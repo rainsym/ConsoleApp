@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -33,15 +34,41 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var path = @"C:\Users\rainsym\Desktop\Photos\abc.png";
-            var fileName = Path.GetFileName(path);
-            var img = File.ReadAllBytes(path);
-            ImageHelper.UploadImage(img, @"C:\Users\rainsym\Desktop\Photos", $"{DateTime.Now.Ticks}_{fileName}");
-
-            ImageHelper.UploadImage(path, @"C:\Users\rainsym\Desktop\Photos", fileName);
-            Console.WriteLine("Done");
+            UploadImage();
 
             Console.ReadLine();
+        }
+
+        private static void UploadImage()
+        {
+            var paths = new List<string>
+            {
+                @"C:\Users\rainsym\Desktop\New folder\original_20190103_f72289fa42cd48f8be6e96438911e7ae.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_354b018277424b4b80b6791891562969.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_556cb770a4b543e184e74b6db22eb828.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_587c153e00a94654b6347c43a6a0bf0b.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_900daadf6aaa4182b02a579d66f2b9e4.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_a7f10c5dbd8848d482f3bb59f2bfc63c.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_c5066002069b49d7ae7804496ffcca25.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_dadadf74f28f4b018624b370198f0ac3.png",
+                @"C:\Users\rainsym\Desktop\New folder\original_20190104_dd076ab315ad4115aff102baf2c0f142.png",
+            };
+            foreach (var path in paths)
+            {
+                var extention = Path.GetExtension(path);
+                var fileName = Path.GetFileName(path).Replace(extention, "");
+
+                var img = File.ReadAllBytes(path);
+                ImageHelper.UploadImage(img, @"C:\Users\rainsym\Desktop\New folder", $"{fileName}_resized{extention}");
+            }
+            Console.WriteLine("Done");
+        }
+
+        private static Dictionary<string, object> ConvertToDictionary(this object obj)
+        {
+            return obj.GetType()
+                    .GetProperties(BindingFlags.Instance | BindingFlags.Public)
+                    .ToDictionary(prop => prop.Name, prop => prop.GetValue(obj) == null ? "" : prop.GetValue(obj));
         }
 
         private static async Task RunProgramRunExample()

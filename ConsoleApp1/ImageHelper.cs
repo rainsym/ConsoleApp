@@ -23,7 +23,7 @@ namespace ConsoleApp1
                         Directory.CreateDirectory(directory);
                     }
 
-                    var dimenisions = GetDimensions(byteArray, image.Width, image.Height);
+                    var dimenisions = GetDimensions(image.Width, image.Height);
 
                     if (dimenisions.Width > 0 && dimenisions.Height > 0)
                     {
@@ -68,23 +68,61 @@ namespace ConsoleApp1
             var height = 0;
             if (0.2 < sizeInMb && sizeInMb < 1)
             {
-                width = (int)(originalWidth * 0.3);
-                height = (int)(originalHeight * 0.3);
+                width = (int)(originalWidth * 0.4);
+                height = (int)(originalHeight * 0.4);
             }
             else if (1 <= sizeInMb && sizeInMb <= 3)
-            {
-                width = originalWidth / 2;
-                height = originalHeight / 2;
-            }
-            else if (3 < sizeInMb && sizeInMb <= 5)
             {
                 width = originalWidth / 3;
                 height = originalHeight / 3;
             }
-            else if (5 < sizeInMb)
+            else if (3 < sizeInMb && sizeInMb <= 5)
             {
                 width = originalWidth / 4;
                 height = originalHeight / 4;
+            }
+            else if (5 < sizeInMb)
+            {
+                width = originalWidth / 5;
+                height = originalHeight / 5;
+            }
+
+            return (width, height);
+        }
+
+        private static (int Width, int Height) GetDimensions(int originalWidth, int originalHeight)
+        {
+            var width = 0;
+            var height = 0;
+            if (originalWidth < 500)
+            {
+                width = (int)(originalWidth * 0.3);
+                height = (int)(originalHeight * 0.3);
+            }
+            else if (500 <= originalWidth && originalWidth <= 1000)
+            {
+                width = originalWidth / 3;
+                height = originalHeight / 3;
+            }
+            else if (1000 < originalWidth && originalWidth <= 1500)
+            {
+                width = originalWidth / 4;
+                height = originalHeight / 4;
+            }
+            else if (1500 < originalWidth && originalWidth <= 2000)
+            {
+                width = originalWidth / 5;
+                height = originalHeight / 5;
+            }
+            else if (2000 < originalWidth && originalWidth <= 3000)
+            {
+                width = originalWidth / 7;
+                height = originalHeight / 7;
+            }
+            else if (3000 < originalWidth)
+            {
+                width = originalWidth / 8;
+                height = originalHeight / 8;
             }
 
             return (width, height);
