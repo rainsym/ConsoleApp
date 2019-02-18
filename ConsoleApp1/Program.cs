@@ -41,25 +41,36 @@ namespace ConsoleApp1
 
         private static void UploadImage()
         {
+            var rootPath = @"C:\Users\rainsym\Desktop\New folder\";
+            var directory = new DirectoryInfo(rootPath);
+            var files = directory.GetFiles().ToList();
             var paths = new List<string>
             {
-                @"C:\Users\rainsym\Desktop\New folder\original_20190103_f72289fa42cd48f8be6e96438911e7ae.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_354b018277424b4b80b6791891562969.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_556cb770a4b543e184e74b6db22eb828.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_587c153e00a94654b6347c43a6a0bf0b.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_900daadf6aaa4182b02a579d66f2b9e4.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_a7f10c5dbd8848d482f3bb59f2bfc63c.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_c5066002069b49d7ae7804496ffcca25.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_dadadf74f28f4b018624b370198f0ac3.png",
-                @"C:\Users\rainsym\Desktop\New folder\original_20190104_dd076ab315ad4115aff102baf2c0f142.png",
+                //$"{rootPath}original_20190214_4485158653ba496c8c0d9efcc5475421.jpg",
+                //$"{rootPath}20190117_8c438bb1e3384cfb83162c781d742020.jpg",
+                //$"{rootPath}20190117_3501482956c84ffbb7082fe2de8ecc0a.jpg",
+                //$"{rootPath}20190119_3d1d7da408d64eeb9ddedd319f7fa860.jpg",
+                //$"{rootPath}20190119_4a1198410c8848a38aa634917e0da1d8.jpg",
+                //$"{rootPath}20190119_8bc3ef9d4c484ffdb01de47f888758c2.jpg",
+                //$"{rootPath}20190119_90b81a2aa5eb4595a9e62372eeb4acb6.jpg",
+                //$"{rootPath}20190119_233ae14490374f75b18a85e2a14bbc9b.jpg",
+                //$"{rootPath}20190119_66986b79f8944951a43c4060932fde8a.jpg",
+                //$"{rootPath}20190119_294163e7a02a4622b7c1e32f64976ef4.jpg",
+                //$"{rootPath}20190119_a0ee5d391e9b4a73b373205039a92cef.jpg",
+                //$"{rootPath}20190119_afeaae689fbc476b83f35a0505569f93.jpg",
+                //$"{rootPath}20190119_b87857e46e024d12ab1a7a3aa0702686.jpg",
+                //$"{rootPath}20190119_cfca4bfbc5b6486cbbbe289923c5312f.jpg",
+                //$"{rootPath}20190119_f89cf2442e47496f991938c4a57a0957.jpg",
+                //$"{rootPath}20190124_d84f8afb16f54042b5d8892624fb8877.jpg",
             };
+            paths = files.Select(t => t.FullName).ToList();
             foreach (var path in paths)
             {
                 var extention = Path.GetExtension(path);
                 var fileName = Path.GetFileName(path).Replace(extention, "");
 
                 var img = File.ReadAllBytes(path);
-                ImageHelper.UploadImage(img, @"C:\Users\rainsym\Desktop\New folder", $"{fileName}_resized{extention}");
+                ImageHelper.UploadImage(img, rootPath, $"{fileName}_resized{extention}");
             }
             Console.WriteLine("Done");
         }
@@ -119,7 +130,7 @@ namespace ConsoleApp1
         {
             int lineCount = 0;
             int fileCount = 0;
-            DirectoryInfo d = new DirectoryInfo(@"C:\Users\rainsym\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\logs");//Assuming Test is your Folder
+            DirectoryInfo d = new DirectoryInfo(@"C:\Users\rainsym\Desktop\booking\");//Assuming Test is your Folder
             FileInfo[] Files = d.GetFiles("*.txt"); //Getting Text files
             foreach (FileInfo fileLog in Files)
             {
@@ -129,8 +140,10 @@ namespace ConsoleApp1
                 while ((line = file.ReadLine()) != null)
                 {
 
-                    if (line.Contains("SendEmailByTemplateThroughMandrillMsg:"))
+                    if (line.Contains("1de28a3f-c830-41ec-aa8f-ab923345984e"))
+                    {
                         lineCount++;
+                    }
                 }
 
                 file.Close();
@@ -146,14 +159,28 @@ namespace ConsoleApp1
             var client = new ElasticClient(settings);
             //client.CreateIndex("rv-local", c => c.Mappings(mp => mp.Map<RV>(m => m.AutoMap())));
 
-            //var path = "C:\\Users\\rainsym\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp1\\ConsoleApp1\\rv.json";
+            //var path = "D:\\Work\\Personal\\ConsoleApp\\ConsoleApp1\\rv.json";
             //var rvs = path.ReadJsonFile<List<RV>>();
 
             //var indexResponse = client.IndexMany(rvs);
+            //return;
 
             QueryContainer queryContainer = null;
             queryContainer &= new QueryContainerDescriptor<RV>().Match(c => c.Field(p => p.IsDeleted).Query(false.ToString().ToLower()));
             queryContainer &= new QueryContainerDescriptor<RV>().Match(c => c.Field(p => p.IsPublish).Query(true.ToString().ToLower()));
+
+            queryContainer &= new QueryContainerDescriptor<RV>()
+                                   .Bool(b =>
+                                       b.Must(m =>
+                                           m.Bool(mb =>
+                                               mb.Filter(ft =>
+                                                   ft.Nested(nt =>
+                                                       nt.Path(np => np.ListAddOns)
+                                                           .Query(qr =>
+                                                               qr.Bool(qrb =>
+                                                                   qrb.Must(qrm =>
+                                                                       qrm.QueryString(q => q.DefaultField(d => d.ListAddOns[0].Name).Query("delivery"))
+                                                                       ))))))));
 
             var scriptFields = new ScriptFields
                 {
@@ -214,18 +241,17 @@ namespace ConsoleApp1
             var searchResponse = client.Search<RV>(searchRequest);
 
             //var rvs = searchResponse.Documents;
-            var rvs = new List<RV>();
-            foreach (var hit in searchResponse.Hits)
-            {
-                var rv = hit.Source;
-                var field = hit.Fields["distance"];
-                if (field != null)
-                {
-                    rv.Distance = field.As<JArray>().Value<double>(0);
-                }
+            //foreach (var hit in searchResponse.Hits)
+            //{
+            //    var rv = hit.Source;
+            //    var field = hit.Fields["distance"];
+            //    if (field != null)
+            //    {
+            //        rv.Distance = field.As<JArray>().Value<double>(0);
+            //    }
 
-                rvs.Add(rv);
-            }
+            //    rvs.Add(rv);
+            //}
 
             return;
         }

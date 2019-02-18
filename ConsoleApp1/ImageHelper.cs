@@ -23,7 +23,7 @@ namespace ConsoleApp1
                         Directory.CreateDirectory(directory);
                     }
 
-                    var dimenisions = GetDimensions(image.Width, image.Height);
+                    var dimenisions = GetDimensions(image.Width, image.Height, byteArray);
 
                     if (dimenisions.Width > 0 && dimenisions.Height > 0)
                     {
@@ -90,19 +90,56 @@ namespace ConsoleApp1
             return (width, height);
         }
 
-        private static (int Width, int Height) GetDimensions(int originalWidth, int originalHeight)
+        private static (int Width, int Height) GetDimensions(int originalWidth, int originalHeight, byte[] byteArray = null)
         {
             var width = 0;
             var height = 0;
+            double sizeInMb = (double)byteArray.Length / (1024 * 1024);
             if (originalWidth < 500)
             {
-                width = (int)(originalWidth * 0.3);
-                height = (int)(originalHeight * 0.3);
+                width = originalWidth;
+                height = originalHeight;
             }
-            else if (500 <= originalWidth && originalWidth <= 1000)
+            else if (500 <= originalWidth && originalWidth <= 600)
             {
-                width = originalWidth / 3;
-                height = originalHeight / 3;
+                width = (int)(originalWidth / 1.2);
+                height = (int)(originalHeight / 1.2);
+            }
+            else if (600 < originalWidth && originalWidth <= 700)
+            {
+                width = (int)(originalWidth / 1.3);
+                height = (int)(originalHeight / 1.3);
+            }
+            else if (700 < originalWidth && originalWidth <= 800)
+            {
+                width = (int)(originalWidth / 1.5);
+                height = (int)(originalHeight / 1.5);
+            }
+            else if (800 < originalWidth && originalWidth <= 900)
+            {
+                if (sizeInMb <= 500)
+                {
+                    width = (int)(originalWidth / 1.5);
+                    height = (int)(originalHeight / 1.5);
+                }
+                else
+                {
+                    width = (int)(originalWidth / 2);
+                    height = (int)(originalHeight / 2);
+                }
+            }
+            else if (900 < originalWidth && originalWidth <= 1000)
+            {
+                if (sizeInMb <= 600)
+                {
+                    width = (int)(originalWidth / 2);
+                    height = (int)(originalHeight / 2);
+                }
+                else
+                {
+                    width = (int)(originalWidth / 3);
+                    height = (int)(originalHeight / 3);
+                }
             }
             else if (1000 < originalWidth && originalWidth <= 1500)
             {
@@ -121,8 +158,22 @@ namespace ConsoleApp1
             }
             else if (3000 < originalWidth)
             {
-                width = originalWidth / 8;
-                height = originalHeight / 8;
+                if (sizeInMb <= 2)
+                {
+                    width = originalWidth / 4;
+                    height = originalHeight / 4;
+                }
+                else if (2 < sizeInMb && sizeInMb < 3)
+                {
+                    width = originalWidth / 6;
+                    height = originalHeight / 6;
+                }
+                else
+                {
+                    width = originalWidth / 8;
+                    height = originalHeight / 8;
+
+                }
             }
 
             return (width, height);

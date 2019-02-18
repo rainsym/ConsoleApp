@@ -140,7 +140,12 @@
     "MinimumRentalDay": 7,
     "IsDeleted": false,
     "InsuranceProfileAdded": false,
-    "ListAddOns": null,
+    "ListAddOns": [
+      {
+        "Id": 1,
+        "Name": "DASHBOARD.ADDONS.DELIVERY_250"
+      }
+    ],
     "CreatedDate": "0001-01-01T00:00:00",
     "ModifiedDate": "0001-01-01T00:00:00",
     "IsRegisteredInAPersonalName": true,
@@ -295,7 +300,16 @@
     "MinimumRentalDay": 3,
     "IsDeleted": false,
     "InsuranceProfileAdded": false,
-    "ListAddOns": null,
+    "ListAddOns": [
+      {
+        "Id": 10,
+        "Name": "RV Delivery (within 100 kms)"
+      },
+      {
+        "Id": 11,
+        "Name": "hello"
+      }
+    ],
     "CreatedDate": "0001-01-01T00:00:00",
     "ModifiedDate": "0001-01-01T00:00:00",
     "IsRegisteredInAPersonalName": true,
@@ -498,7 +512,16 @@
     "MinimumRentalDay": 0,
     "IsDeleted": false,
     "InsuranceProfileAdded": false,
-    "ListAddOns": null,
+    "ListAddOns": [
+      {
+        "Id": 1,
+        "Name": "RV Delivery (within 150 kms)"
+      },
+      {
+        "Id": 2,
+        "Name": "hi rainsym"
+      }
+    ],
     "CreatedDate": "2018-02-13T00:27:57.9657517",
     "ModifiedDate": "2018-02-13T03:08:51.9065021",
     "IsRegisteredInAPersonalName": true,

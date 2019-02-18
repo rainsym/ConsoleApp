@@ -161,6 +161,7 @@ namespace ConsoleApp1
         public bool InsuranceProfileAdded { get; set; }
 
         //List add-on
+        [Nested]
         public List<AddOn> ListAddOns { get; set; }
         public DateTime CreatedDate { get; set; }
 
