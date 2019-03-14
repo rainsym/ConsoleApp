@@ -117,62 +117,75 @@ namespace ConsoleApp1
             }
             else if (800 < originalWidth && originalWidth <= 900)
             {
-                if (sizeInMb <= 500)
+                if (sizeInMb <= 0.5)
                 {
                     width = (int)(originalWidth / 1.5);
                     height = (int)(originalHeight / 1.5);
                 }
                 else
                 {
-                    width = (int)(originalWidth / 2);
-                    height = (int)(originalHeight / 2);
+                    width = originalWidth / 2;
+                    height = originalHeight / 2;
                 }
             }
             else if (900 < originalWidth && originalWidth <= 1000)
             {
-                if (sizeInMb <= 600)
+                if (sizeInMb <= 0.5)
                 {
-                    width = (int)(originalWidth / 2);
-                    height = (int)(originalHeight / 2);
+                    width = (int)(originalWidth / 1.5);
+                    height = (int)(originalHeight / 1.5);
+                }
+                else if (0.5 < sizeInMb && sizeInMb <= 0.7)
+                {
+                    width = originalWidth / 2;
+                    height = originalHeight / 2;
                 }
                 else
                 {
-                    width = (int)(originalWidth / 3);
-                    height = (int)(originalHeight / 3);
+                    width = originalWidth / 3;
+                    height = originalHeight / 3;
                 }
             }
-            else if (1000 < originalWidth && originalWidth <= 1500)
+            else
             {
-                width = originalWidth / 4;
-                height = originalHeight / 4;
-            }
-            else if (1500 < originalWidth && originalWidth <= 2000)
-            {
-                width = originalWidth / 5;
-                height = originalHeight / 5;
-            }
-            else if (2000 < originalWidth && originalWidth <= 3000)
-            {
-                width = originalWidth / 7;
-                height = originalHeight / 7;
-            }
-            else if (3000 < originalWidth)
-            {
-                if (sizeInMb <= 2)
+                if (sizeInMb <= 1)
+                {
+                    width = originalWidth / 2;
+                    height = originalHeight / 2;
+                }
+                else if (sizeInMb > 1 && sizeInMb <= 2)
+                {
+                    width = originalWidth / 3;
+                    height = originalHeight / 3;
+                }
+                else if (1000 < originalWidth && originalWidth <= 1500)
                 {
                     width = originalWidth / 4;
                     height = originalHeight / 4;
                 }
-                else if (2 < sizeInMb && sizeInMb < 3)
+                else if (1500 < originalWidth && originalWidth <= 2000)
                 {
-                    width = originalWidth / 6;
-                    height = originalHeight / 6;
+                    width = originalWidth / 5;
+                    height = originalHeight / 5;
                 }
-                else
+                else if (2000 < originalWidth && originalWidth <= 3000)
                 {
-                    width = originalWidth / 8;
-                    height = originalHeight / 8;
+                    width = originalWidth / 7;
+                    height = originalHeight / 7;
+                }
+                else if (3000 < originalWidth)
+                {
+                    if (2 < sizeInMb && sizeInMb < 3)
+                    {
+                        width = originalWidth / 6;
+                        height = originalHeight / 6;
+                    }
+                    else
+                    {
+                        width = originalWidth / 8;
+                        height = originalHeight / 8;
 
+                    }
                 }
             }
 

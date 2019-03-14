@@ -21,6 +21,8 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -34,7 +36,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            UploadImage();
+            SendMessageViaSocket();
+
+            Console.WriteLine("Done!");
 
             Console.ReadLine();
         }
@@ -46,9 +50,9 @@ namespace ConsoleApp1
             var files = directory.GetFiles().ToList();
             var paths = new List<string>
             {
-                //$"{rootPath}original_20190214_4485158653ba496c8c0d9efcc5475421.jpg",
-                //$"{rootPath}20190117_8c438bb1e3384cfb83162c781d742020.jpg",
-                //$"{rootPath}20190117_3501482956c84ffbb7082fe2de8ecc0a.jpg",
+                $"{rootPath}IMG_20190221_133711.jpg",
+                //$"{rootPath}IMG_20190221_133711.jpg",
+                //$"{rootPath}IMG_20190221_133704.jpg",
                 //$"{rootPath}20190119_3d1d7da408d64eeb9ddedd319f7fa860.jpg",
                 //$"{rootPath}20190119_4a1198410c8848a38aa634917e0da1d8.jpg",
                 //$"{rootPath}20190119_8bc3ef9d4c484ffdb01de47f888758c2.jpg",
@@ -63,7 +67,7 @@ namespace ConsoleApp1
                 //$"{rootPath}20190119_f89cf2442e47496f991938c4a57a0957.jpg",
                 //$"{rootPath}20190124_d84f8afb16f54042b5d8892624fb8877.jpg",
             };
-            paths = files.Select(t => t.FullName).ToList();
+            //paths = files.Select(t => t.FullName).ToList();
             foreach (var path in paths)
             {
                 var extention = Path.GetExtension(path);
@@ -157,13 +161,17 @@ namespace ConsoleApp1
         {
             var settings = new ConnectionSettings(new Uri("https://search-search-rvezy-sdxhps7oh6vgvoy7f3ctpxnh7q.us-east-2.es.amazonaws.com")).DefaultIndex("rv-local");
             var client = new ElasticClient(settings);
-            //client.CreateIndex("rv-local", c => c.Mappings(mp => mp.Map<RV>(m => m.AutoMap())));
 
-            //var path = "D:\\Work\\Personal\\ConsoleApp\\ConsoleApp1\\rv.json";
-            //var rvs = path.ReadJsonFile<List<RV>>();
-
-            //var indexResponse = client.IndexMany(rvs);
+            //client.DeleteIndexAsync("rv-local").Wait();
             //return;
+
+            client.CreateIndex("rv-local", c => c.Mappings(mp => mp.Map<RV>(m => m.AutoMap())));
+
+            var path = "D:\\Work\\Personal\\ConsoleApp\\ConsoleApp1\\rv.json";
+            var rvs = path.ReadJsonFile<List<RV>>();
+
+            var indexResponse = client.IndexMany(rvs);
+            return;
 
             QueryContainer queryContainer = null;
             queryContainer &= new QueryContainerDescriptor<RV>().Match(c => c.Field(p => p.IsDeleted).Query(false.ToString().ToLower()));
@@ -342,6 +350,15 @@ namespace ConsoleApp1
             }
         }
 
+        public static string ReadFile(this string path)
+        {
+            using (StreamReader r = new StreamReader(path))
+            {
+                var json = r.ReadToEnd();
+                return json;
+            }
+        }
+
         public static void WriteJsonFile(this object model, string path)
         {
             File.WriteAllText(path, JsonConvert.SerializeObject(model));
@@ -352,6 +369,68 @@ namespace ConsoleApp1
             Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
             string temp = s.Normalize(NormalizationForm.FormD);
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
+        }
+
+        public static void SendMessageViaSocket()
+        {
+            var path = "D:\\Work\\Personal\\ConsoleApp\\ConsoleApp1\\pcb.xml";
+            var pcb = path.ReadFile();
+            var message = $"APPL00000395~{pcb}~<EOF>";
+            TcpClient client = new TcpClient();
+
+            client.Client.Connect(IPAddress.Parse("172.27.6.20"), 9999);
+
+            client.Client.Send(Encoding.ASCII.GetBytes(message));
+
+            ReadDataLoop(client);
+        }
+
+        private static void ReadDataLoop(TcpClient client)
+        {
+            var flag = true;
+            while (flag)
+            {
+                if (!client.Connected)
+                    break;
+
+                var result = ReadData(client);
+                if (result.ToLower() == "ok")
+                {
+                    client.Close();
+                    flag = false;
+                    Console.WriteLine($"Result: {result}");
+                }
+            }
+        }
+
+        private static string ReadData(TcpClient client)
+        {
+            string retVal;
+            byte[] data = new byte[1024];
+
+            NetworkStream stream = client.GetStream();
+
+
+            byte[] myReadBuffer = new byte[1024];
+            StringBuilder myCompleteMessage = new StringBuilder();
+            int numberOfBytesRead = 0;
+
+
+            do
+            {
+                numberOfBytesRead = stream.Read(myReadBuffer, 0, myReadBuffer.Length);
+
+                myCompleteMessage.AppendFormat("{0}", Encoding.ASCII.GetString(myReadBuffer, 0, numberOfBytesRead));
+
+            }
+            while (stream.DataAvailable);
+
+
+
+            retVal = myCompleteMessage.ToString();
+
+
+            return retVal;
         }
     }
 }
