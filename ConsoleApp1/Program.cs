@@ -1,34 +1,17 @@
 ﻿using Elasticsearch.Net;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Nest;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Quartz;
 using Quartz.Impl;
-using Quartz.Logging;
-using RawRabbit.Context;
-using RawRabbit.Extensions.Client;
-using RawRabbit.Extensions.MessageSequence;
-using Serilog;
-using Serilog.Events;
-using Serilog.Sinks.MSSqlServer;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Processing;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace ConsoleApp1
 {
@@ -36,7 +19,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            SendMessageViaSocket();
+            
 
             Console.WriteLine("Done!");
 
@@ -369,68 +352,6 @@ namespace ConsoleApp1
             Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
             string temp = s.Normalize(NormalizationForm.FormD);
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
-        }
-
-        public static void SendMessageViaSocket()
-        {
-            var path = "D:\\Work\\Personal\\ConsoleApp\\ConsoleApp1\\pcb.xml";
-            var pcb = path.ReadFile();
-            var message = $"APPL00000395~{pcb}~<EOF>";
-            TcpClient client = new TcpClient();
-
-            client.Client.Connect(IPAddress.Parse("172.27.6.20"), 9999);
-
-            client.Client.Send(Encoding.ASCII.GetBytes(message));
-
-            ReadDataLoop(client);
-        }
-
-        private static void ReadDataLoop(TcpClient client)
-        {
-            var flag = true;
-            while (flag)
-            {
-                if (!client.Connected)
-                    break;
-
-                var result = ReadData(client);
-                if (result.ToLower() == "ok")
-                {
-                    client.Close();
-                    flag = false;
-                    Console.WriteLine($"Result: {result}");
-                }
-            }
-        }
-
-        private static string ReadData(TcpClient client)
-        {
-            string retVal;
-            byte[] data = new byte[1024];
-
-            NetworkStream stream = client.GetStream();
-
-
-            byte[] myReadBuffer = new byte[1024];
-            StringBuilder myCompleteMessage = new StringBuilder();
-            int numberOfBytesRead = 0;
-
-
-            do
-            {
-                numberOfBytesRead = stream.Read(myReadBuffer, 0, myReadBuffer.Length);
-
-                myCompleteMessage.AppendFormat("{0}", Encoding.ASCII.GetString(myReadBuffer, 0, numberOfBytesRead));
-
-            }
-            while (stream.DataAvailable);
-
-
-
-            retVal = myCompleteMessage.ToString();
-
-
-            return retVal;
         }
     }
 }
