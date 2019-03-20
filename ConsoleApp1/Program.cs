@@ -1,4 +1,5 @@
 ﻿using Elasticsearch.Net;
+using ImageMagick;
 using Nest;
 using Newtonsoft.Json;
 using Quartz;
@@ -19,7 +20,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+            UploadImage();
 
             Console.WriteLine("Done!");
 
@@ -33,7 +34,7 @@ namespace ConsoleApp1
             var files = directory.GetFiles().ToList();
             var paths = new List<string>
             {
-                $"{rootPath}IMG_20190221_133711.jpg",
+                //$"{rootPath}20190103_eb0596db11724580b91f152f7ff85354.jpg",
                 //$"{rootPath}IMG_20190221_133711.jpg",
                 //$"{rootPath}IMG_20190221_133704.jpg",
                 //$"{rootPath}20190119_3d1d7da408d64eeb9ddedd319f7fa860.jpg",
@@ -50,7 +51,7 @@ namespace ConsoleApp1
                 //$"{rootPath}20190119_f89cf2442e47496f991938c4a57a0957.jpg",
                 //$"{rootPath}20190124_d84f8afb16f54042b5d8892624fb8877.jpg",
             };
-            //paths = files.Select(t => t.FullName).ToList();
+            paths = files.Select(t => t.FullName).ToList();
             foreach (var path in paths)
             {
                 var extention = Path.GetExtension(path);
@@ -59,7 +60,6 @@ namespace ConsoleApp1
                 var img = File.ReadAllBytes(path);
                 ImageHelper.UploadImage(img, rootPath, $"{fileName}_resized{extention}");
             }
-            Console.WriteLine("Done");
         }
 
         private static Dictionary<string, object> ConvertToDictionary(this object obj)
