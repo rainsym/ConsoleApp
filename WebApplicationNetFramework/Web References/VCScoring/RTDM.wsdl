@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:typesns="http://www.sas.com/xml/schema/sas-svcs/rtdm-1.1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.sas.com/xml/schema/sas-svcs/rtdm-1.1/wsdl/" name="RTDM" targetNamespace="http://www.sas.com/xml/schema/sas-svcs/rtdm-1.1/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema xmlns:tns="http://www.sas.com/xml/schema/sas-svcs/rtdm-1.1" elementFormDefault="qualified" targetNamespace="http://www.sas.com/xml/schema/sas-svcs/rtdm-1.1" xmlns="http://www.w3.org/2001/XMLSchema">
+      <annotation>
+        <documentation>
+               Schema for SAS Decision Services 'CFCScoring' Event.
+               Generated on Mon, 15 Jan 2018 14:16:31 +0700.
+            </documentation>
+      </annotation>
+      <simpleType name="NameType">
+        <annotation>
+          <documentation>
+				Defines a standard format for names that include spaces.
+				e.g. file names
+			</documentation>
+        </annotation>
+        <restriction base="normalizedString">
+          <maxLength value="255" />
+          <pattern value="[^\\/:\*\?&quot;&lt;&gt;\|@&amp;#'~`\[\]\{\}]*" />
+        </restriction>
+      </simpleType>
+      <simpleType name="DataTypes">
+        <annotation>
+          <documentation>Primitive data types supported by rdm</documentation>
+        </annotation>
+        <restriction base="normalizedString">
+          <enumeration value="Int" />
+          <enumeration value="Boolean" />
+          <enumeration value="Float" />
+          <enumeration value="DateTime" />
+          <enumeration value="String" />
+          <enumeration value="Table" />
+        </restriction>
+      </simpleType>
+      <element name="String">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="StringArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" type="string" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Int">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="long" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="IntArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" type="long" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Float">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="double" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FloatArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" type="double" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Boolean">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="BooleanArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" type="boolean" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DateTime">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="dateTime" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DateTimeArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" type="dateTime" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <complexType name="TableDataType">
+        <annotation>
+          <documentation>
+				Only one of the following sequenced elements should be
+				included with element TableType.Row.Col below. This schema 
+				does not make this constraint visible for reasons previously 
+				noted.
+			  </documentation>
+        </annotation>
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" ref="tns:String" />
+          <element minOccurs="0" maxOccurs="1" ref="tns:Int" />
+          <element minOccurs="0" maxOccurs="1" ref="tns:Float" />
+          <element minOccurs="0" maxOccurs="1" ref="tns:Boolean" />
+          <element minOccurs="0" maxOccurs="1" ref="tns:DateTime" />
+        </sequence>
+      </complexType>
+      <complexType name="TableColumnType">
+        <attribute name="name" type="tns:NameType" use="required" />
+        <attribute name="type" type="tns:DataTypes" use="required" />
+      </complexType>
+      <complexType name="TableRowType">
+        <sequence>
+          <element minOccurs="1" maxOccurs="unbounded" name="Col" type="tns:TableDataType" />
+        </sequence>
+      </complexType>
+      <complexType name="TableType">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="Column" type="tns:TableColumnType" />
+          <element minOccurs="0" maxOccurs="unbounded" name="Row" type="tns:TableRowType" />
+        </sequence>
+      </complexType>
+      <element name="Table">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val" type="tns:TableType" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="TableArray">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" name="Val">
+              <complexType>
+                <sequence>
+                  <element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:TableType" />
+                </sequence>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <annotation>
+        <documentation>
+            Input-Type-Mapping:
+            [Application_Number:String],
+            [Request_Limit:Float],
+            [Application_ID:String],
+            [Product:String],
+            [Credit_Card_Type:String],
+            [Promo_Code:String],
+            [Age:String],
+            [Resident_Type:String],
+            [Marital_Status:String],
+            [Address_Type:String],
+            [State:String],
+            [City:String],
+            [Number_of_Dependents:Int],
+            [Number_of_Children:Int],
+            [Occupation_Type:String],
+            [Industry:String],
+            [Nature_of_Business:String],
+            [SubIndustry:String],
+            [Company_Type:String],
+            [Employment_type:String],
+            [Employment_Status:String],
+            [Employment_From:DateTime],
+            [Years_In_Job:Float],
+            [Employment_Location:String],
+            [Gross_Monthly_Income:Float],
+            [Missing_Information:String],
+            [Employer_Status:String],
+            [Employer_Establish_Day:String],
+            [Annual_Net_Income:Float],
+            [Annual_Gross_Income:Float],
+            [Income_From_Other_Sources:Float],
+            [Card_Limit:Float],
+            [Card_Expiry:String],
+            [PCB_Response_XML:String],
+            [Maximum_Worststatus:Int],
+            [Result:String],
+            [No_of_Contract:Int],
+            [Results_2:String],
+            [Amount_of_Unpaid_Due_Installments:Float],
+            [Overdue_Not_Paid_Amount:Float],
+            [Total_Current_Overdue_Amount:Float],
+            [Results_3:String],
+            [Number_of_Bank_Relationship:Float],
+            [No_of_Installment_Loans:Float],
+            [Total_Outstanding_Balances:Float],
+            [No_of_Credit_Cards:Float],
+            [Total_Credit_Limit:Float],
+            [Total_Oustanding_Balance_1:Float],
+            [No_Overdraft:Float],
+            [Total_Credit_Limit_1:Float],
+            [Total_Monthly_Payment_Excluding_Overdraft:Float]
+            </documentation>
+      </annotation>
+      <complexType name="DataItemType">
+        <choice>
+          <element ref="tns:String" />
+          <element ref="tns:Float" />
+          <element ref="tns:Int" />
+          <element ref="tns:DateTime" />
+        </choice>
+        <attribute name="name" use="required">
+          <simpleType>
+            <restriction base="string">
+              <enumeration value="Application_Number" />
+              <enumeration value="Request_Limit" />
+              <enumeration value="Application_ID" />
+              <enumeration value="Product" />
+              <enumeration value="Credit_Card_Type" />
+              <enumeration value="Promo_Code" />
+              <enumeration value="Age" />
+              <enumeration value="Resident_Type" />
+              <enumeration value="Marital_Status" />
+              <enumeration value="Address_Type" />
+              <enumeration value="State" />
+              <enumeration value="City" />
+              <enumeration value="Number_of_Dependents" />
+              <enumeration value="Number_of_Children" />
+              <enumeration value="Occupation_Type" />
+              <enumeration value="Industry" />
+              <enumeration value="Nature_of_Business" />
+              <enumeration value="SubIndustry" />
+              <enumeration value="Company_Type" />
+              <enumeration value="Employment_type" />
+              <enumeration value="Employment_Status" />
+              <enumeration value="Employment_From" />
+              <enumeration value="Years_In_Job" />
+              <enumeration value="Employment_Location" />
+              <enumeration value="Gross_Monthly_Income" />
+              <enumeration value="Missing_Information" />
+              <enumeration value="Employer_Status" />
+              <enumeration value="Employer_Establish_Day" />
+              <enumeration value="Annual_Net_Income" />
+              <enumeration value="Annual_Gross_Income" />
+              <enumeration value="Income_From_Other_Sources" />
+              <enumeration value="Card_Limit" />
+              <enumeration value="Card_Expiry" />
+              <enumeration value="PCB_Response_XML" />
+              <enumeration value="Maximum_Worststatus" />
+              <enumeration value="Result" />
+              <enumeration value="No_of_Contract" />
+              <enumeration value="Results_2" />
+              <enumeration value="Amount_of_Unpaid_Due_Installments" />
+              <enumeration value="Overdue_Not_Paid_Amount" />
+              <enumeration value="Total_Current_Overdue_Amount" />
+              <enumeration value="Results_3" />
+              <enumeration value="Number_of_Bank_Relationship" />
+              <enumeration value="No_of_Installment_Loans" />
+              <enumeration value="Total_Outstanding_Balances" />
+              <enumeration value="No_of_Credit_Cards" />
+              <enumeration value="Total_Credit_Limit" />
+              <enumeration value="Total_Oustanding_Balance_1" />
+              <enumeration value="No_Overdraft" />
+              <enumeration value="Total_Credit_Limit_1" />
+              <enumeration value="Total_Monthly_Payment_Excluding_Overdraft" />
+            </restriction>
+          </simpleType>
+        </attribute>
+      </complexType>
+      <annotation>
+        <documentation>
+            Output-Type-Mapping:
+            [Application_Number:String],
+            [Score:Float],
+            [Score_Category:String],
+            [Results:String],
+            [Scheme_Code:String],
+            [Score_Credit_Limit:Float],
+            [STATUSCODE:Int],
+            [STATUSDESC:String]
+            </documentation>
+      </annotation>
+      <complexType name="DataItemResponseType">
+        <choice>
+          <element ref="tns:String" />
+          <element ref="tns:Float" />
+          <element ref="tns:Int" />
+        </choice>
+        <attribute name="name" use="required">
+          <simpleType>
+            <restriction base="string">
+              <enumeration value="Application_Number" />
+              <enumeration value="Score" />
+              <enumeration value="Score_Category" />
+              <enumeration value="Results" />
+              <enumeration value="Scheme_Code" />
+              <enumeration value="Score_Credit_Limit" />
+              <enumeration value="STATUSCODE" />
+              <enumeration value="STATUSDESC" />
+            </restriction>
+          </simpleType>
+        </attribute>
+      </complexType>
+      <complexType name="HeaderType">
+        <sequence>
+          <element minOccurs="0" name="Identity" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="ClientTimeZoneID" type="normalizedString" />
+        </sequence>
+      </complexType>
+      <complexType name="HeaderResponseType">
+        <sequence>
+          <element minOccurs="0" name="CorrelationId" type="string" />
+          <element name="StartTime" type="string" />
+          <element name="CompletionTime" type="string" />
+        </sequence>
+      </complexType>
+      <complexType name="BodyType">
+        <sequence>
+          <element minOccurs="51" maxOccurs="51" name="Data" type="tns:DataItemType" />
+        </sequence>
+      </complexType>
+      <complexType name="BodyResponseType">
+        <sequence>
+          <element minOccurs="8" maxOccurs="8" name="Data" type="tns:DataItemResponseType" />
+        </sequence>
+      </complexType>
+      <complexType name="EventType">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="Header" type="tns:HeaderType" />
+          <element name="Body" type="tns:BodyType" />
+        </sequence>
+        <attribute fixed="CFCScoring" name="name" type="string" use="required" />
+      </complexType>
+      <complexType name="EventResponseType">
+        <sequence>
+          <element name="Header" type="tns:HeaderResponseType" />
+          <element name="Body" type="tns:BodyResponseType" />
+        </sequence>
+        <attribute fixed="CFCScoring" name="name" type="string" use="required" />
+      </complexType>
+      <element name="Event" type="tns:EventType" />
+      <element name="EventResponse" type="tns:EventResponseType" />
+      <element name="FaultException" type="tns:FaultException" />
+      <complexType name="FaultException">
+        <sequence>
+          <element minOccurs="0" maxOccurs="unbounded" name="ExceptionMessage" type="string" />
+        </sequence>
+      </complexType>
+    </schema>
+  </types>
+  <message name="eventRequest">
+    <part name="parameters" element="typesns:Event" />
+  </message>
+  <message name="eventResponse">
+    <part name="parameters" element="typesns:EventResponse" />
+  </message>
+  <message name="FaultException">
+    <part name="detail" element="typesns:FaultException" />
+  </message>
+  <portType name="EventPortType">
+    <operation name="Event">
+      <input message="tns:eventRequest" />
+      <output message="tns:eventResponse" />
+      <fault name="fault" message="tns:FaultException" />
+    </operation>
+  </portType>
+  <binding name="EventSoapBinding" type="tns:EventPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="Event">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="fault">
+        <soap:fault use="literal" name="fault" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="EventService">
+    <port name="EventPort" binding="tns:EventSoapBinding">
+      <soap:address location="https://sasappvaartest01.vietcredit.com.vn:8343/RTDM/Event" />
+    </port>
+  </service>
+</definitions>
