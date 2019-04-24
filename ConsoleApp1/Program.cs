@@ -13,6 +13,8 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace ConsoleApp1
 {
@@ -20,7 +22,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            UploadImage();
+            ConvertXML();
 
             Console.WriteLine("Done!");
 
@@ -62,6 +64,20 @@ namespace ConsoleApp1
             }
         }
 
+        static void ConvertXML()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml("<MGResponse xmlns=\"urn: crif - messagegateway:2006 - 08 - 23\"><RI_Req_Output xmlns=\"\"><Subject /><Error><Category>2</Category><Code>212</Code><Description>FIELD LENGTH IS NOT CORRECT</Description><Value>'APPL00012608_636893932576230092'</Value></Error></RI_Req_Output></MGResponse>");
+
+            string xpath = "MGResponse";
+            var nodes = xmlDoc.SelectNodes(xpath);
+
+            foreach (XmlNode childrenNode in nodes)
+            {
+                Console.WriteLine(childrenNode.SelectSingleNode("//Description").Value);
+            }
+        }
+
         private static Dictionary<string, object> ConvertToDictionary(this object obj)
         {
             return obj.GetType()
@@ -69,75 +85,30 @@ namespace ConsoleApp1
                     .ToDictionary(prop => prop.Name, prop => prop.GetValue(obj) == null ? "" : prop.GetValue(obj));
         }
 
-        private static async Task RunProgramRunExample()
-        {
-            try
-            {
-                // Grab the Scheduler instance from the Factory
-                NameValueCollection props = new NameValueCollection
-                {
-                    { "quartz.serializer.type", "binary" }
-                };
-                StdSchedulerFactory factory = new StdSchedulerFactory(props);
-                IScheduler scheduler = await factory.GetScheduler();
-
-                // and start it off
-                await scheduler.Start();
-
-                // define the job and tie it to our HelloJob class
-                IJobDetail job = JobBuilder.Create<HelloJob>()
-                    .WithIdentity("job1", "group1")
-                    .Build();
-
-                // Trigger the job to run now, and then repeat every 10 seconds
-                Quartz.ITrigger trigger = TriggerBuilder.Create()
-                    .WithIdentity("trigger1", "group1")
-                    .StartNow()
-                    .WithSimpleSchedule(x => x
-                        .WithIntervalInSeconds(10)
-                        .RepeatForever())
-                    .Build();
-
-                // Tell quartz to schedule the job using our trigger
-                await scheduler.ScheduleJob(job, trigger);
-
-                // some sleep to show what's happening
-                //await Task.Delay(TimeSpan.FromSeconds(60));
-
-                // and last shut down the scheduler when you are ready to close your program
-                //await scheduler.Shutdown();
-            }
-            catch (SchedulerException se)
-            {
-                Console.WriteLine(se);
-            }
-        }
-
         static void CountLog()
         {
-            int lineCount = 0;
-            int fileCount = 0;
-            DirectoryInfo d = new DirectoryInfo(@"C:\Users\rainsym\Desktop\booking\");//Assuming Test is your Folder
-            FileInfo[] Files = d.GetFiles("*.txt"); //Getting Text files
+            var result = new List<string>();
+            DirectoryInfo d = new DirectoryInfo(@"C:\Users\rainsym\Desktop\logs\");//Assuming Test is your Folder
+            FileInfo[] Files = d.GetFiles("*.log"); //Getting Text files
             foreach (FileInfo fileLog in Files)
             {
-                fileCount++;
                 string line;
-                System.IO.StreamReader file = new System.IO.StreamReader(fileLog.FullName);
+                var file = new StreamReader(fileLog.FullName);
+                var fileName = fileLog.Name;
                 while ((line = file.ReadLine()) != null)
                 {
 
-                    if (line.Contains("1de28a3f-c830-41ec-aa8f-ab923345984e"))
+                    //if (line.Contains("Cron job - response:") && line.Contains("\"Id\":\"APPL00067549\",\"Status\":2") && !result.Contains(fileName))
+                    if (line.Contains("48E19222-BC9F-4EFC-CF2C-08D6BD614D0E/documents") && !result.Contains(fileName))
                     {
-                        lineCount++;
+                        result.Add(fileName);
                     }
                 }
 
                 file.Close();
             }
 
-            Console.WriteLine($"File Count: #{fileCount}");
-            Console.WriteLine($"Line Count: #{lineCount}");
+            Console.WriteLine($"Result: {string.Join(", ", result)}");
         }
 
         public static void ElasticSearch()

@@ -277,6 +277,11 @@ namespace ConsoleApp1
         public double lon { get; set; }
     }
 
+    public class PcbResult
+    {
+
+    }
+
     public enum InsuranceProfileState
     {
         InProcessByRVezyTeam,
