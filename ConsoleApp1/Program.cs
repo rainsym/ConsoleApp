@@ -13,6 +13,8 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace ConsoleApp1
 {
@@ -62,55 +64,25 @@ namespace ConsoleApp1
             }
         }
 
+        static void ConvertXML()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.LoadXml("<MGResponse xmlns=\"urn: crif - messagegateway:2006 - 08 - 23\"><RI_Req_Output xmlns=\"\"><Subject /><Error><Category>2</Category><Code>212</Code><Description>FIELD LENGTH IS NOT CORRECT</Description><Value>'APPL00012608_636893932576230092'</Value></Error></RI_Req_Output></MGResponse>");
+
+            string xpath = "MGResponse";
+            var nodes = xmlDoc.SelectNodes(xpath);
+
+            foreach (XmlNode childrenNode in nodes)
+            {
+                Console.WriteLine(childrenNode.SelectSingleNode("//Description").Value);
+            }
+        }
+
         private static Dictionary<string, object> ConvertToDictionary(this object obj)
         {
             return obj.GetType()
                     .GetProperties(BindingFlags.Instance | BindingFlags.Public)
                     .ToDictionary(prop => prop.Name, prop => prop.GetValue(obj) == null ? "" : prop.GetValue(obj));
-        }
-
-        private static async Task RunProgramRunExample()
-        {
-            try
-            {
-                // Grab the Scheduler instance from the Factory
-                NameValueCollection props = new NameValueCollection
-                {
-                    { "quartz.serializer.type", "binary" }
-                };
-                StdSchedulerFactory factory = new StdSchedulerFactory(props);
-                IScheduler scheduler = await factory.GetScheduler();
-
-                // and start it off
-                await scheduler.Start();
-
-                // define the job and tie it to our HelloJob class
-                IJobDetail job = JobBuilder.Create<HelloJob>()
-                    .WithIdentity("job1", "group1")
-                    .Build();
-
-                // Trigger the job to run now, and then repeat every 10 seconds
-                Quartz.ITrigger trigger = TriggerBuilder.Create()
-                    .WithIdentity("trigger1", "group1")
-                    .StartNow()
-                    .WithSimpleSchedule(x => x
-                        .WithIntervalInSeconds(10)
-                        .RepeatForever())
-                    .Build();
-
-                // Tell quartz to schedule the job using our trigger
-                await scheduler.ScheduleJob(job, trigger);
-
-                // some sleep to show what's happening
-                //await Task.Delay(TimeSpan.FromSeconds(60));
-
-                // and last shut down the scheduler when you are ready to close your program
-                //await scheduler.Shutdown();
-            }
-            catch (SchedulerException se)
-            {
-                Console.WriteLine(se);
-            }
         }
 
         static void CountLog()
@@ -121,7 +93,8 @@ namespace ConsoleApp1
             foreach (FileInfo fileLog in Files)
             {
                 string line;
-                System.IO.StreamReader file = new System.IO.StreamReader(fileLog.FullName);
+                var file = new StreamReader(fileLog.FullName);
+                var fileName = fileLog.Name;
                 while ((line = file.ReadLine()) != null)
                 {
 
