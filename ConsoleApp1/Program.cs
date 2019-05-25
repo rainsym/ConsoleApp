@@ -20,7 +20,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            UploadImage();
+            CountLog();
 
             Console.WriteLine("Done!");
 
@@ -115,29 +115,66 @@ namespace ConsoleApp1
 
         static void CountLog()
         {
-            int lineCount = 0;
-            int fileCount = 0;
-            DirectoryInfo d = new DirectoryInfo(@"C:\Users\rainsym\Desktop\booking\");//Assuming Test is your Folder
+            var files = new List<LogFile>();
+            DirectoryInfo d = new DirectoryInfo(@"D:\This PC\Desktop\drive-download-20190525T021738Z-001\");//Assuming Test is your Folder
             FileInfo[] Files = d.GetFiles("*.txt"); //Getting Text files
             foreach (FileInfo fileLog in Files)
             {
-                fileCount++;
                 string line;
                 System.IO.StreamReader file = new System.IO.StreamReader(fileLog.FullName);
                 while ((line = file.ReadLine()) != null)
                 {
 
-                    if (line.Contains("1de28a3f-c830-41ec-aa8f-ab923345984e"))
+                    if (line.Contains("URL:"))
                     {
-                        lineCount++;
+                        var temp = files.FirstOrDefault(t => t.Name == line);
+                        if (temp != null) temp.Count++;
+                        else if (line.Contains("booking-documents/of-booking"))
+                        {
+                            GetLine(files, line, "booking-documents/of-booking");
+                        }
+                        else if (line.Contains("generate-download-url"))
+                        {
+                            GetLine(files, line, "generate-download-url");
+                        }
+                        else if (line.Contains("/threadId"))
+                        {
+                            GetLine(files, line, "/threadId");
+                        }
+                        else files.Add(new LogFile { Name = line, Count = 1 });
+                    }
+                    else if(line.Contains("Subscribe on Event"))
+                    {
+                        line = line.Substring(line.IndexOf('S'));
+                        var ev = line.Replace("Subscribe on Event", "").Trim().Split(' ')[0];
+                        var temp = files.FirstOrDefault(t => t.Name.Replace("Subscribe on Event ", "") == ev);
+                        if (temp != null) temp.Count++;
+                        else files.Add(new LogFile { Name = $"Subscribe on Event {ev}", Count = 1 });
+                    }
+                    else if (line.Contains("RabbitMQ - Request type:"))
+                    {
+                        var temp = files.FirstOrDefault(t => t.Name == line);
+                        if (temp != null) temp.Count++;
+                        else files.Add(new LogFile { Name = line, Count = 1 });
                     }
                 }
 
                 file.Close();
             }
 
-            Console.WriteLine($"File Count: #{fileCount}");
-            Console.WriteLine($"Line Count: #{lineCount}");
+            files = files.OrderByDescending(t => t.Count).ToList();
+            Console.WriteLine($"Total request: {files.Sum(s => s.Count)}");
+            foreach (var item in files)
+            {
+                Console.WriteLine($"{item.Count} - {item.Name}");
+            }
+        }
+
+        private static void GetLine(List<LogFile> files, string line, string text)
+        {
+            var temp = files.FirstOrDefault(t => t.Name.Contains(text));
+            if (temp != null) temp.Count++;
+            else files.Add(new LogFile { Name = line, Count = 1 });
         }
 
         public static void ElasticSearch()
@@ -353,5 +390,11 @@ namespace ConsoleApp1
             string temp = s.Normalize(NormalizationForm.FormD);
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         }
+    }
+
+    public class LogFile
+    {
+        public string Name { get; set; }
+        public int Count { get; set; }
     }
 }
