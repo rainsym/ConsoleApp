@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microservice.Common.Exceptions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+//using NLog;
 
 namespace Microservice.B.Controllers
 {
@@ -10,10 +13,23 @@ namespace Microservice.B.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ILogger _logger;
+        //private static Logger logger = LogManager.GetCurrentClassLogger();
+
+        public ValuesController(ILogger<ValuesController> logger)
+        {
+            _logger = logger;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            //logger.Info("Test information");
+            _logger.LogInformation("---------------1-------------------");
+            _logger.LogWarning("---------------2-------------------");
+            _logger.LogError("---------------3-------------------");
+            //throw new Exception("This is message");
             return new string[] { "value1", "value2" };
         }
 

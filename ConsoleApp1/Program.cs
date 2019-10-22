@@ -1,5 +1,6 @@
 ﻿using Elasticsearch.Net;
 using ImageMagick;
+using Itenso.TimePeriod;
 using Nest;
 using Newtonsoft.Json;
 using Quartz;
@@ -22,7 +23,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            CountLog();
+            //CountLog();
 
             Console.WriteLine("Done!");
 

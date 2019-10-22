@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microservice.A.VietCredit;
+using Microservice.Common.Exceptions;
 using Microservice.Common.Models.Events;
 using Microservice.Common.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -28,8 +29,11 @@ namespace Microservice.A.Controllers
         [HttpGet]
         public ActionResult<IActionResult> Get()
         {
-            var checkScoring = new CheckScoring();
-            checkScoring.Run(_logger);
+            _logger.LogInformation("Test log information");
+            _logger.LogWarning("Test log warning");
+            _logger.LogError("Test log error");
+            //var checkScoring = new CheckScoring();
+            //checkScoring.Run(_logger);
             return Ok();
         }
     }

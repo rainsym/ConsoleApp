@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Elmah.Io.Extensions.Logging;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System;
 
 namespace Microservice.A
 {
@@ -19,6 +15,15 @@ namespace Microservice.A
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .ConfigureLogging((ctx, logging) =>
+                {
+                    logging.AddElmahIo(options =>
+                    {
+                        options.ApiKey = "7fd051f574ba4906811dfeaf6a4eba48";
+                        options.LogId = new Guid("e6fd62d7-292a-4fc3-b723-a89d66d53861");
+                    });
+                    logging.AddFilter<ElmahIoLoggerProvider>(null, LogLevel.Information);
+                });
     }
 }
