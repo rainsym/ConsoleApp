@@ -18,7 +18,7 @@ namespace Microservice.Common.RawRabbit
                 where TMessageHandler : IMessageHandle<TMessage>
         {
             var client = GetClient(app);
-            var _logger = GetLogging<IMessage>(app);
+            var _logger = app.GetLogging<IMessage>();
             //get namespace of service
             var subscriber = typeof(TMessageHandler).Assembly.FullName.Split(',')[0];
 
@@ -70,16 +70,6 @@ namespace Microservice.Common.RawRabbit
             }
 
             return client;
-        }
-
-        private static ILogger<TResponse> GetLogging<TResponse>(IApplicationBuilder app)
-        {
-            //if you want to write log the response, please add logging into your service in the starup.cs (services.AddLogging())
-            var loggingFactory = app.ApplicationServices.GetService<ILoggerFactory>();
-            ILogger<TResponse> logger = null;
-            logger = loggingFactory != null ? loggingFactory.CreateLogger<TResponse>() : null;
-
-            return logger;
         }
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microservice.C.EventHandlers;
+﻿using Microservice.C.EventHandlers;
+using Microservice.Common;
+using Microservice.Common.EventHandlers;
 using Microservice.Common.Models;
 using Microservice.Common.Models.Events;
 using Microservice.Common.RawRabbit;
@@ -15,8 +13,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
 using RawRabbit.Extensions.Client;
 
@@ -47,6 +43,9 @@ namespace Microservice.C
 
             services.AddScoped<IRawRabbitWrapper, RawRabbitWrapper>();
             services.AddScoped<TestHandler, TestHandler>();
+            services.AddScoped<FirestoreHandler, FirestoreHandler>();
+            services.AddScoped<FirestoreService>();
+            services.AddScoped<IOrderService, OrderService>();
 
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
@@ -72,6 +71,13 @@ namespace Microservice.C
             app.UseMvc();
 
             app.AddMessageHandler<TestEvent, TestHandler>();
+
+            var _firestoreDb = CommonFunctions.InitiFirestore(env);
+            var query = _firestoreDb.Collection(ConstantServices.OrderCollection)
+                                    //.WhereEqualTo("Status", (int)OrderStatus.New)
+                                    .WhereEqualTo(ConstantServices.ServiceC, false);
+            var eve = new ListenNewOrder { ServeName = ConstantServices.ServiceC, CollectionName = ConstantServices.OrderCollection };
+            app.AddFirestoreHandler<ListenNewOrder, FirestoreHandler>(eve, query);
 
             app.CheckEventRegistered(typeof(Startup).Namespace);
         }

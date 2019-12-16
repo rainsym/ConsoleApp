@@ -44,6 +44,8 @@ namespace Microservice.A
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddScoped<IRawRabbitWrapper, RawRabbitWrapper>();
+            services.AddScoped<FirestoreService>();
+            services.AddScoped<IOrderService, OrderService>();
 
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)

@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Elmah.Io.AspNetCore" Version="3.7.86" />
     <PackageReference Include="Elmah.Io.Extensions.Logging" Version="3.4.38" />
+    <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
@@ -32,6 +33,10 @@
     <None Update="nlog.Development.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extentions\" />
   </ItemGroup>
 
 </Project>

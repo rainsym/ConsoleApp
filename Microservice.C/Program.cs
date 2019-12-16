@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microservice.Common;
+using Microservice.Common.Models;
+using Microservice.Common.Services;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using NLog.Web;
 
 namespace Microservice.C
 {
@@ -14,11 +12,25 @@ namespace Microservice.C
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args);
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var env = services.GetService<IHostingEnvironment>();
+                var logger = NLogBuilder.ConfigureNLog($"nlog.{env.EnvironmentName}.config").GetCurrentClassLogger();
+            }
+            host.Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHost CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                //.ConfigureLogging(logging =>
+                //{
+                //    logging.ClearProviders();
+                //    logging.SetMinimumLevel(LogLevel.Information);
+                //})
+                //.UseNLog()
+                .Build();
     }
 }

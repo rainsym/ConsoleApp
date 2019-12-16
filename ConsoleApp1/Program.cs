@@ -5,6 +5,8 @@ using Nest;
 using Newtonsoft.Json;
 using Quartz;
 using Quartz.Impl;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -23,7 +25,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //CountLog();
+            //var factory = new ConnectionFactory() { HostName = "localhost" };
+            //var connection = factory.CreateConnection();
+            //var channel = connection.CreateModel();
+            //channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+            
 
             Console.WriteLine("Done!");
 
@@ -363,6 +369,39 @@ namespace ConsoleApp1
             Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
             string temp = s.Normalize(NormalizationForm.FormD);
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
+        }
+
+        public static void PubRabbitMQ(IModel channel)
+        {
+            string message = "Hello World!";
+            var body = Encoding.UTF8.GetBytes(message);
+
+            channel.BasicPublish(exchange: "logs",
+                                 routingKey: "",
+                                 basicProperties: null,
+                                 body: body);
+            Console.WriteLine(" [x] Sent {0}", message);
+        }
+
+        public static void SubRabbitMQ(IModel channel)
+        {
+            var queueName = channel.QueueDeclare().QueueName;
+            channel.QueueBind(queue: queueName,
+                              exchange: "logs",
+                              routingKey: "");
+
+            Console.WriteLine($"[{queueName}] Waiting for logs.");
+
+            var consumer = new EventingBasicConsumer(channel);
+            consumer.Received += (model, ea) =>
+            {
+                var receiverBody = ea.Body;
+                var receiverMessage = Encoding.UTF8.GetString(receiverBody);
+                Console.WriteLine($"[{queueName}] Received {0}", receiverMessage);
+            };
+            channel.BasicConsume(queue: queueName,
+                                 autoAck: true,
+                                 consumer: consumer);
         }
     }
 

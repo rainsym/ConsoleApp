@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microservice.B.EventHandlers;
+﻿using Microservice.B.EventHandlers;
+using Microservice.Common;
+using Microservice.Common.EventHandlers;
 using Microservice.Common.Models;
 using Microservice.Common.Models.Events;
 using Microservice.Common.RawRabbit;
@@ -10,14 +8,11 @@ using Microservice.Common.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
 using RawRabbit.Extensions.Client;
 
@@ -48,6 +43,9 @@ namespace Microservice.B
 
             services.AddScoped<IRawRabbitWrapper, RawRabbitWrapper>();
             services.AddScoped<TestHandler, TestHandler>();
+            services.AddScoped<FirestoreHandler, FirestoreHandler>();
+            services.AddScoped<FirestoreService>();
+            services.AddScoped<IOrderService, OrderService>();
 
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
@@ -73,6 +71,13 @@ namespace Microservice.B
             app.UseMvc();
 
             app.AddMessageHandler<TestEvent, TestHandler>();
+
+            var _firestoreDb = CommonFunctions.InitiFirestore(env);
+            var query = _firestoreDb.Collection(ConstantServices.OrderCollection)
+                                    //.WhereEqualTo("Status", (int)OrderStatus.New)
+                                    .WhereEqualTo(ConstantServices.ServiceB, false);
+            var eve = new ListenNewOrder { ServeName = ConstantServices.ServiceB, CollectionName = ConstantServices.OrderCollection };
+            app.AddFirestoreHandler<ListenNewOrder, FirestoreHandler>(eve, query);
 
             app.CheckEventRegistered(typeof(Startup).Namespace);
         }

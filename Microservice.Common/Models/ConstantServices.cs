@@ -6,8 +6,10 @@ namespace Microservice.Common.Models
 {
     public class ConstantServices
     {
-        public const string ServiceA = "Microservice.A";
-        public const string ServiceB = "Microservice.B";
-        public const string ServiceC = "Microservice.C";
+        public const string ServiceA = "MicroserviceA";
+        public const string ServiceB = "MicroserviceB";
+        public const string ServiceC = "MicroserviceC";
+
+        public const string OrderCollection = "order";
     }
 }

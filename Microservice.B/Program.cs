@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore;
+﻿using Microservice.Common.Models;
+using Microservice.Common.Services;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Logging;
-using NLog.Web;
 using Microsoft.Extensions.DependencyInjection;
+using NLog.Web;
 
 namespace Microservice.B
 {
@@ -14,8 +15,8 @@ namespace Microservice.B
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var env = services.GetService<IHostingEnvironment>().EnvironmentName;
-                NLogBuilder.ConfigureNLog($"nlog.{env}.config").GetCurrentClassLogger();
+                var env = services.GetService<IHostingEnvironment>();
+                var logger = NLogBuilder.ConfigureNLog($"nlog.{env.EnvironmentName}.config").GetCurrentClassLogger();
             }
             host.Run();
         }
@@ -23,12 +24,12 @@ namespace Microservice.B
         public static IWebHost CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .ConfigureLogging(logging =>
-                {
-                    logging.ClearProviders();
-                    logging.SetMinimumLevel(LogLevel.Information);
-                })
-                .UseNLog()
+                //.ConfigureLogging(logging =>
+                //{
+                //    logging.ClearProviders();
+                //    logging.SetMinimumLevel(LogLevel.Information);
+                //})
+                //.UseNLog()
                 .Build();
     }
 }

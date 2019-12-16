@@ -10,4 +10,10 @@ namespace Microservice.Common.Models.Events
         public int Id { get; set; }
         public string Name { get; set; }
     }
+
+    public class ListenNewOrder: IMessage
+    {
+        public string CollectionName { get; set; }
+        public string ServeName { get; set; }
+    }
 }

@@ -17,6 +17,7 @@ namespace Microservice.Common.Models
     public class EventDbContext : DbContext
     {
         private readonly IHttpContextAccessor _httpContext;
+        public bool IsDisposed { get; set; }
 
         public EventDbContext(DbContextOptions<EventDbContext> options, IHttpContextAccessor httpContext) : base(options)
         {
@@ -30,6 +31,7 @@ namespace Microservice.Common.Models
         public DbSet<EventTracker> EventTrackers { get; set; }
         public DbSet<RawRabbitEvent> RawRabbitEvents { get; set; }
         public DbSet<UnsubscribeEvent> UnsubscribeEvents { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -111,16 +113,20 @@ namespace Microservice.Common.Models
 
                 if (entry.Metadata.FindProperty("ModifiedAt") != null)
                 {
-                    if (entry.Property("ModifiedAt").CurrentValue == null)
-                        entry.Property("ModifiedAt").CurrentValue = currentTime;
+                    entry.Property("ModifiedAt").CurrentValue = currentTime;
                 }
 
                 if (entry.Metadata.FindProperty("ModifiedBy") != null)
                 {
-                    if (entry.Property("ModifiedBy").CurrentValue == null)
-                        entry.Property("ModifiedBy").CurrentValue = accountId;
+                    entry.Property("ModifiedBy").CurrentValue = accountId;
                 }
             }
+        }
+
+        public override void Dispose()
+        {
+            IsDisposed = true;
+            base.Dispose();
         }
     }
 

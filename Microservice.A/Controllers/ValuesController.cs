@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microservice.A.VietCredit;
-using Microservice.Common.Exceptions;
-using Microservice.Common.Models.Events;
+﻿using Microservice.Common.Models;
 using Microservice.Common.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using RawRabbit;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Microservice.A.Controllers
 {
@@ -16,25 +12,48 @@ namespace Microservice.A.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IOrderService _orderService;
+        private readonly FirestoreService _firestoreService;
         private readonly IRawRabbitWrapper _rawRabbitClient;
         private readonly ILogger _logger;
 
-        public ValuesController(IRawRabbitWrapper rawRabbitClient, ILogger<ValuesController> logger)
+        public ValuesController(IOrderService orderService, FirestoreService firestoreService, IRawRabbitWrapper rawRabbitClient, ILogger<ValuesController> logger)
         {
+            _orderService = orderService;
+            _firestoreService = firestoreService;
             _rawRabbitClient = rawRabbitClient;
             _logger = logger;
         }
 
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IActionResult> Get()
+        // GET api/values/5
+        [HttpGet("create")]
+        public async Task Get()
         {
-            _logger.LogInformation("Test log information");
-            _logger.LogWarning("Test log warning");
-            _logger.LogError("Test log error");
-            //var checkScoring = new CheckScoring();
-            //checkScoring.Run(_logger);
-            return Ok();
+            //await _rawRabbitClient.PublishAsync(new TestEvent { Id = 1, Name = "TestEvent" });
+            var order = new Order { Status = OrderStatus.New, GuidId = Guid.NewGuid() };
+            order = await _orderService.CreateAsync(order);
+            var data = new Dictionary<string, object>
+            {
+                { "Status", order.Status },
+                { ConstantServices.ServiceA, true },
+                { ConstantServices.ServiceB, false },
+                { ConstantServices.ServiceC, false }
+            };
+            await _firestoreService.AddDocumentAsync("order", order.GuidId.ToString(), data);
+        }
+
+        [HttpGet("update/{id}/{status}")]
+        public async Task Update(Guid id, OrderStatus status)
+        {
+            var order = await _orderService.UpdateStatusAsync(id, status);
+            var data = new Dictionary<string, object>
+            {
+                { "Status", order.Status },
+                { ConstantServices.ServiceA, true },
+                { ConstantServices.ServiceB, false },
+                { ConstantServices.ServiceC, false }
+            };
+            await _firestoreService.AddDocumentAsync("order", order.GuidId.ToString(), data);
         }
     }
 }

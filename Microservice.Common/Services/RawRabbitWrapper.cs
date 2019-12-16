@@ -28,9 +28,19 @@ namespace Microservice.Common.Services
         public async Task PublishAsync<T>(T message = default(T), Guid globalMessageId = default(Guid), Action<IPublishConfigurationBuilder> configuration = null)
         {
             globalMessageId = globalMessageId == default(Guid) ? Guid.NewGuid() : globalMessageId;
-            await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
-
             await SubscribedAsync(message, globalMessageId);
+
+            try
+            {
+                await _rawRabbitClient.PublishAsync(message, globalMessageId, configuration);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"PublishAsync - Error: payload: {JsonConvert.SerializeObject(message)}\r\n{ex.Message}\r\n{ex.StackTrace}");
+                await RemovePublishedAsync(globalMessageId);
+
+                throw ex;
+            }
         }
 
         public async Task RegisterEventAsync(string name, string subscriber)
@@ -59,7 +69,7 @@ namespace Microservice.Common.Services
                     Subscriber = subscriber
                 };
 
-                _context.Add(eventTracker);
+                _context.EventTrackers.Add(eventTracker);
 
                 await _context.SaveChangesAsync();
             }
@@ -67,6 +77,16 @@ namespace Microservice.Common.Services
             {
                 _logger.LogError(ex, $"SubscribedAsync ERROR {JsonConvert.SerializeObject(payload)}");
             }
+        }
+
+        public async Task RemovePublishedAsync(Guid messageId)
+        {
+            var ev = await _context.EventTrackers.FirstOrDefaultAsync(t => t.MessageId == messageId && t.Type == EventType.Publish);
+            if (ev == null) return;
+
+            _context.EventTrackers.Remove(ev);
+
+            await _context.SaveChangesAsync();
         }
 
         public async Task<List<UnsubscribeEvent>> GetUnsubscribeEvents()
