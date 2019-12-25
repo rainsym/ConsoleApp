@@ -25,10 +25,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var amazonSQS = new AmazonSQS();
-            amazonSQS.ReceiveMessage();
-            amazonSQS.SendMessage(JsonConvert.SerializeObject(new LogFile { Count = 1, Name = "Tan Hoang" }));
-            amazonSQS.SendMessage(JsonConvert.SerializeObject(new RV { Name = "RV 1", Length = 5, AliasName = "123/rv", HSEndDate = DateTime.Now }));
 
             Console.WriteLine("Done!");
 
