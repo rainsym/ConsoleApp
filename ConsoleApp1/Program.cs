@@ -25,6 +25,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var stripeAPI = new StripeAPI();
+            var cardNumber = "4242424242424242";
+            var expMonth = 2;
+            var expYear = 2021;
+            var cvc = "123";
+            //var customer = stripeAPI.GetCustomer("cus_Gj5714I5g0hSJ6");
+            //var customer = stripeAPI.CreateCustomer();
+            //stripeAPI.Charge("cus_Gj5714I5g0hSJ6", 50, 123);
+            stripeAPI.Refund("ch_1GBepPBqhCJKs3KhGGW4kFej", 60);
+
 
             Console.WriteLine("Done!");
 
