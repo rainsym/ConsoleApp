@@ -1,23 +1,17 @@
 ﻿using Elasticsearch.Net;
-using ImageMagick;
 using Itenso.TimePeriod;
 using Nest;
 using Newtonsoft.Json;
-using Quartz;
-using Quartz.Impl;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Serialization;
 
 namespace ConsoleApp1
 {
@@ -32,9 +26,8 @@ namespace ConsoleApp1
             var cvc = "123";
             //var customer = stripeAPI.GetCustomer("cus_Gj5714I5g0hSJ6");
             //var customer = stripeAPI.CreateCustomer();
-            //stripeAPI.Charge("cus_Gj5714I5g0hSJ6", 50, 123);
-            stripeAPI.Refund("ch_1GBepPBqhCJKs3KhGGW4kFej", 60);
-
+            //stripeAPI.Charge("cus_Gj5714I5g0hSJ6", 50, 7411);
+            //stripeAPI.Refund("ch_1GBepPBqhCJKs3KhGGW4kFej", 60);
 
             Console.WriteLine("Done!");
 

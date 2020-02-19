@@ -69,7 +69,7 @@ namespace ConsoleApp1
             {
                 Amount = long.Parse((amount * 100).ToString()),
                 Currency = "usd",
-                Description = "My First Test Charge (created for API docs)",
+                Description = $"Booking #{bookingId}",
                 Customer = customerId,//"tok_1GBbPwBqhCJKs3Kh7bvRukv6",
                 TransferGroup = $"Booking #{bookingId}"
             };
