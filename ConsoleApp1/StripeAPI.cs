@@ -60,6 +60,73 @@ namespace ConsoleApp1
             return stripeToken.Id;
         }
 
+        public void CreateAccount(string firstName, string lastName, string email)
+        {
+            StripeConfiguration.ApiKey = secretkey;
+            var options = new TokenCreateOptions
+            {
+                BankAccount = new BankAccountOptions
+                {
+                    Country = "CA",
+                    Currency = "cad",
+                    AccountHolderName = $"{firstName} {lastName}",
+                    AccountHolderType = "individual",
+                    RoutingNumber = "11000-000",
+                    AccountNumber = "000123456789"
+                }
+            };
+
+            var service = new TokenService();
+            var stripeToken = service.Create(options);
+            Console.WriteLine($"Bank token: {stripeToken.Id}");
+
+            //create account
+            var accountOptions = new AccountCreateOptions
+            {
+                Type = "custom",
+                Country = "CA",
+                DefaultCurrency = "cad",
+                Individual = new PersonCreateOptions
+                {
+                    Address = new AddressOptions { City = "Cumberland", Line1 = "1 Cumberland Square", PostalCode = "K4C", State = "Ontario" },
+                    FirstName = firstName,
+                    LastName = lastName,
+                    Dob = new DobOptions { Year = 1989, Month = 1, Day = 1 },
+                    IdNumber = "123456789",//SIN
+                    Email = email
+                },
+                Email = email,
+                TosAcceptance = new AccountTosAcceptanceOptions { Date = DateTime.Now, Ip = stripeToken.ClientIp },
+                BusinessType = "individual",
+                
+                Settings = new AccountSettingsOptions { 
+                    Payouts = new AccountSettingsPayoutsOptions { 
+                        DebitNegativeBalances = true,
+                        Schedule = new AccountSettingsPayoutsScheduleOptions { Interval = "daily" } 
+                    }
+                },
+                RequestedCapabilities = new List<string>
+                {
+                    "card_payments",
+                    "transfers",
+                },
+            };
+
+            var accountService = new AccountService();
+            var account = accountService.Create(accountOptions);
+            Console.WriteLine($"Account: {account.Id}");
+
+            //create external account
+            var externalOption = new ExternalAccountCreateOptions
+            {
+                ExternalAccount = stripeToken.Id,
+                DefaultForCurrency = true
+            };
+            var externalAccountService = new ExternalAccountService();
+            var externalAccount = externalAccountService.Create(account.Id, externalOption);
+            Console.WriteLine($"External Account: {externalAccount.Id}");
+        }
+
         public void Charge(string customerId, double amount, int bookingId)
         {
             StripeConfiguration.ApiKey = secretkey;
@@ -96,6 +163,23 @@ namespace ConsoleApp1
             var result = refundService.Create(options);
 
             Console.WriteLine($"Refund response: \r\n{JsonConvert.SerializeObject(result)}");
+        }
+
+        public void Payout(int bookingId, string accountId, double amount)
+        {
+            StripeConfiguration.ApiKey = secretkey;
+            var transferService = new TransferService();
+            var option = new TransferCreateOptions
+            {
+                Amount = long.Parse((amount * 100).ToString()),
+                Currency = "cad",
+                Destination = accountId,
+                Description = $"Payout for booking #{bookingId}",
+                TransferGroup = $"Booking #{bookingId}"
+            };
+
+            var transfer = transferService.Create(option);
+            Console.WriteLine($"transfer: {JsonConvert.SerializeObject(transfer)}");
         }
     }
 
