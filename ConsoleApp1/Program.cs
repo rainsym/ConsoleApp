@@ -3,6 +3,7 @@ using Nest;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -15,21 +16,30 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var stripeAPI = new StripeAPI();
-            var cardNumber = "4242424242424242";
-            var expMonth = 2;
-            var expYear = 2021;
-            var cvc = "123";
-            //var customer = stripeAPI.GetCustomer("cus_Gj5714I5g0hSJ6");
-            //var customer = stripeAPI.CreateCustomer();
-            //stripeAPI.Charge("cus_Gj5714I5g0hSJ6", 50, 7411);
-            //stripeAPI.Refund("ch_1GBepPBqhCJKs3KhGGW4kFej", 60);
-            //stripeAPI.CreateAccount("Rain", "Sym", "tanhn90@gmail.com");
-            stripeAPI.Payout(100, "acct_1GI5jLABdCxpahjD", 120);
+            Stripe();
 
             Console.WriteLine("Done!");
 
             Console.ReadLine();
+        }
+
+        public static void Stripe()
+        {
+            var stripeAPI = new StripeAPI();
+            var cardNumber = "5555555555554444";//"4242424242424242";
+            var expMonth = 2;
+            var expYear = 2021;
+            var cvc = "123";
+            //var customer = stripeAPI.GetCustomer("cus_Gj5714I5g0hSJ6");
+            //var token = stripeAPI.CreateCardTokens(cardNumber, expMonth, expYear, cvc);
+            //stripeAPI.AddCard("cus_GyQb5rf11O0eAn", token); card_1GQn3uBqhCJKs3Kh97U975Ch
+            stripeAPI.RemoveCard("cus_GyQb5rf11O0eAn", "card_1GQn3uBqhCJKs3Kh97U975Ch");
+            //var customer = stripeAPI.CreateCustomer("Tan Hoang Ngoc", "rain9x@gmail.com", token);
+            //var customer = stripeAPI.UpdateCustomerCard("cus_Gj5714I5g0hSJ6", token);
+            //stripeAPI.Charge("cus_Gj5714I5g0hSJ6", 250, 12345);
+            //stripeAPI.Refund("ch_1GOIjOBqhCJKs3KhrdVe9PaP", 100);
+            //stripeAPI.CreateAccount("Rain", "Sym", "tanhn90@gmail.com");
+            //stripeAPI.Payout(100, "acct_1GI5jLABdCxpahjD", 120);
         }
 
         private static Dictionary<string, object> ConvertToDictionary(this object obj)
@@ -198,11 +208,32 @@ namespace ConsoleApp1
             string temp = s.Normalize(NormalizationForm.FormD);
             return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         }
-    }
 
-    public class Test
-    {
-        public TimeSpan StartTime { get; set; }
-        public TimeSpan EndTime { get; set; }
+        public static IDictionary<string, object> ToDictionary(this object source)
+        {
+            return source.ToDictionary<object>();
+        }
+
+        public static IDictionary<string, T> ToDictionary<T>(this object source)
+        {
+            if (source == null) return null;
+
+            var dictionary = new Dictionary<string, T>();
+            foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(source))
+                AddPropertyToDictionary<T>(property, source, dictionary);
+            return dictionary;
+        }
+
+        private static void AddPropertyToDictionary<T>(PropertyDescriptor property, object source, Dictionary<string, T> dictionary)
+        {
+            object value = property.GetValue(source);
+            if (IsOfType<T>(value))
+                dictionary.Add(property.Name, (T)value);
+        }
+
+        private static bool IsOfType<T>(object value)
+        {
+            return value is T;
+        }
     }
 }

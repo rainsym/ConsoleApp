@@ -15,6 +15,8 @@ namespace ConsoleApp1
             StripeConfiguration.ApiKey = secretkey;
             var customerService = new CustomerService();
             var customer = customerService.Get(id);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Customer response: \r\n{JsonConvert.SerializeObject(customer)}");
 
             return customer;
@@ -32,7 +34,25 @@ namespace ConsoleApp1
                 Name = fullName
             });
 
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Customer response: \r\n{JsonConvert.SerializeObject(customer)}");
+
+            return customer;
+        }
+
+        public Customer UpdateCustomerCard(string id, string cardToken)
+        {
+            StripeConfiguration.ApiKey = secretkey;
+            var customerService = new CustomerService();
+            var option = new CustomerUpdateOptions
+            {
+                Source = cardToken
+            };
+
+            var customer = customerService.Update(id, option);
+
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine($"Update customer response: {JsonConvert.SerializeObject(customer)}");
 
             return customer;
         }
@@ -55,9 +75,31 @@ namespace ConsoleApp1
             var service = new TokenService();
             Token stripeToken = service.Create(options);
 
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Token response: \r\n{JsonConvert.SerializeObject(stripeToken)}");
 
             return stripeToken.Id;
+        }
+
+        public void AddCard(string customerId, string cardToken)
+        {
+            StripeConfiguration.ApiKey = secretkey;
+            var options = new CardCreateOptions
+            {
+                Source = cardToken,
+            };
+            var service = new CardService();
+            var card = service.Create(customerId, options);
+            Console.WriteLine($"Card: {JsonConvert.SerializeObject(card)}");
+        }
+
+        public void RemoveCard(string customerId, string cardId)
+        {
+            StripeConfiguration.ApiKey = secretkey;
+            var service = new CardService();
+            var card = service.Delete(customerId, cardId);
+
+            Console.WriteLine($"Card: {JsonConvert.SerializeObject(card)}");
         }
 
         public void CreateAccount(string firstName, string lastName, string email)
@@ -78,6 +120,8 @@ namespace ConsoleApp1
 
             var service = new TokenService();
             var stripeToken = service.Create(options);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Bank token: {stripeToken.Id}");
 
             //create account
@@ -114,6 +158,8 @@ namespace ConsoleApp1
 
             var accountService = new AccountService();
             var account = accountService.Create(accountOptions);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Account: {account.Id}");
 
             //create external account
@@ -124,6 +170,8 @@ namespace ConsoleApp1
             };
             var externalAccountService = new ExternalAccountService();
             var externalAccount = externalAccountService.Create(account.Id, externalOption);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"External Account: {externalAccount.Id}");
         }
 
@@ -135,13 +183,15 @@ namespace ConsoleApp1
             var options = new ChargeCreateOptions
             {
                 Amount = long.Parse((amount * 100).ToString()),
-                Currency = "usd",
+                Currency = "cad",
                 Description = $"Booking #{bookingId}",
                 Customer = customerId,//"tok_1GBbPwBqhCJKs3Kh7bvRukv6",
                 TransferGroup = $"Booking #{bookingId}"
             };
             var service = new ChargeService();
             var result = service.Create(options);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Charge response: \r\n{JsonConvert.SerializeObject(result)}");
         }
 
@@ -162,6 +212,7 @@ namespace ConsoleApp1
             var refundService = new RefundService();
             var result = refundService.Create(options);
 
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"Refund response: \r\n{JsonConvert.SerializeObject(result)}");
         }
 
@@ -179,6 +230,8 @@ namespace ConsoleApp1
             };
 
             var transfer = transferService.Create(option);
+
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"transfer: {JsonConvert.SerializeObject(transfer)}");
         }
     }
